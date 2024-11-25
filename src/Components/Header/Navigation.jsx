@@ -7,24 +7,28 @@ function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow">
-      <div className="mx-auto w-[90%] sm:px-6">
-        <div className="flex items-center justify-between h-16 py-4 sm:py-14">
+    <header className="sticky top-0 z-50 w-full bg-white shadow">
+      <div className="w-full mx-auto sm:px-6">
+        <div className="flex items-center justify-between py-4 lg:px-[60px] pt-0 px-[20px]">
           {/* Logo Section */}
-          <div className="flex items-center">
+          <div className="flex-col items-center hidden lg:flex-row lg:items-center lg:block">
             <Link to="/">
               <img
                 src={logo}
                 alt="logo"
-                className="h-[50px] sm:h-[50px] md:h-[100px] w-auto object-contain hidden lg:block"
+                className="h-[41px] sm:h-[50px] md:h-[100px] w-auto object-contain"
               />
+              <p className="font-sans font-[600] text-primary-light leading-[1.5] text-center text-[8px] lg:mt-[-20px]">
+                FIRST NATIONAL LEGISLATIVE SUMMIT & <br />
+                EXPO ON RENEWABLE ENERGY
+              </p>
             </Link>
           </div>
 
           {/* Desktop and Tablet Navigation Links */}
           <div className="hidden lg:block">
             <nav aria-label="Global">
-              <ul className="flex items-center gap-10 text-l">
+              <ul className="flex items-center gap-10 text-[18px] font-sans font-[500] text-[#504F53]">
                 {/* Dropdown for About */}
                 <li
                   className="relative group"
@@ -38,11 +42,11 @@ function Navigation() {
                     About
                   </NavLink>
                   {isDropdownOpen && (
-                    <ul className="absolute left-0 z-10 w-48 mt-2 bg-white border border-gray-200 rounded shadow-md group-hover:block">
+                    <ul className="absolute left-0 z-10 w-48 bg-white border border-gray-200 rounded shadow-md group-hover:block">
                       <li>
                         <NavLink
                           to="/about-us"
-                          className="block px-4 py-2 text-gray-700 transition hover:bg-gray-100 hover:text-[#005911]"
+                          className="block text-gray-700 transition hover:bg-gray-100 hover:text-[#005911]"
                         >
                           About Us
                         </NavLink>
@@ -50,7 +54,7 @@ function Navigation() {
                       <li>
                         <NavLink
                           to="/sustainability"
-                          className="block px-4 py-2 text-gray-700 transition hover:bg-gray-100 hover:text-[#005911]"
+                          className="block text-gray-700 transition hover:bg-gray-100 hover:text-[#005911]"
                         >
                           Sustainability
                         </NavLink>
@@ -60,7 +64,7 @@ function Navigation() {
                 </li>
 
                 {/* Other Links */}
-                {["Exhibit", "Visit", "Conference", "Media", "Travel"].map(
+                {["Participate", "Sponsor", "Visit", "Conference", "Media"].map(
                   (link) => (
                     <li key={link}>
                       <NavLink
@@ -77,19 +81,19 @@ function Navigation() {
           </div>
 
           {/* Buttons */}
-          <div className="items-center hidden gap-4 lg:flex">
-            <a
-              href="#"
-              className="px-5 py-2 font-medium text-[#FAA61A] transition border-2 border-[#FAA61A] rounded-md text-l hover:bg-[#005911] hover:text-white"
+          <div className="items-center hidden gap-4 font-sanss md:hidden lg:flex ml-9 ">
+            <Link
+              to="#"
+              className="font-bold text-primary-light transition border-2 border-primary-light rounded-md hover:bg-[#005911] hover:text-white py-[14.6px] px-[16px] text-[16px]"
             >
-              Enquire to Exhibit
-            </a>
-            <a
-              href="#"
-              className="px-5 py-2 font-medium text-white transition bg-[#FAA61A] rounded-md shadow text-l hover:bg-green-800"
+              Enquire to Participate
+            </Link>
+            <Link
+              to="#"
+              className="font-bold text-white transition rounded-md shadow bg-primary-light text-l hover:bg-white py-[14.6px] px-[16px] hover:text-primary-light text-[16px]"
             >
-              Download Sales Brochure
-            </a>
+              Download Brochure
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -98,11 +102,11 @@ function Navigation() {
               <img
                 src={logo}
                 alt="logo"
-                className="h-[60px] sm:h-[100px] w-auto object-contain"
+                className="h-[80px] sm:h-[50px] md:h-[100px] w-auto object-contain ml-[-20px] mb-[-20px]"
               />
             </Link>
             <button
-              className="p-2 text-gray-600 bg-gray-100 rounded hover:text-gray-700"
+              className="text-gray-600 bg-gray-100 rounded hover:text-gray-700"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <svg
@@ -126,12 +130,12 @@ function Navigation() {
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <nav className="md:hidden">
-            <ul className="space-y-4 text-xl font-semibold text-center">
+            <ul className="space-y-4 font-semibold text-center text-[16px] pb-3">
               {/* About Links */}
               <li>
                 <NavLink
                   to="/about-us"
-                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
+                  className="block text-gray-700 transition hover:text-[#005911]"
                 >
                   About Us
                 </NavLink>
@@ -139,19 +143,19 @@ function Navigation() {
               <li>
                 <NavLink
                   to="/sustainability"
-                  className="block py-2 text-gray-700 transition hover:text-[#005911]"
+                  className="block text-gray-700 transition hover:text-[#005911]"
                 >
                   Sustainability
                 </NavLink>
               </li>
 
               {/* Other Links */}
-              {["Exhibit", "Visit", "Conference", "Media", "Travel"].map(
+              {["Participate", "Sponsor", "Visit", "Conference", "Media"].map(
                 (link) => (
                   <li key={link}>
                     <NavLink
                       to={`/${link.toLowerCase()}`}
-                      className="block py-2 text-gray-700 transition hover:text-[#005911]"
+                      className="block text-gray-700 transition hover:text-[#005911]"
                     >
                       {link}
                     </NavLink>
@@ -160,22 +164,20 @@ function Navigation() {
               )}
 
               {/* Mobile Buttons */}
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 font-medium text-[#FAA61A] border-t border-gray-200 hover:bg-gray-50"
+              <div className="flex flex-col items-center gap-4">
+                <Link
+                  to="#"
+                  className="block font-bold text-primary-light transition border-2 border-primary-light rounded-md hover:bg-[#005911] hover:text-white py-[14.6px] px-[16px] text-[16px]"
                 >
-                  Enquire to Exhibit
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 text-white transition bg-[#FAA61A] rounded hover:bg-green-800"
+                  Enquire to Participate
+                </Link>
+                <Link
+                  to="#"
+                  className="block font-bold text-white transition rounded-md shadow bg-primary-light text-l hover:bg-white py-[14.6px] px-[16px] hover:text-primary-light text-[16px]"
                 >
-                  Download Sales Brochure
-                </a>
-              </li>
+                  Download Brochure
+                </Link>
+              </div>
             </ul>
           </nav>
         )}

@@ -1,8 +1,11 @@
 import React from 'react'
+import HeroOne from '../Components/Hero/HeroOne'
 
 function Home() {
   return (
-    <div className='container max-w-screen-2xl'>Home</div>
+    <div>
+      <HeroOne/>
+    </div>
   )
 }
 

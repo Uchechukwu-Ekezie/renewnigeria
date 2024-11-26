@@ -6,6 +6,7 @@ import Partners from '../Components/Partners/Partners'
 import GainInsight from '../Components/GainInsight/GainInsight'
 import WhyExhibit from '../Components/WhyExhibit/WhyExhibit'
 import ShowFeatures from '../Components/Features/Features'
+import ComingSoon from '../Components/ComingSoon/ComingSoon'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <HeroOne/>
       <PricingPlans/>
       <ShowFeatures/>
+      <ComingSoon/>
       <WhyExhibit/>
       <GainInsight/>
       <PricingPlans/>

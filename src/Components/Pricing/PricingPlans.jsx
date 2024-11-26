@@ -9,7 +9,7 @@ const PricingPlans = () => {
           </h1>
   
           {/* Pricing Plans */}
-          <div className="lg:w-3/5 w-full  grid grid-cols-2   md- w-full gap-8">
+          <div className="lg:w-3/5 w-full  grid grid-cols-2    gap-8">
             {/* Free Plan */}
             <div className="bg-[#005911] text-white rounded-lg shadow-lg p-8 flex flex-col justify-between">
               <div>

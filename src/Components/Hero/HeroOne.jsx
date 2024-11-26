@@ -11,15 +11,15 @@ import year from "../../Assets/Image/2025.png";
 const HeroOne = () => {
   return (
     <div
-      className="relative  max-w-full bg-center bg-no-repeat bg-cover lg:h-[800px] h-screen"
+      className="relative w-full h-screen bg-center bg-no-repeat bg-cover"
       style={{
         backgroundImage: `url(${background})`,
-        backgroundPosition: " center 20%",
+        backgroundPosition: "center 20%",
       }}
     >
       {/* Overlay */}
       <div
-        className="absolute inset-0 opacity-70"
+        className="absolute inset-0 opacity-80"
         style={{
           background:
             "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(77, 111, 65, 0.8) 80%, rgba(77, 95, 65, 1) 100%)",
@@ -27,69 +27,75 @@ const HeroOne = () => {
       ></div>
 
       {/* Content */}
-      {/* Heading */}
-
-      <div className="relative mx-auto max-w-screen-2xl">
+      <div className="relative z-10 mx-auto max-w-[90%] h-full flex flex-col justify-center items-center">
+        {/* Solar Image */}
         <img
           src={solar}
           alt="Solar Panel"
-          className="absolute top-4 left-4 w-[150px] md:w-[250px] lg:w-[501.93px] lg:h-[330px]"
+          className="absolute top-[1%] left-[-5%] w-[15vw] lg:w-[26.14vw] lg:h-[17.19vw]"
         />
 
+        {/* Nigeria Image */}
         <img
           src={nigeria}
-          alt="renew nigeria"
-          className="absolute top-[130px] left-[15px] lg:top-[220px] lg:left-[171px] w-[400px] lg:w-[1068px] lg:h-[352.82px] md:top-[180px] md:left-[100px]  md:w-[568px] md:h-[252.82px] "
+          alt="Renew Nigeria"
+          className="absolute top-[17%] left-[15%] w-[60vw] md:w-[50vw] lg:w-[55.63vw]"
         />
 
+        {/* Gold Image */}
         <img
           src={gold}
-          alt="gold"
-          className="absolute lg:top-[393px] lg:left-[183px] lg:w-[1011px] lg:h-[36px] md:top-[301px] md:left-[111px] md:w-[530px] md:h-[36px] top-[197px] left-[21px] w-[375px] h-[15px]"
-        />
-        <img
-          src={goldOne}
-          alt="flash"
-          className="absolute top-[332px] left-[211.5px] lg:w-[98px] lg:h-[134px] transform rotate-[-1.6deg]"
-        />
-        <img
-          src={legi}
-          alt="Solar Panel"
-          className="absolute top-[311px] left-[1155px] lg:w-[200px] lg:h-[200px]"
-        />
-        <img
-          src={staff}
-          alt="staff"
-          className="absolute top-[383px] left-[20px] lg:w-[310px] lg:h-[406px]"
+          alt="Gold Line"
+          className="absolute hidden top-[33.2%] lg:top-[33%] left-[15.9%] w-[80%] lg:w-[59%]"
         />
 
-        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center text-white md:px-8">
-          {/* Subtitle */}
-          <p className="mt-4 text-[36px] font-raleway font-bold sm:text-2xl md:text-3xl lg:mt-[580px] text-left ml-[-300px]">
+        {/* GoldOne Image */}
+        <img
+          src={goldOne}
+          alt="Flash"
+          className="absolute hidden top-[30.1%] lg:top-[27.9%] left-[17.7%] lg:w-[5.10%]"
+        />
+
+        {/* Legislative Image */}
+        <img
+          src={legi}
+          alt="Legislative Icon"
+          className="absolute top-[20%] right-[10%] w-[15vw]"
+        />
+
+        {/* Staff Image */}
+        <img
+          src={staff}
+          alt="Staff"
+          className="absolute bottom-[23%] left-[-8%] w-[24vw]"
+        />
+
+        {/* Main Text */}
+        <div className="text-left text-white">
+          <p className="text-[4vw] lg:mt-[50%] lg:ml-[-1%] font-bold leading-tight md:text-[3vw]">
             FIRST NATIONAL LEGISLATIVE SUMMIT & EXPO ON <br /> RENEWABLE ENERGY
           </p>
 
           {/* Date and Location */}
-          <p className="mt-2 text-[32px] sm:text-xl md:text-2xl text-left ml-[-670px] font-[700] font-sanss">
+          <p className="mt-4 text-[3vw] font-semibold md:text-[2vw]">
             11th – 13th February, 2025
             <br />
             Eko Hotel, Lagos State, Nigeria
           </p>
 
+          {/* Year Image */}
           <img
             src={year}
-            alt=""
-            className="absolute top-[599px] left-[643px] lg:w-[565.98px] lg:h-[170px]"
+            alt="2025"
+            className="mx-auto mt-4 w-[40vw] lg:w-[30vw]"
           />
 
           {/* Theme */}
-          <p className="mt-6 text-xl italic md:text-2xl lg:text-3xl font-raleway">
+          <p className="mt-6 text-[2vw] md:text-[1.5vw] font-raleway">
             <span className="font-semibold text-[#FFC707]">Theme:</span>
-            <span className="font-bold text-white text-[36px]">
-              RENEW NIGERIA&nbsp;
-            </span>
-            <span className="font-bold text-[36px]">
-              Unlocking Nigeria's Energy Future
+            <br />
+            <span className="font-bold text-white">
+              RENEW NIGERIA &nbsp; Unlocking Nigeria's Energy Future
             </span>
           </p>
         </div>

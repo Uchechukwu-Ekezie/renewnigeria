@@ -12,7 +12,6 @@ function Home() {
   return (
     <div>
       <HeroOne/>
-      <HeroTwo/>
       <PricingPlans/>
       <ShowFeatures/>
       <ComingSoon/>

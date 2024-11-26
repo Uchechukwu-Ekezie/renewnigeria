@@ -1,10 +1,12 @@
 import React from 'react'
-import PricingPlans from '../Components/Pricing/PricingPlans'
+import HeroOne from '../Components/Hero/HeroOne'
+import HeroTwo from '../Components/Hero/HeroTwo'
 
 function Home() {
   return (
-    <div className='container max-w-screen-2xl'>
-      <PricingPlans/>
+    <div>
+      <HeroOne/>
+      <HeroTwo/>
     </div>
   )
 }

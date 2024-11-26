@@ -5,12 +5,14 @@ import PricingPlans from '../Components/Pricing/PricingPlans'
 import Partners from '../Components/Partners/Partners'
 import GainInsight from '../Components/GainInsight/GainInsight'
 import WhyExhibit from '../Components/WhyExhibit/WhyExhibit'
+import ShowFeatures from '../Components/Features/Features'
 
 function Home() {
   return (
     <div>
       <HeroOne/>
       <PricingPlans/>
+      <ShowFeatures/>
       <WhyExhibit/>
       <GainInsight/>
       <PricingPlans/>

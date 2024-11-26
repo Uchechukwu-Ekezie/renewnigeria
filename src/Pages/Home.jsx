@@ -12,7 +12,7 @@ function Home() {
   return (
     <div>
       <HeroOne/>
-      <PricingPlans/>
+
       <ShowFeatures/>
       <ComingSoon/>
       <WhyExhibit/>

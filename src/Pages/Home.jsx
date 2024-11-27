@@ -10,11 +10,14 @@ import ShowFeatures from '../Components/Features/Features'
 import ComingSoon from '../Components/ComingSoon/ComingSoon'
 import ShowHighlights from '../Components/ShowHighlights/ShowHighlights'
 import VideoGallery from '../Components/VideoGallery/VideoGallery'
+import Hero from '../Components/Hero/Hero'
+import Slider from '../Components/Hero/Slider'
+// import Slider from '../Components/Hero/Slider'
 
 function Home() {
   return (
     <div>
-      <HeroOne/>
+     <Slider/>
       <HeroThree/>
       <HeroFour/>
       <ShowFeatures/>

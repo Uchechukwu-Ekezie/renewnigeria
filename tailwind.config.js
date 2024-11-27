@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         sanss: ['"DM Sans"', "sans-serif"],
         raleway: ["Raleway", "sans-serif"],
+        'segoe-script': ['Segoe Script', 'cursive'],
       },
       colors: {
         green: {

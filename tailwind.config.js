@@ -18,6 +18,9 @@ module.exports = {
         raleway: ["Raleway", "sans-serif"],
       },
       colors: {
+        green: {
+          700: '#2f855a', // Adjust based on your design
+        },
         primary: {
           light: "#005911",
           DEFAULT: "#005911",

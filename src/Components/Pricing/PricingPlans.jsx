@@ -9,20 +9,20 @@ const PricingPlans = () => {
         </h1>
 
         {/* Pricing Plans */}
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 lg:w-[75%] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 lg:w-[80%] mx-auto">
   {/* Free Plan */}
-  <div className="bg-[#005911] text-white rounded-lg shadow-lg p-8 flex flex-col justify-between w-full md:w-[370px] md:h-[520px] lg:w-[350px] lg:h-[470px] mx-auto">
-    <div>
+  <div className="bg-[#005911] text-white rounded-lg shadow-lg p-8 flex flex-col justify-between w-full md:w-[370px] md:h-[520px] lg:w-[390px] lg:h-[470px] mx-auto">
+    <div className="w-[100%]" >
       <h2 className="text-xl md:text-2xl font-normal font-sans mb-4">Free</h2>
       <p className="text-4xl md:text-5xl font-bold font-poppins mb-4">$0</p>
       <p className="text-base md:text-lg font-sans text-[16px] mb-6">
         Best for Small Teams or Individuals.
       </p>
       <ul className="space-y-3">
-        <li className="flex items-center font-sans text-[16px] gap-2">
-          <span>✔</span> 150+ local and international exhibitors
+        <li className="flex items-center w-full font-sans text-[16px] gap-2">
+          <span>✔</span> <p>150+ local and international exhibitors</p>
         </li>
-        <li className="flex items-center font-sans text-[16px] gap-2">
+        <li className="flex items-center  font-sans text-[16px] gap-2">
           <span>✔</span> Technical Seminar
         </li>
         <li className="flex items-center font-sans text-[16px] gap-2">
@@ -36,8 +36,8 @@ const PricingPlans = () => {
   </div>
 
   {/* Enterprise Plan */}
-  <div className="bg-[#FFFFFF] text-gray-900 rounded-lg shadow-lg p-8 flex flex-col justify-between w-full md:w-[370px] md:h-[520px] lg:w-[350px] lg:h-[470px] mx-auto">
-    <div>
+  <div className="bg-[#FFFFFF] text-gray-900 rounded-lg shadow-lg p-8 flex flex-col justify-between w-full md:w-[370px] md:h-[520px] lg:w-[390px] lg:h-[470px] mx-auto">
+    <div className="w[100%]">
       <h2 className="text-xl md:text-2xl font-bold mb-4">Enterprise</h2>
       <p className="text-4xl md:text-5xl font-extrabold mb-4">$500</p>
       <p className="text-base md:text-lg mb-6">

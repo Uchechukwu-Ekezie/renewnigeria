@@ -3,31 +3,31 @@ import why from "../../Assets/Image/whypart.jpg";
 import why2 from "../../Assets/Image/whyexhi.jpg";
 import why3 from "../../Assets/Image/whyspon.jpg";
 
-const ShowFeatures = () => {
+const ShowFeature = () => {
   const features = [
     {
       title: "Exhibition",
       description:
         "Our international exhibition has 150+ exhibitors offering a unique opportunity for attendees to network, trade, and discover new opportunities.",
-      imgSrc:{why}, // Replace with actual image path
+      image: why,
     },
     {
       title: "Conferences",
       description:
         "The leadership summit, technical seminar, and newly launched Energy-X Contest are premier events for industry professionals seeking the latest challenges and innovations in West Africa's energy sector.",
-      imgSrc: {why2}, // Replace with actual image path
+      image: why2,
     },
     {
-      title: "Product Sectors",
+      title: "Product sectors",
       description:
         "Our exhibition showcases 5 diverse product sectors and the latest energy equipment solutions all in one convenient location.",
-      imgSrc: {why3}, // Replace with actual image path
+      image: why3,
     },
     {
-      title: "VIP Programme",
+      title: "VIP programme",
       description:
         "Our exclusive VIP initiative connects decision-makers and energy experts, providing attendees with high-level opportunities to network with key players.",
-      imgSrc: "path-to-vip-programme-image.jpg", // Replace with actual image path
+      image: why,
     },
   ];
 
@@ -69,4 +69,4 @@ const ShowFeatures = () => {
   );
 };
 
-export default ShowFeatures;
+export default ShowFeature;

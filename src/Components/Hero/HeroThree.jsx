@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
-import Image1 from "../../Assets/Image/organizers/image1.png";
+import { FaFacebook, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
 import Image2 from "../../Assets/Image/organizers/image2.png";
 import Image3 from "../../Assets/Image/organizers/image3.png";
 import Image4 from "../../Assets/Image/organizers/Green_Clean_Text.png";
@@ -21,7 +20,7 @@ function HeroOne() {
               to="#"
               className="flex items-center justify-center w-10 h-10 text-[#005911] bg-white rounded-full shadow-lg hover:bg-gray-200"
             >
-              <FaFacebookF size={20} />
+              <FaFacebook size={20} />
             </Link>
             <Link
               to="#"

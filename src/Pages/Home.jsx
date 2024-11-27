@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroOne from '../Components/Hero/HeroOne'
-import HeroTwo from '../Components/Hero/HeroTwo'
 import HeroThree from '../Components/Hero/HeroThree'
 import HeroFour from '../Components/Hero/HeroFour'
 import PricingPlans from '../Components/Pricing/PricingPlans'

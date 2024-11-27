@@ -1,4 +1,4 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+// import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 // import logo from "../../assets/image/Green_Clean logo.png";
 
 import logo from "../../Assets/Renew_Nigeria.png";

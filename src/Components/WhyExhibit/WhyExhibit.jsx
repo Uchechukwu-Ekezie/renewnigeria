@@ -70,7 +70,7 @@ const WhyExhibit = () => {
               <img src={vector} alt="" srcset="" />
               <img src={heading} alt="" srcset="" />
             </div>
-            <div className=" mx-auto lg:w-[86%] mb-[54px]  " >
+            <div className=" mx-auto  sm:w[40%]  lg:w-[86%] mb-[54px]  " >
             <img className="" src={headingtwo} alt="" srcset="" />
             </div>
            

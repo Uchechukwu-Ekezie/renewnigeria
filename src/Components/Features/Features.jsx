@@ -32,12 +32,12 @@ const ShowFeatures = () => {
   ];
 
   return (
-    <div className="py-12 bg-gray-100 text-center">
+    <div className="py-12 text-center bg-gray-100">
       <h2 className="text-[40px] font-bold text-[#313131] font-sans mb-8">
         2025 Show Features
       </h2>
       <div className="w-[50px] h-[1px] bg-yellow-400 mx-auto mb-8"></div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 px-4 md:px-5">
+      <div className="grid grid-cols-1 gap-16 px-4 sm:grid-cols-2 lg:grid-cols-4 md:px-5">
         {features.map((feature, index) => (
           <div
             key={index}
@@ -46,12 +46,12 @@ const ShowFeatures = () => {
             <img
               src={feature.imgSrc}
               alt={feature.title}
-              className="w-full h-40 object-cover rounded-t-lg"
+              className="object-cover w-full h-40 rounded-t-lg"
             />
             <h3 className="text-[20px] font-bold font-sans text-[#066C16] mt-4">
               {feature.title}
             </h3>
-            <p className="text-sm text-gray-600 mt-2">
+            <p className="mt-2 text-sm text-gray-600">
               {feature.description}
             </p>
           </div>

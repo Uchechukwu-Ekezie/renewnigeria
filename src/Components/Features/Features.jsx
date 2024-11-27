@@ -40,7 +40,7 @@ const ShowFeature = () => {
         </h2>
         
         <div className="w-12 h-1 bg-[#FFCB05] mx-auto lg:mx-auto my-4"></div> 
-        <div className="grid w-[80%] gap-6 mx-auto md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid w-[90%]  gap-4 mx-auto md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -51,12 +51,12 @@ const ShowFeature = () => {
                 alt={feature.title}
                 className="object-cover w-64 h-64 mx-auto rounded-md"
               />
-                <div className="flex flex-col justify-between h-full">
+                <div className=" font-sans flex flex-col justify-between h-full">
                 <div>
-                  <h3 className="mb-1 text-xl font-semibold text-yellow-600">
+                  <h3 className="mb-1 text-xl font-bold text-[#066C16]">
                     {feature.title}
                   </h3>
-                  <p className="text-lg font-semibold text-gray-600">{feature.description}</p>
+                  <p className="text-[14px]  font-sans text-center font-normal text-gray-600">{feature.description}</p>
                 </div>
                 <div className="mt-auto">
                   {/* Empty space, pushing the content to the top */}

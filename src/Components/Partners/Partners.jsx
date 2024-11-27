@@ -75,7 +75,7 @@ const Partners = () => {
          
         
         {/* Windmill Image */}
-        <div className="absolute -top-72 right-12 transform -translate-y-12 hidden lg:block">
+        <div className="absolute -top-[310px] -right-7 transform -translate-y-12 hidden lg:block">
           <img
             src={windmill}
             alt="Windmill"

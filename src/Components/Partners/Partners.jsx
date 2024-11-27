@@ -70,7 +70,7 @@ const Partners = () => {
         <p className="text-[11.48px] "> TO NAME A FEW OF OUR 185,000+ CUSTOMERS</p>
       <h2 className="text-[41.5px]  ">PARTNERS</h2>
       </div>
-          <div className="w-[60%]  relative  lg:-mr-96">
+          <div className="w-[50%]  relative  lg:-mr-96">
         
          
         

@@ -55,7 +55,7 @@ const Partners = () => {
   return (
     <div className="bg-[#F5F5F5] w-full  h-fit top-16 flex flex-col items-center">
       {/* Banner Section */}
-      <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row w-full items-center lg:px-10 py-8 relative mt-16" >
+      <div className="  bg-red-600 flex flex-col sm:flex-col md:flex-col lg:flex-row w-full items-center lg:px-10 py-8 relative mt-16" >
         
         {/* Banner Image */}
           <div className="lg:w-[460px] bg-gray-800 h-[500px]  lg:ml-20 lg:-top-14 lg:relative"  >
@@ -75,7 +75,7 @@ const Partners = () => {
          
         
         {/* Windmill Image */}
-        <div className="absolute -top-72 right-12 transform -translate-y-12 hidden lg:block">
+        <div className="absolute -top-[310px] -right-7 transform -translate-y-12 hidden lg:block">
           <img
             src={windmill}
             alt="Windmill"
@@ -88,7 +88,7 @@ const Partners = () => {
 
      
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-10/12 justify-items-center">
+      <div className="grid   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-10/12 justify-items-center">
         {partnerLogos.map((partner, index) => (
           <img
             key={index}

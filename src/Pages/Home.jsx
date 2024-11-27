@@ -1,5 +1,4 @@
-import React from 'react'
-import HeroOne from '../Components/Hero/HeroOne'
+
 import HeroThree from '../Components/Hero/HeroThree'
 import HeroFour from '../Components/Hero/HeroFour'
 import PricingPlans from '../Components/Pricing/PricingPlans'
@@ -10,11 +9,12 @@ import ShowFeatures from '../Components/Features/Features'
 import ComingSoon from '../Components/ComingSoon/ComingSoon'
 import ShowHighlights from '../Components/ShowHighlights/ShowHighlights'
 import VideoGallery from '../Components/VideoGallery/VideoGallery'
+import Slider from '../Components/Hero/Slider'
 
 function Home() {
   return (
     <div>
-      <HeroOne/>
+      <Slider/>
       <HeroThree/>
       <HeroFour/>
       <ShowFeatures/>

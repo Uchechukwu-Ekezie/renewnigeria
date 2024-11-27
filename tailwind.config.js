@@ -16,6 +16,8 @@ module.exports = {
       fontFamily: {
         sanss: ['"DM Sans"', "sans-serif"],
         raleway: ["Raleway", "sans-serif"],
+        inter: ['Inter', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif'],
       },
       colors: {
         green: {

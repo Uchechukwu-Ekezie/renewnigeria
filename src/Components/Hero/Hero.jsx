@@ -12,7 +12,7 @@ function Hero() {
     <div className="w-full ">
       <div>
         <div
-          className="relative w-full h-screen font-sans bg-center bg-no-repeat bg-cover"
+          className="relative w-full min-h-screen font-sans bg-center bg-no-repeat bg-cover"
           style={{
             backgroundImage: `url(${background})`,
             backgroundPosition: "center 20%",

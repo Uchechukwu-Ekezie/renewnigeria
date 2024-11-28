@@ -58,12 +58,12 @@ const Partners = () => {
       <div className=" flex flex-col  sm:flex-col md:flex-col lg:flex-row w-full items-center lg:px-10 py-8 relative mt-16" >
         
         {/* Banner Image */}
-          <div className="w-[25%] bg-gray-800 h-[80%]  md:w[100%] sm:w-[260px] sm:h-[300px] lg:ml-20 lg:-top-5 lg:relative"  >
+          <div className="w-[50%] bg-gray-800 h-[80%]  md:w[100%] sm:w-[260px] sm:h-[300px] lg:ml-20 lg:-top-5 lg:relative"  >
             
           <img
             src={renewpic}
             alt="Renew Nigeria"
-            className="w-[100%] h-[100%] "
+            className="w-[120%] h-[100%] "
           />
           </div>
           <div className="flex flex-col left-96 w-[80%] h-[80%] items-center justify-center py-12 bg-white">

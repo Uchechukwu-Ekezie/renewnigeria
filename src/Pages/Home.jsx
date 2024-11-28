@@ -11,11 +11,14 @@ import ComingSoon from '../Components/ComingSoon/ComingSoon'
 import ShowHighlights from '../Components/ShowHighlights/ShowHighlights'
 import VideoGallery from '../Components/VideoGallery/VideoGallery'
 import Slider from '../Components/Hero/Slider'
+import Hero from '../Components/Hero/Hero'
+import HeroOne from '../Components/Hero/HeroOne'
 
 
 function Home() {
   return (
     <div>
+      <HeroOne/>
       <Slider/>
       <HeroThree/>
       <HeroFour/>

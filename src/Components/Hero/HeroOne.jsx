@@ -66,7 +66,7 @@ const HeroOne = () => {
           </p>
 
           {/* Date and Location */}
-          <p className="absolute text-[4vw] text-white font-semibold md:text-[3vw] md:mt-[200%] lg:mt-[50%] 2xl:mt-[68%] lg:ml-[-27%] 2xl:text-[28px] lg:text-[22px] lg:text-left 2xl:ml-[-39%]  text-center font-sanss">
+          <p className="absolute text-[4vw] mt-[250%] text-white font-semibold md:text-[3vw] md:mt-[200%] lg:mt-[50%] 2xl:mt-[68%] lg:ml-[-27%] 2xl:text-[28px] lg:text-[22px] lg:text-left 2xl:ml-[-39%]  text-center font-sanss">
             11th – 13th February, 2025
             <br />
             Eko Hotel, Lagos State, Nigeria

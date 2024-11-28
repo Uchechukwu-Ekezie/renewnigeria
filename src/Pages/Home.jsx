@@ -13,6 +13,7 @@ import VideoGallery from '../Components/VideoGallery/VideoGallery'
 import Slider from '../Components/Hero/Slider'
 
 
+
 function Home() {
   return (
     <div>

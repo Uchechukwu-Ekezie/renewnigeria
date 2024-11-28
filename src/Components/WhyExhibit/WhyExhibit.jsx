@@ -6,39 +6,33 @@ import why3 from "../../Assets/Image/whyspon.jpg";
 import vector from "../../Assets/Vector.png";
 import heading from "../../Assets/Heading.png";
 import headingtwo from "../../Assets/Heading2.png";
+
 const WhyExhibit = () => {
   const sections = [
-
     {
-      title: "WHY PARTIPATE?",
+      title: "WHY PARTICIPATE?",
       image: why,
       points: [
         {
-          
           normal:
-            " Spark new deals: Engage with 93% of businesses who recognize Nigeria Energy as an important platform for their business.",
+            "Spark new deals: Engage with 93% of businesses who recognize Nigeria Energy as an important platform for their business.",
         },
         {
-          bold: "",
           normal:
-            " Connect and collaborate: Network face-to-face with key decision-makers and potential partners to unlock business opportunities.",
+            "Connect and collaborate: Network face-to-face with key decision-makers and potential partners to unlock business opportunities.",
         },
       ],
-      buttonText: "Partipate Enquiry",
+      buttonText: "Participate Enquiry",
     },
-
-
     {
       title: "WHY EXHIBIT?",
       image: why2,
       points: [
         {
-          
           normal:
-            " Spark new deals: Engage with 93% of businesses who recognize Nigeria Energy as an important platform for their business.",
+            "Spark new deals: Engage with 93% of businesses who recognize Nigeria Energy as an important platform for their business.",
         },
         {
-         
           normal:
             "Connect and collaborate: Network face-to-face with key decision-makers and potential partners to unlock business opportunities.",
         },
@@ -50,12 +44,10 @@ const WhyExhibit = () => {
       image: why3,
       points: [
         {
-          
           normal:
             "Spark new deals: Get premium brand exposure positioning you as a thought leader.",
         },
         {
-          
           normal:
             "Connect and collaborate: Maximize your brand's impact with pre-show promotions, eye-catching outdoor branding, and exclusive venue and conference sponsorships.",
         },
@@ -65,23 +57,21 @@ const WhyExhibit = () => {
   ];
 
   return (
-    <section className="w-full  h-[100%]py-8 bg-white sm:py-12">
-        <div className=" mx-auto lg:w-[86%] mb-[14px] flex gap-4">
-              <img src={vector} alt="" srcset="" />
-              <img src={heading} alt="" srcset="" />
-            </div>
-            <div className=" mx-auto  sm:w[40%]  lg:w-[86%] mb-[54px]  " >
-            <img className="" src={headingtwo} alt="" srcset="" />
-            </div>
-           
-      <div className="grid grid-cols-1 gap-6 px-4 mx-auto sm:px-6 lg:w-[75%] lg:h-[40%] lg:grid-cols-3">
-        
+    <section className="w-full py-8 bg-white sm:py-12">
+      {/* Header Section */}
+      <div className="ml-7 md:mx-auto lg:mx-auto  w-[50%] md:w-[93%] lg:w-[90%] mb-[14px]  flex gap-4">
+        <img src={vector} alt="Vector" />
+        <img src={heading} alt="Heading" />
+      </div>
+      <div className=" ml-7 md:mx-auto lg:mx-auto w-[50%] md:w-[93%] lg:w-[90%] mb-[24px]  md:mb-[54px] lg:mb-[54px]">
+        <img src={headingtwo} alt="Heading Two" />
+      </div>
+      {/* Cards Section */}
+      <div className="grid grid-cols-1 gap-6 px-4 mx-auto sm:px-6 lg:w-[95%] md:grid-cols-2 lg:grid-cols-3">
         {sections.map((section, index) => (
-          <div>
-          
-             <div
+          <div
             key={index}
-            className="flex flex-col items-center px-2 py-2 overflow-hidden bg-[#EBEBEB] rounded-md shadow-lg"
+            className="flex flex-col justify-between h-full items-center px-4 py-4 bg-[#EBEBEB] rounded-md shadow-lg"
           >
             {/* Section Title */}
             <h3 className="mb-4 text-lg font-semibold text-center text-[#005911] md:text-xl lg:text-2xl">
@@ -94,24 +84,21 @@ const WhyExhibit = () => {
               className="object-cover w-full h-48 mb-4 rounded-lg sm:h-56 md:h-64"
             />
             {/* Points */}
-            <ul className="mb-6 space-y-4 text-sm font-normal text-[#555555] sm:text-base lg:text-[16px]">
+            <ul className="flex-grow mb-6 space-y-4 text-sm font-normal text-[#555555] sm:text-base lg:text-[16px]">
               {section.points.map((point, idx) => (
                 <li key={idx} className="flex items-start">
                   <span className="mr-2 text-[16px] font-normal text-black">•</span>
                   <span className="font-sans text-[16px] font-normal">
-                    <b>{point.bold}</b>
                     {point.normal}
                   </span>
                 </li>
               ))}
             </ul>
             {/* Button */}
-            <button className="px-6 py-2 w-[80%] text-white transition bg-[#005911] hover:bg-green-200">
+            <button className="px-6 py-2 w-[80%] text-white bg-[#005911] transition hover:bg-green-200">
               {section.buttonText}
             </button>
           </div>
-          </div>
-         
         ))}
       </div>
     </section>

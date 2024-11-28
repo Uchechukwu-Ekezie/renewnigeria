@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
+import Image1 from "../../Assets/Image/organizers/image1.png";
 import Image2 from "../../Assets/Image/organizers/image2.png";
 import Image3 from "../../Assets/Image/organizers/image3.png";
 import Image4 from "../../Assets/Image/organizers/Green_Clean_Text.png";
@@ -20,7 +21,7 @@ function HeroOne() {
               to="#"
               className="flex items-center justify-center w-10 h-10 text-[#005911] bg-white rounded-full shadow-lg hover:bg-gray-200"
             >
-              <FaFacebook size={20} />
+              <FaFacebookF size={20} />
             </Link>
             <Link
               to="#"
@@ -54,39 +55,42 @@ function HeroOne() {
           <h1 className="mb-4 text-lg font-bold text-white lg:mb-8 sm:text-xl lg:text-2xl">
             Organizers
           </h1>
-          <div className="flex flex-row gap-5 items-center justify-center">
+          <div className="flex flex-row gap-3 items-center justify-center">
             {/* Organizer 1 */}
             <div className="flex flex-col items-center text-center">
-              <img
-                src={Image2}
-                alt="Speaker logo"
-                className="w-[70%] h-[70%] lg:w-[70%]"
-              />
+            <img
+  src={Image2}
+  alt="Speaker logo"
+  className="w-24 h-24 object-contain"
+/>
               <p className="text-white">Office of the Speaker</p>
             </div>
 
             {/* Organizer 2 */}
             <div className="flex flex-col items-center text-center">
-              <img
-                src={Image2}
-                alt="Committee Logo"
-                className="w-[70%] h-[70%] lg:w-[70%]"
-              />
+            <img
+  src={Image2}
+  alt="Speaker logo"
+  className="w-24 h-24 object-contain"
+/>
               <p className="text-white">Committee on Renewable Energy</p>
             </div>
 
             {/* Organizer 3 */}
             <div className="flex flex-col items-center text-center">
+             
               <img
-                src={Image3}
-                alt="Green Clean Logo"
-                 className="w-[70%] h-[70%] lg:w-[70%]"
-              />
+  src={Image3}
+  alt="Green Clean Logo"
+  className="w-24 h-24 object-contain"
+/>
               <img
                 src={Image4}
                 alt="Green Clean Text"
-                className="w-[160px] h-[32.73px] lg:w-[160px] xl:w-[160px]"
+                className=" lg:mt-2 w-[160px] h-[32.73px] lg:w-[150px] xl:w-[160px]"
               />
+              
+              
             </div>
           </div>
         </div>

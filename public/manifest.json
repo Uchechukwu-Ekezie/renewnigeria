@@ -1,6 +1,7 @@
 {
-  "short_name": "Renew Nigeria",
+  "short_name": "RenewNigeria",
   "name": "Renew Nigeria",
+  "description": "National Renewable Energy Policy Workshop",
   "icons": [
     {
       "src": "favicon.ico",

@@ -55,31 +55,31 @@ const Partners = () => {
   return (
     <div className="bg-[#F5F5F5] w-full  h-fit top-16 flex flex-col items-center">
       {/* Banner Section */}
-      <div className="flex  w-full items-center px-10 py-8 relative mt-16" >
+      <div className=" flex flex-col sm:flex-col md:flex-col lg:flex-row w-full items-center lg:px-10 py-8 relative mt-16" >
         
         {/* Banner Image */}
-          <div className="w-[460px] bg-gray-800 h-[500px]  ml-20 -top-14 relative"  >
+          <div className="lg:w-[460px] bg-gray-800 h-[500px]  sm:w-[260px] sm:h-[300px] lg:ml-20 lg:-top-14 lg:relative"  >
             
           <img
             src={renewpic}
             alt="Renew Nigeria"
-            className="w-[460px] h-[500px] "
+            className="w-[460px] h-[500px]  sm:w-[260px] sm:h-[300px]"
           />
           </div>
-          <div className="  font-medium font-sans  absolute ml-[550px]  -top-3 ">
+          <div className="  font-medium font-sans  lg:absolute  lg:ml-[550px]  lg:-top-3  md:text-black sm:text-black lg:text-black ">
         <p className="text-[11.48px] "> TO NAME A FEW OF OUR 185,000+ CUSTOMERS</p>
-      <h2 className="text-[41.5px]  ">PARTNERS</h2>
+      <h2 className="text-[41.5px] lg:text-start text-center  ">PARTNERS</h2>
       </div>
-          <div className="w-[70%]  relative -mr-96">
+          <div className=" w-[90%] lg:w-[50%]  relative  lg:-mr-96">
         
          
         
         {/* Windmill Image */}
-        <div className="absolute -top-72 right-12 transform -translate-y-12">
+        <div className="absolute -top-[310px] -right-7 transform -translate-y-12 hidden lg:block">
           <img
             src={windmill}
             alt="Windmill"
-            className="h-[630px] w-[251px]"
+            className="h-[630px] w-[251px] "
           />
         </div>
     
@@ -88,17 +88,18 @@ const Partners = () => {
 
      
 
-      <div className="grid grid-cols-4 gap-4 w-10/12 mt-8 mb-4 justify-items-center">
+      <div className="grid  lg:w-[85%] grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
         {partnerLogos.map((partner, index) => (
           <img
             key={index}
             src={partner.logo}
             alt={partner.name}
-            className="w-[141.38px] h-[47.36px] object-contain"
+            className="w-[40%] lg:w-[141.38px] h-[47.36px] "
           />
         ))}
         </div>
         </div>
+        
       
       </div>
 

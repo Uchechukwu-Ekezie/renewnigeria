@@ -7,10 +7,9 @@ const ShowHighlights = () => {
         <h2 className="text-[40px] font-sans text-center font-bold text-[#313131] mb-4">
             2025 Show Highlights
           </h2>
-          <div className="w-12 h-1 bg-[#FFCB05] mx-auto lg:mx-auto my-4"></div> 
+          <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto lg:mx-auto my-4"></div> 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
-        {/* Left Section */}
-        
+        {/* Left Section */} 
         <div className="text-center lg:text-center">
           
           {/* <div className="w-12 h-1 bg-green-600 mx-auto lg:mx-0 my-4"></div> */}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Hero from "./Hero";
 import HeroOne from "./HeroOne";
+
 ; // Assuming HeroOne is your second component
 
 function Slider() {
@@ -24,3 +25,8 @@ function Slider() {
 }
 
 export default Slider;
+
+
+
+
+

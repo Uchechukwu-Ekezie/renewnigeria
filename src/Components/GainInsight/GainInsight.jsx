@@ -35,7 +35,7 @@ const GainInsight = () => {
         <h2 className="font-sans mb-6 text-[40px] font-semibold sm:text-[40px] md:text-[40px]">
           Gain insights into the Nigeria Renewable Energy Sector
         </h2>
-        <div className="w-12 h-1 bg-[#FFCB05] mx-auto lg:mx-auto my-4"></div> 
+        <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto lg:mx-auto my-4"></div> 
         <p className="mb-8 font-sans text-[#005911] text-[20px] sm:text-xl">
           Regional industry reports brought to you by the editorial team behind Energy & Utilities
         </p>

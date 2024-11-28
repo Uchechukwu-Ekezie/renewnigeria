@@ -1,3 +1,6 @@
+import React from 'react'
+import Hero from '../Components/Hero/Hero'
+// import HeroTwo from '../Components/Hero/HeroTwo'
 import HeroThree from '../Components/Hero/HeroThree'
 import HeroFour from '../Components/Hero/HeroFour'
 import PricingPlans from '../Components/Pricing/PricingPlans'
@@ -14,8 +17,10 @@ import HeroOne from '../Components/Hero/HeroOne'
 function Home() {
   return (
     <div>
+      <Hero/>
       <HeroOne />
       <Slider/>
+      {/* <HeroOne/> */}
       <HeroThree/>
       <HeroFour/>
       <ShowFeatures/>

@@ -32,40 +32,49 @@ const ShowFeature = () => {
   ];
 
   return (
-    <div className="py-12 text-center bg-gray-100">
-      <h2 className="text-[40px] font-bold text-[#313131] font-sans mb-8">
-        2025 Show Features
-      </h2>
-      <div className="w-[50px] h-[1px] bg-yellow-400 mx-auto mb-8"></div>
-      <div className="grid grid-cols-1 gap-16 px-4 sm:grid-cols-2 lg:grid-cols-4 md:px-5">
-        {features.map((feature, index) => (
-          <div
-            key={index}
-            className="bg-white w-[300px] h-[500px] shadow-md rounded-lg p-6 transition-transform transform hover:scale-105"
-          >
-            <img
-              src={feature.imgSrc}
-              alt={feature.title}
-              className="object-cover w-full h-40 rounded-t-lg"
-            />
-            <h3 className="text-[20px] font-bold font-sans text-[#066C16] mt-4">
-              {feature.title}
-            </h3>
-            <p className="mt-2 text-sm text-gray-600">
-              {feature.description}
-            </p>
-          </div>
-        ))}
+    <section className="w-full h-auto py-16 bg-gray-300">
+      
+      <div className="container px-4 mx-auto">
+        <h2 className="mb-6 text-3xl font-bold text-center">
+          2025 Show Features
+        </h2>
+        
+        <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto lg:mx-auto my-4"></div> 
+        <div className="grid w-[90%]  gap-4 mx-auto md:grid-cols-2 lg:grid-cols-4">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="flex flex-col justify-between p-4 text-center "
+            >
+              <img
+                src={feature.image}
+                alt={feature.title}
+                className="object-cover w-64 h-64 mx-auto rounded-md"
+              />
+                <div className=" font-sans flex flex-col justify-between h-full">
+                <div>
+                  <h3 className="mb-1 text-xl font-bold text-[#066C16]">
+                    {feature.title}
+                  </h3>
+                  <p className="text-[14px]  font-sans text-center font-normal text-gray-600">{feature.description}</p>
+                </div>
+                <div className="mt-auto">
+                  {/* Empty space, pushing the content to the top */}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col justify-center gap-6 mt-8 sm:flex-row">
+          <button className="w-full px-6 py-3 text-white transition bg-[#066C16] rounded hover:bg-red-600 sm:w-auto">
+            Visitor registration
+          </button>
+          <button className="w-full px-6 py-3 text-white transition bg-[#066C16] rounded hover:bg-red-600 sm:w-auto">
+            Delegate registration
+          </button>
+        </div>
       </div>
-      <div className="mt-10 space-x-4">
-        <button className="bg-[#066C16] w[200px] text-[#FFFFFF] text-[16px] font-sans py-2 px-4 rounded-lg hover:bg-green-700 transition">
-          Visitor Registration
-        </button>
-        <button className="bg-[#066C16] w-[200px] text-[#FFFFFF] text-[16px] font-sans py-2 px-4 rounded-lg hover:bg-green-700 transition">
-          Delegate Registration
-        </button>
-      </div>
-    </div>
+    </section>
   );
 };
 

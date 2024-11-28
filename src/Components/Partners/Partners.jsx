@@ -66,7 +66,7 @@ const Partners = () => {
             className="w-[100%] h-[100%] "
           />
           </div>
-          <div className="flex flex-col left-96 w-[60%] h-[80%] items-center justify-center py-12 bg-white">
+          <div className="flex flex-col left-96 w-[80%] h-[80%] items-center justify-center py-12 bg-white">
           <h2 className="text-[41.5px] lg:text-start text-center  ">PARTNERS</h2>
       <div className="w-12 h-[1px] bg-yellow-400 my-2"></div>
       <h1 className="text-black  font-sanss font-semibold text-4xl lg:text- md:text-5xl">

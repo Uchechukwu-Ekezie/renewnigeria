@@ -10,7 +10,7 @@ const HeroOne = () => {
   return (
     <div className="w-full">
       <div
-        className="relative w-full min-h-screen bg-center bg-no-repeat bg-cover font-sanss"
+        className="relative w-full min-h-screen bg-center bg-no-repeat bg-cover font-sanss 2xl:min-h-[1000px]"
         style={{
           backgroundImage: `url(${background})`,
           backgroundPosition: "center 30%",
@@ -59,14 +59,14 @@ const HeroOne = () => {
           <p
             className="absolute top-[-90%] text-center p-2 text-[4vw] mt-[100%] font-bold leading-[1]
            md:mt-[80%] md:top-[-190%] md:left-[2%] md:text-[4vw] 
-           lg:text-left lg:mt-[55%] lg:ml-[22%] lg:top-[-98%] lg:text-[27px] lg:p-0
-           2xl:text-[2vw] xl:top-[-110%]  2xl:ml-[14.2%] 2xl:top-[-80%] 2xl:text-left text-white font-raleway "
+           lg:text-left lg:mt-[58%] lg:ml-[22%] lg:top-[-118%] lg:text-[27px] lg:p-0
+           2xl:text-[1.5vw] 2xl:top-[-100%]  2xl:ml-[14.2%] 2xl:top-[-80%]  2xl:text-left text-white font-raleway "
           >
             FIRST NATIONAL LEGISLATIVE SUMMIT & EXPO ON <br /> RENEWABLE ENERGY
           </p>
 
           {/* Date and Location */}
-          <p className="absolute text-[4vw] mt-[250%] text-white font-semibold md:text-[3vw] md:mt-[200%] lg:mt-[50%] 2xl:mt-[68%] lg:ml-[-27%] 2xl:text-[28px] lg:text-[22px] lg:text-left 2xl:ml-[-39%]  text-center font-sanss">
+          <p className="absolute text-[4vw] mt-[250%] text-white font-semibold md:text-[3vw] md:mt-[200%] lg:mt-[49%] 2xl:mt-[68%] lg:ml-[-27%] 2xl:text-[28px] lg:text-[22px] lg:text-left 2xl:ml-[-39%]  text-center font-sanss">
             11th – 13th February, 2025
             <br />
             Eko Hotel, Lagos State, Nigeria
@@ -76,11 +76,11 @@ const HeroOne = () => {
           <img
             src={year}
             alt="2025"
-            className="absolute w-[40vw] md:mt-[140%] md:w-[35vw] lg:w-[30vw] lg:mt-[50%] lg:ml-[30%] mt-[170%] 2xl:left-[20%] 2xl:top-[-50%]"
+            className="absolute w-[40vw]  2xl:h-[10vw] md:mt-[140%] md:w-[35vw] lg:w-[30vw] lg:mt-[50%] lg:ml-[30%] mt-[170%] 2xl:left-[10%] 2xl:top-[-50%]"
           />
 
           {/* Theme */}
-          <p className="absolute text-[4vw] lg:text-[2.5vw] md:text-[3vw] sm:text-[4.5vw] italic font-raleway mt-[280%] p-2 text-center md:mt-[220%] lg:mt-[70%] 2xl:mt-[90%] lg:ml-[7%]">
+          <p className="absolute text-[4vw] lg:text-[2.5vw] md:text-[3vw] sm:text-[4.5vw] italic font-raleway mt-[280%] p-2 text-center md:mt-[220%] lg:mt-[70%] 2xl:mt-[100%] lg:ml-[7%]">
             <span className="font-semibold text-[#FFC707]">Theme:</span>{" "}
             <span className="font-bold text-white">RENEW NIGERIA&nbsp;</span>
             <span className="font-bold text-white ">

@@ -44,7 +44,7 @@ const Partners = () => {
           <img
             src={renewpic}
             alt="Renew Nigeria"
-            className="w-[450px] h-[80%]  md:w-[100%]"
+            className=" w-[200px] lg:w-[450px] h-[80%]  md:w-[100%]"
           />
           </div>
           

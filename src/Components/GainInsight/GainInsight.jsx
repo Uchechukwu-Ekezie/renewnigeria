@@ -1,28 +1,25 @@
 import React from "react";
-import boom from "../../Assets/Image/lithum boom.webp";
-import solar from "../../Assets/Image/the-rise-of-solar-home-systems.webp";
-import renew from "../../Assets/Image/renewable.webp";
-import out from "../../Assets/Image/outlook.webp";
+import acro from "../../Assets/acrobat.png";
 
 const reports = [
   {
-    title: "Nigeria's lithium boom: Powering the battery industry",
-    image: boom,
+    title: "Powering the Future: Your Guide to Solar Energy Solutions",
+    image: acro,
     buttonText: "Download the report",
   },
   {
     title: "The rise of solar home system in West Africa",
-    image: solar,
+    image: acro,
     buttonText: "Download the report",
   },
   {
-    title: "The Renewable Energy roadmap report",
-    image: renew,
+    title: "The Renewable Energy Roadmap Report",
+    image: acro,
     buttonText: "Download the report",
   },
   {
-    title: "West Africa's energy outlook report",
-    image: out,
+    title: "West Africa's Energy Outlook Report",
+    image: acro,
     buttonText: "Download the report",
   },
 ];
@@ -30,12 +27,12 @@ const reports = [
 const GainInsight = () => {
   return (
     <section className="bg-[#F5F5F5] py-12 w-full">
-      <div className="max-w-screen-xl px-4 mx-auto text-center">
+      <div className="max-w-screen-xl px-4 mx-auto mb-10 text-center">
         {/* Section Header */}
         <h2 className="font-sans mb-6 text-[40px] font-semibold sm:text-[40px] md:text-[40px]">
-          Gain insights into the Nigeria Renewable Energy Sector
+        Nigerians Renewable Energy Reports
         </h2>
-        <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto lg:mx-auto my-4"></div> 
+        <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto my-4"></div>
         <p className="mb-8 font-sans text-[#005911] text-[20px] sm:text-xl">
           Regional industry reports brought to you by the editorial team behind Energy & Utilities
         </p>
@@ -50,14 +47,14 @@ const GainInsight = () => {
               <img
                 src={report.image}
                 alt={report.title}
-                className="object-cover w-full mb-4 rounded-md max-h-[200px] sm:max-h-[250px] md:max-h-[300px]"
+                className="object-cover w-full mb-4 rounded-md max-h-[200px]"
               />
               {/* Report Title */}
-              <h3 className="font-sans mb-4 text-[20px] text-[#0D0D0D] font-extralight text-center sm:text-[20px]">
+              <h3 className="font-sans mb-4 text-[20px] text-[#0D0D0D] font-extralight text-center">
                 {report.title}
               </h3>
               {/* Download Button */}
-              <button className="font-sans px-6 py-2 text-[16px] w-[219px] h-[50px] sm:text-[16px] font-bold text-white transition bg-[#005911] rounded-md">
+              <button className="font-sans mt-auto px-6 py-2 text-[16px] w-[219px] h-[50px] font-bold text-white transition bg-[#005911] rounded-md">
                 {report.buttonText}
               </button>
             </div>

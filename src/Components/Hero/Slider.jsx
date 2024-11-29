@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Hero from "./Hero";
 import HeroOne from "./HeroOne";
+import { FaAngleLeft } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
 
 function Slider() {
   const [currentHero, setCurrentHero] = useState(0);
-  const slides = ["hero", "heroOne"];
+  const slides = ["hero", "heroOne"]; // Define the slides
   const [hoverPause, setHoverPause] = useState(false);
 
   useEffect(() => {
@@ -18,11 +20,15 @@ function Slider() {
   }, [hoverPause]);
 
   const handlePrev = () => {
-    setCurrentHero((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
+    if (currentHero > 0) {
+      setCurrentHero((prevIndex) => prevIndex - 1);
+    }
   };
 
   const handleNext = () => {
-    setCurrentHero((prevIndex) => (prevIndex + 1) % slides.length);
+    if (currentHero < slides.length - 1) {
+      setCurrentHero((prevIndex) => prevIndex + 1);
+    }
   };
 
   return (
@@ -34,20 +40,35 @@ function Slider() {
       {slides[currentHero] === "hero" ? <Hero /> : <HeroOne />}
 
       {/* Navigation Buttons */}
-      <div className="absolute inset-0 flex items-center justify-between px-4">
+      <div className="absolute top-[89%] left-[35%] inset-0 flex w-10 h-10 gap-2  px-4 lg:left-[83%]" >
+        {/* Previous Button */}
         <button
           onClick={handlePrev}
-          className="z-50 p-3 text-black bg-white rounded-full shadow-lg hover:bg-gray-200"
-          style={{ position: "absolute", left: "20px", top: "50%", transform: "translateY(-50%)" }}
+          disabled={currentHero === 0} // Disable if on the first slide
+          className={`z-50 p-2 sm:p-3 text-white shadow-lg ${
+            currentHero === 0
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-green-700 hover:bg-green-800"
+          }`}
+          // Positioning for responsive screens
+          style={{ top: "50%", transform: "translateY(-50%)", left: "1rem" }}
         >
-          Prev
+          <FaAngleLeft size={20} />
         </button>
+
+        {/* Next Button */}
         <button
           onClick={handleNext}
-          className="z-50 p-3 text-black bg-white rounded-full shadow-lg hover:bg-gray-200"
-          style={{ position: "absolute", right: "20px", top: "50%", transform: "translateY(-50%)" }}
+          disabled={currentHero === slides.length - 1} // Disable if on the last slide
+          className={`z-50 p-2 sm:p-3 text-white shadow-lg ${
+            currentHero === slides.length - 1
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-green-700 hover:bg-green-800"
+          }`}
+          // Positioning for responsive screens
+          style={{ top: "50%", transform: "translateY(-50%)", right: "1rem" }}
         >
-          Next
+          <FaAngleRight size={20} />
         </button>
       </div>
     </div>

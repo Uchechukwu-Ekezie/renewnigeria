@@ -35,7 +35,7 @@ function Hero() {
             {/* Center Section: Main Content */}
             <div className="flex flex-col items-center w-full lg:items-start lg:w-[60%] ">
               {/* Title */}
-              <div className="flex justify-center w-full mt-[-50px] lg:mt-8 mb-3 lg:justify-start lg:mb-0">
+              <div className="flex justify-center w-full md:mt-4 mt-[-50px] lg:mt-8 mb-3 lg:justify-start lg:mb-0">
                 <img
                   src={nigeria}
                   alt="Logo"

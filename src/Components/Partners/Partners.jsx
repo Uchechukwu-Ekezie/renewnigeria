@@ -36,23 +36,24 @@ const Partners = () => {
   return (
     <div className="bg-[#F5F5F5] w-full  h-full top-16 flex flex-col items-center">
       {/* Banner Section */}
-      <div className=" flex flex-col  sm:flex-col md:flex-col lg:flex-row w-[90%]  h-fullitems-center lg:px-10 py-8 relative mt-16" >
+      <div className=" flex flex-col  sm:flex-col md:flex-col lg:flex-row w-[100%]   h-[70%] items-center lg:px-10 py-8 relative  mx-auto" >
         
         {/* Banner Image */}
-          <div className="w-[400px] bg-gray-800 h-[100%]  sm:w-[260px] sm:h-[300px] lg:-top-20- lg:relative"  >
+          <div className=" "  >
             
           <img
             src={renewpic}
             alt="Renew Nigeria"
-            className="w-[100%] h-[100%] "
+            className=" w-[200px] lg:w-[450px] h-[80%]  md:w-[100%]"
           />
           </div>
-          <div className="font-medium font-sanss  text-center -top-[90px] w-[550px]  lg:left-96 lg:relative   h-[30px] ">
+          
+    <div className="w-[70%]  md:w-[100%] lg:ml-12">
+    <div className="font-medium font-sanss  ">
           <p className="lg:text-[14.5px] text-[20.48px] ">TO NAME A FEW OF OUR 185,000+ CUSTOMERS</p>
           <h2 className="text-[41.5px] lg:text-start   ">PARTNERS</h2>
     </div>
-
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4  lg:gap-2 w-[80%] mt-8 mb-4 justify-items-center">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4  lg:gap-2 w-[90%] mt-8 mb-4 justify-items-center">
   {partnerLogos.map((partner, index) => (
     <div
       key={index}
@@ -73,6 +74,7 @@ const Partners = () => {
       />
     </div>
   ))}
+</div>
 </div>
 
         

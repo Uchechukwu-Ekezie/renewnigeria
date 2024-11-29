@@ -8,7 +8,7 @@ const reports = [
     buttonText: "Download the report",
   },
   {
-    title: "The rise of solar home system in West Africa",
+    title: "The rise of solar home system in Nigeria",
     image: acro,
     buttonText: "Download the report",
   },
@@ -18,7 +18,7 @@ const reports = [
     buttonText: "Download the report",
   },
   {
-    title: "West Africa's Energy Outlook Report",
+    title: "Nigeria Energy Outlook Report",
     image: acro,
     buttonText: "Download the report",
   },
@@ -34,7 +34,7 @@ const GainInsight = () => {
         </h2>
         <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto my-4"></div>
         <p className="mb-8 font-sans text-[#005911] text-[20px] sm:text-xl">
-          Regional industry reports brought to you by the editorial team behind Energy & Utilities
+          Nigerians Renewable Engery Report
         </p>
         {/* Reports Grid */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

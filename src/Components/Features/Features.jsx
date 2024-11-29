@@ -6,36 +6,36 @@ import why3 from "../../Assets/Image/whyspon.jpg";
 const ShowFeature = () => {
   const features = [
     {
-      title: "Exhibition",
+      title: "Conferences",
       description:
-        "Our international exhibition has 150+ exhibitors offering a unique opportunity for attendees to network, trade, and discover new opportunities.",
+        "Gain valuable insights from industry leaders, experts, and pioneers at dynamic sessions designed to inspire and inform.",
       image: why,
     },
     {
-      title: "Conferences",
+      title: "Targeted Exhibition",
       description:
-        "The leadership summit, technical seminar, and newly launched Energy-X Contest are premier events for industry professionals seeking the latest challenges and innovations in West Africa's energy sector.",
+        "Explore an expansive showcase of cutting-edge innovations and solutions from leading solar and energy brands, all under one roof.",
       image: why2,
     },
     {
-      title: "Product sectors",
+      title: "Product Shows",
       description:
-        "Our exhibition showcases 5 diverse product sectors and the latest energy equipment solutions all in one convenient location.",
+        "Discover a diverse range of specialized solar technologies, tools, and services tailored to your specific needs.",
       image: why3,
     },
     {
-      title: "VIP programme",
+      title: "Private Sessions",
       description:
-        "Our exclusive VIP initiative connects decision-makers and energy experts, providing attendees with high-level opportunities to network with key players.",
+        "Unlock exclusive access to networking events, private lounges, and premium benefits designed for industry decision-makers.",
       image: why,
     },
   ];
 
   return (
-    <section className="w-full h-auto py-16 bg-gray-300">
+    <section className="w-full h-auto py-16 bg-gray-300 font-sanss">
       
       <div className="container px-4 mx-auto">
-        <h2 className="mb-6 text-3xl font-bold text-center">
+        <h2 className="mb-6 font-bold text-center text-[40px]">
           2025 Show Features
         </h2>
         
@@ -51,12 +51,12 @@ const ShowFeature = () => {
                 alt={feature.title}
                 className="object-cover w-64 h-64 mx-auto rounded-md"
               />
-                <div className=" font-sans flex flex-col justify-between h-full">
+                <div className="flex flex-col justify-between h-full font-sans ">
                 <div>
-                  <h3 className="mb-1 text-xl font-bold text-[#066C16]">
+                  <h3 className="mb-3 text-[20px] font-bold text-[#066C16] mt-3">
                     {feature.title}
                   </h3>
-                  <p className="text-[14px]  font-sans text-center font-normal text-gray-600">{feature.description}</p>
+                  <p className="text-[18px]  font-sanss text-center font-[400] text-[#555555] leading-7">{feature.description}</p>
                 </div>
                 <div className="mt-auto">
                   {/* Empty space, pushing the content to the top */}

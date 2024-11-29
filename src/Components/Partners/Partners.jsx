@@ -50,7 +50,7 @@ const Partners = () => {
           
     <div className="w-[70%]  md:w-[100%] lg:ml-12">
     <div className="font-medium font-sanss  ">
-          <p className="lg:text-[14.5px] text-[20.48px] ">TO NAME A FEW OF OUR 185,000+ CUSTOMERS</p>
+          <p className="lg:text-[14.5px]  ">TO NAME A FEW OF OUR 185,000+ CUSTOMERS</p>
           <h2 className="text-[41.5px] lg:text-start   ">PARTNERS</h2>
     </div>
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4  lg:gap-2 w-[90%] mt-8 mb-4 justify-items-center">

@@ -3,7 +3,7 @@ import React from "react";
 const ContactUs = () => {
   return (
     <>
-    <div className="relative hidden  lg:block bg-white h-[205px] lg:w-[1170px] py-8">
+    <div className="relative hidden  lg:block bg-white h-[205px] w-full py-8">
       {/* White Background Div */}
       <div className="z-0">
         {/* Content of the white background div (if needed) */}

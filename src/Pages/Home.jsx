@@ -1,5 +1,4 @@
 import React from 'react'
-// import Hero from '../Components/Hero/Hero'
 // import HeroTwo from '../Components/Hero/HeroTwo'
 import HeroThree from '../Components/Hero/HeroThree'
 import HeroFour from '../Components/Hero/HeroFour'
@@ -14,11 +13,13 @@ import VideoGallery from '../Components/VideoGallery/VideoGallery'
 import Slider from '../Components/Hero/Slider'
 import HeroOne from '../Components/Hero/HeroOne'
 
+
+
 function Home() {
   return (
     <div>
+      <HeroOne/>
       <Slider/>
-      {/* <HeroOne/> */}
       <HeroThree/>
       <HeroFour/>
       <ShowFeatures/>

@@ -1,7 +1,8 @@
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 // import logo from "../../assets/image/Green_Clean logo.png";
 
-import logo from "../../Assets/Renew_Nigeria.png";
+import logo from "../../Assets/Image/Footer.png";
+import logo1 from "../../Assets/Image/Footer2.png";
 function Footer() {
   return (
     <div className="py-10 text-white ">
@@ -9,15 +10,22 @@ function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-6 lg:grid-cols-4"> {/* Grid layout on tablet and above */}
           {/* Left Section */}
           <div className="w-full">
-            <div className="flex items-center space-x-3">
+            <div className="flex flex-col justify-center items-center gap-2 w-[100%] space-x-3">
 
               <img
                 src={logo}
                 alt="Green Clean Logo"
-                className="h-[40px] w-[140px] lg:block"
+                className="  h-[47px] w-[137px] lg:block"
+                
+              />
+              <img
+                src={logo1}
+                alt="Green Clean Logo"
+                className="  h-[5px] w-[150px] lg:block"
+                
               />
             </div>
-            <p className="mt-5 ml-3 text-[14px] leading-6 font-albert font-[400] text-white md:text-[16px] md:w-[250px]">
+            <p className="mt-5 ml-4 text-center text-[14px] leading-6 font-albert font-[400] text-white md:text-[16px] md:w-[250px]">
               Driving Nigeria's <br /> Green Revolution
             </p> <br />
             

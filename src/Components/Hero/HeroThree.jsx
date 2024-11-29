@@ -25,26 +25,26 @@ function HeroThree() {
       <div className="absolute inset-0 z-0 bg-[#066C16] opacity-90"></div>
 
       {/* Content */}
-      <div className="relative grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-6 lg:grid-cols-3 max-w-[1440px] mx-auto z-10 px-4 lg:px-8">
+      <div className="relative grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-3 lg:grid-cols-3 max-w-[1440px] mx-auto z-10 px-6">
         {/* Social Media Section */}
         <div className="flex flex-col items-center lg:items-start mt-14">
-          <h1 className="mb-4 text-lg font-bold text-white sm:text-xl lg:text-[20px] leading-6 font-sanss text-center lg:text-left">
+          <h1 className="mb-4 text-lg font-bold text-white sm:text-xl lg:text-[20px] leading-6 font-sanss">
             Stay connected with Us <br />
             #RN2025
           </h1>
-          <div className="flex justify-center pt-2 space-x-4 lg:justify-start sm:space-x-6">
-            {[
-              { icon: FaFacebookF, link: "#" },
-              { icon: FaLinkedinIn, link: "#" },
-              { icon: FaInstagram, link: "#" },
+          <div className="flex justify-center pt-2 space-x-8">
+            {[ 
+              { icon: FaFacebookF, link: "#" }, 
+              { icon: FaLinkedinIn, link: "#" }, 
+              { icon: FaInstagram, link: "#" }, 
               { icon: FaYoutube, link: "#" },
             ].map(({ icon: Icon, link }, index) => (
               <Link
                 key={index}
                 to={link}
-                className="flex items-center justify-center w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] text-[#005911] bg-white rounded-full shadow-lg hover:bg-gray-200"
+                className="flex items-center justify-center w-[50px] h-[50px] text-[#005911] bg-white rounded-full shadow-lg hover:bg-gray-200"
               >
-                <Icon size={20} />
+                <Icon size={25} />
               </Link>
             ))}
           </div>
@@ -55,25 +55,27 @@ function HeroThree() {
           <h1 className="mb-4 text-lg text-white font-[500] lg:mb-8 sm:text-xl lg:text-2xl font-sanss">
             Organizers
           </h1>
-          <div className="flex flex-wrap items-start justify-center space-x-6 sm:space-x-10">
-            {[
-              { image: Image2, text: "Office of the Speaker" },
-              { image: Image2, text: "Committee on Renewable Energy" },
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-14">
+            {[ 
+              { image: Image2, text: "Office of the Speaker" }, 
+              { image: Image2, text: "Committee on Renewable Energy" }, 
               { image: Image3, text: "", subImage: Image4 },
             ].map(({ image, text, subImage }, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center space-y-4 w-[120px] sm:w-[150px] mb-6"
+                className="flex flex-col items-center text-center space-y-4 w-[150px]"
               >
                 <img
                   src={image}
                   alt={`Organizer ${index}`}
-                  className="object-contain h-[100px] w-[100px] sm:h-[130px] sm:w-[130px]"
+                  className="object-contain h-[130px] w-[130px]"
                 />
                 {text && (
                   <p
-                    className={`text-white leading-6 text-[14px] sm:text-[16px] whitespace-pre-wrap ${
-                      text.includes("Committee") ? "w-[150px]" : ""
+                    className={`text-white leading-7 whitespace-normal text-[18px] ${
+                      text.includes("Committee")
+                        ? "w-[150px]"
+                        : ""
                     }`}
                   >
                     {text}
@@ -83,7 +85,7 @@ function HeroThree() {
                   <img
                     src={subImage}
                     alt="Sub Logo"
-                    className="w-[120px] h-[25px] sm:w-[160px] sm:h-[32.73px]"
+                    className="lg:mt-2 w-[160px] h-[32.73px] lg:w-[150px] xl:w-[160px]"
                   />
                 )}
               </div>
@@ -93,16 +95,16 @@ function HeroThree() {
 
         {/* Host Section */}
         <div className="flex flex-col items-center justify-center text-center lg:items-end">
-          <h1 className="mb-4 text-lg font-bold text-white sm:text-xl lg:text-2xl">
+          <h1 className="mb-7  text-lg font-[500] text-white lg:mr-11 lg:mt-[-50px] sm:text-xl lg:text-2xl font-sanss">
             Host
           </h1>
           <div className="flex flex-col items-center text-center">
             <img
               src={Host}
               alt="Host Logo"
-              className="object-contain w-[100px] h-[100px] sm:w-[130px] sm:h-[130px]"
+              className="w-[130px] h-[130px] "
             />
-            <p className="leading-6 text-white whitespace-pre-wrap mt-2 text-[14px] sm:text-[16px]">
+            <p className="leading-7 text-white whitespace-pre-wrap mt-2 text-[18px] font-sanss">
               Lagos State <br />
               Government
             </p>

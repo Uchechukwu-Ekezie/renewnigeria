@@ -9,7 +9,7 @@ import ring from "../../Assets/Image/men/ring.png";
 
 function Hero() {
   return (
-    <div className=" ">
+    <div className="">
       <div>
         <div
           className="relative w-full min-h-screen font-sans bg-center bg-no-repeat bg-cover 2xl:min-h-[1000px]"
@@ -80,7 +80,7 @@ function Hero() {
 
             {/* Right Section: Speakers */}
             <div className="flex justify-center w-full pb-9 lg:justify-start lg:w-[20%] lg:mt-10 md:w-[80%] md:pb-36">
-              <div className="flex sm:flex-row pt-8 sm:space-x-6 lg:flex-col lg:space-x-6 lg:space-y-5 md:flex-row md:space-x-6 md:space-y-0">
+              <div className="flex pt-8 sm:flex-row sm:space-x-6 lg:flex-col lg:space-x-6 lg:space-y-5 md:flex-row md:space-x-6 md:space-y-0">
                 {/* Speaker 1 */}
                 <div className="flex flex-col items-center text-center">
                   <div className="relative">
@@ -157,7 +157,6 @@ function Hero() {
 }
 
 export default Hero;
-
 
 
 

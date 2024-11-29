@@ -4,8 +4,6 @@ import why2 from "../../Assets/Image/whyexhi.jpg";
 import why3 from "../../Assets/Image/whyspon.jpg";
 
 import vector from "../../Assets/Vector.png";
-import heading from "../../Assets/Heading.png";
-import headingtwo from "../../Assets/Heading2.png";
 
 const WhyExhibit = () => {
   const sections = [
@@ -15,7 +13,7 @@ const WhyExhibit = () => {
       points: [
         {
           normal:
-            "Spark new deals: Engage with 93% of businesses who recognize Nigeria Energy as an important platform for their business.",
+            "Spark new deals: Engage with 93% of  businesses who recognize Nigeria Energy as an important platform for their business.",
         },
         {
           normal:
@@ -57,17 +55,18 @@ const WhyExhibit = () => {
   ];
 
   return (
-    <section className="w-full py-8 bg-white sm:py-12">
+    <section className="w-full py-8 bg-white ">
+      <div className="mx-auto w-[1440px]">
       {/* Header Section */}
-      <div className="ml-7 md:mx-auto lg:mx-auto  w-[50%] md:w-[93%] lg:w-[90%] mb-[14px]  flex gap-4">
+      <div className="ml-7 md:mx-auto lg:mx-auto  w-[50%] md:w-[93%] lg:w-[] mb-[14px]  flex gap-4">
         <img src={vector} alt="Vector" />
-        <img src={heading} alt="Heading" />
+        <h1 className="font-sanss text-[16px] font-[600] text-[#005911]">RENEW NIGERIA</h1>
       </div>
       <div className=" ml-7 md:mx-auto lg:mx-auto w-[50%] md:w-[93%] lg:w-[90%] mb-[24px]  md:mb-[54px] lg:mb-[54px]">
-        <img src={headingtwo} alt="Heading Two" />
+        <h1 className="font-sanss font-[700] text-[55px]">Why Us</h1>
       </div>
       {/* Cards Section */}
-      <div className="grid grid-cols-1 gap-6 px-4 mx-auto sm:px-6 lg:w-[95%] md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 px-4 mx-auto sm:px-6 lg:w-[1320px] md:grid-cols-2 lg:grid-cols-3">
         {sections.map((section, index) => (
           <div
             key={index}
@@ -87,7 +86,9 @@ const WhyExhibit = () => {
             <ul className="flex-grow mb-6 space-y-4 text-sm font-normal text-[#555555] sm:text-base lg:text-[16px]">
               {section.points.map((point, idx) => (
                 <li key={idx} className="flex items-start">
-                  <span className="mr-2 text-[16px] font-normal text-black">•</span>
+                  <span className="mr-2 text-[16px] font-normal text-black">
+                    •
+                  </span>
                   <span className="font-sans text-[16px] font-normal">
                     {point.normal}
                   </span>
@@ -100,6 +101,7 @@ const WhyExhibit = () => {
             </button>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

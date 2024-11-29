@@ -9,10 +9,10 @@ import ring from "../../Assets/Image/men/ring.png";
 
 function Hero() {
   return (
-    <div className="w-full ">
+    <div className="w-full">
       <div>
         <div
-          className="relative w-full min-h-screen font-sans bg-center bg-no-repeat bg-cover"
+          className="relative w-full h-screen lg:h-[90vh] xl:h-[85vh] 2xl:h-[80vh] font-sans bg-center bg-no-repeat bg-cover"
           style={{
             backgroundImage: `url(${background})`,
             backgroundPosition: "center 20%",
@@ -22,7 +22,7 @@ function Hero() {
           <div className="absolute inset-0 bg-black opacity-60"></div>
 
           {/* Content */}
-          <div className="relative z-10 flex flex-col lg:flex-row h-full text-center text-white justify-between items-center lg:items-start lg:text-left 2xl:pt-[50px]  max-w-screen-2xl mx-auto px-4">
+          <div className="relative z-10 flex flex-col items-center justify-between h-full px-4 mx-auto text-center text-white lg:flex-row lg:items-start lg:text-left max-w-screen-2xl">
             {/* Left Section: Logo */}
             <div className="flex justify-center w-full mb-6 lg:justify-start lg:w-[20%] lg:mb-0">
               <img
@@ -54,7 +54,7 @@ function Hero() {
               </p>
 
               {/* Theme */}
-              <p className="mb-[-20px] mx-auto font-bold text-center  lg:mt-[5px] md:text-[20px] md:mt-[10px]">
+              <p className="mb-[-20px] mx-auto font-bold text-center lg:mt-[5px] md:text-[20px] md:mt-[10px]">
                 <span className="text-[#FFC707] font-segoe-script lg:text-[48px]">
                   Theme
                 </span>{" "}
@@ -84,21 +84,17 @@ function Hero() {
                 {/* Speaker 1 */}
                 <div className="flex flex-col items-center text-center">
                   <div className="relative">
-                    {/* Ring image */}
                     <img
                       src={ring}
                       alt="Ring"
                       className="w-[90px] h-[90px] md:w-[120px] md:h-[120px] 2xl:w-[160px] 2xl:h-[160px] lg:w-[150px] lg:h-[140px] rounded-full mx-auto relative z-10"
                     />
-
-                    {/* Speaker image */}
                     <img
                       src={speaker1}
                       alt="Speaker 1"
-                      className="absolute inset-0 w-[80%] h-[80%] md:w-[80%] md:h-[80%] lg:w-[75%] lg:h-[75%] 2xl:w-[80%] 2xl:h-[80%] rounded-full object-cover mx-auto top-[10%] z-20"
+                      className="absolute inset-0 w-[80%] h-[80%] rounded-full object-cover mx-auto top-[10%] z-20"
                     />
                   </div>
-
                   <p className="mt-4 text-sm font-[800] leading-[19.53px] font-sans md:text-[14px] lg:text-[15px]">
                     Rt. Hon. Abbas Tajudeen, <br />
                     PhD, GCON
@@ -119,7 +115,7 @@ function Hero() {
                     <img
                       src={speaker2}
                       alt="Speaker 2"
-                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[8px] top-[6px] left-0 right-0 bottom-0 mx-auto"
+                      className="absolute w-[80%] h-[80%] rounded-full object-cover mx-auto top-[10%]"
                     />
                   </div>
                   <p className="mt-4 text-sm font-[800] leading-[19.53px] font-sans md:text-[14px] lg:text-[15px]">
@@ -141,7 +137,7 @@ function Hero() {
                     <img
                       src={speaker3}
                       alt="Speaker 3"
-                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[8px] top-[6px] left-0 right-0 bottom-0 mx-auto"
+                      className="absolute w-[80%] h-[80%] rounded-full object-cover mx-auto top-[10%]"
                     />
                   </div>
                   <p className="mt-4 text-sm font-[800] leading-[19.53px] font-sans md:text-[14px] lg:text-[15px]">

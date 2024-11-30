@@ -31,7 +31,7 @@ const HeroOne = () => {
           <img
             src={solar}
             alt="Solar Panel"
-            className="absolute mt-[50%] lg:top-[0%] md:mt-[30%]  left-[-2%] w-[45vw] lg:w-[400px] lg:h-[290px] md:w-[35vw] md:left-[-1%]"
+            className="absolute mt-[50%] lg:top-[-125%] md:mt-[30%]  left-[-2%] w-[45vw] lg:w-[400px] lg:h-[290px] md:w-[35vw] md:left-[-1%]"
           />
 
           {/* Nigeria Image */}

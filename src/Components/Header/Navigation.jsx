@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../Assets/Image/Frame33.png";
+import logo from "../../Assets/Image/renewlogo.png";
 
 function Navigation() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

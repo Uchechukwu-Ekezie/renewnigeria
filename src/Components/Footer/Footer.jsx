@@ -27,7 +27,7 @@ function Footer() {
 
           {/* Services Section */}
           <div className="w-full">
-            <h3 className="mb-4 text-[20px] font-albert font-[600] md:text-[24px]">
+            <h3 className="mb-4 text-[20px] font-albert font-[600] md:text-[24px] md:text-left">
               Our <span className="text-[#005911]">Services</span>
             </h3>
             <ul className="flex flex-col items-center md:items-start justify-center space-y-4 text-[14px] leading-6 font-albert font-[400] md:text-[16px]">
@@ -49,7 +49,7 @@ function Footer() {
 
           {/* Useful Links Section */}
           <div className="w-full">
-            <h3 className="mb-4 text-[20px] font-albert font-[600] md:text-[24px]">
+            <h3 className="mb-4 text-[20px] font-albert font-[600] md:text-[24px] md:text-left">
               Useful <span className="text-[#005911]">Links</span>
             </h3>
             <ul className="flex flex-col items-center md:items-start justify-center space-y-4 text-[14px] leading-6 font-albert font-[400] md:text-[16px]">

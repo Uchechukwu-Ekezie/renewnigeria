@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../Assets/Image/renewlogo.png";
+import report from "../../Assets/report.pdf"
 
 function Navigation() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -77,12 +78,13 @@ function Navigation() {
             >
               Enquire to Participate
             </Link>
-            <Link
-              to="#"
-              className="px-6 py-3 font-bold text-white rounded bg-primary-light hover:bg-white hover:text-primary-light"
-            >
-              Download Brochure
-            </Link>
+            <a
+    href={report}
+    className="px-6 py-3 font-bold text-white rounded bg-primary-light hover:bg-white hover:text-primary-light"
+    download
+  >
+    Download Brochure
+  </a>
           </div>
 
           {/* Mobile Menu Button */}

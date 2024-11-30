@@ -2,9 +2,9 @@ import React from "react";
 
 const ComingSoon = () => {
   return (
-    <div className="max-w-[1440px] h-[389.61px]">
-      <div className="flex flex-col items-center justify-center py-12 bg-white font-sanss">
-        <h3 className="text-[40px] font-[700] text-[#313131]">
+    <div className="max-w-[1440px] h-[389.61px] flex items-center justify-center bg-white font-sanss">
+      <div className="flex flex-col items-center justify-center py-12 ">
+        <h3 className="text-[30px] lg:text-[40px] font-[700] text-[#313131]">
           Speakers & Delegates
         </h3>
         <div className="w-12 h-[1px] bg-yellow-400 my-2"></div>

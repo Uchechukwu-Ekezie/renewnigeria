@@ -24,7 +24,7 @@ function Hero() {
           {/* Content */}
           <div className="relative z-10 flex flex-col lg:flex-row h-full text-center text-white justify-between items-center lg:items-start lg:text-left 2xl:pt-[50px]  max-w-screen-2xl mx-auto px-4">
             {/* Left Section: Logo */}
-            <div className="flex justify-center w-full mb-6 lg:justify-start lg:w-[20%] lg:mb-0">
+            <div className="flex justify-center w-full mb-16 md:mb-11 lg:justify-start lg:w-[20%] lg:mb-0">
               <img
                 src={legi}
                 alt="Logo"

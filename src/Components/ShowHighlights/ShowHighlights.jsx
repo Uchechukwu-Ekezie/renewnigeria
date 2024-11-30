@@ -14,10 +14,10 @@ const ShowHighlights = () => {
           <p className="uppercase text-[11.78px] font-inter font-medium tracking-wide text-[#0D0D0D] mt-6">
             First Impressions Matter
           </p>
-          <h3 className="uppercase text-[35px] font-inter font-light text-[#0D0D0D] my-4 leading-[40px]">
+          <h3 className="uppercase text-[19px] md:text-[26px] lg:text-[35px] font-inter font-light text-[#0D0D0D] my-4 leading-[40px]">
             Redefining Networking <br/> Excellence
           </h3>
-          <p className="text-[#2E2E2E] font-normal text-[13.59px] font-inter leading-[26px]">
+          <p className="text-[#2E2E2E] font-normal text-[10px] md:text-[13px] lg:text-[13.59px] font-inter leading-[26px]">
             Forge unforgettable connections with a simple tap of your BYTE card, <br/>
             instantly sharing your digital business card with their phone.
             Easily <br/>customize your BYTE profile to fit any scenario.

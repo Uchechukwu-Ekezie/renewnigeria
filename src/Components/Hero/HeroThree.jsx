@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   FaFacebookF,
-  FaTwitter,
   FaLinkedinIn,
   FaInstagram,
   FaYoutube,
@@ -25,7 +24,7 @@ function HeroThree() {
       <div className="absolute inset-0 z-0 bg-[#066C16] opacity-90"></div>
 
       {/* Content */}
-      <div className="relative grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-3 lg:grid-cols-3 max-w-[1440px] mx-auto z-10 px-6">
+      <div className="relative grid grid-cols-1 gap-8 md:grid-cols-1 lg:gap-3 lg:grid-cols-3 max-w-[1440px] mx-auto z-10 px-6">
         {/* Social Media Section */}
         <div className="flex flex-col items-center lg:items-start mt-14">
           <h1 className="mb-4 text-lg font-bold text-white sm:text-xl lg:text-[20px] leading-6 font-sanss">
@@ -33,10 +32,10 @@ function HeroThree() {
             #RN2025
           </h1>
           <div className="flex justify-center pt-2 space-x-8">
-            {[ 
-              { icon: FaFacebookF, link: "#" }, 
-              { icon: FaLinkedinIn, link: "#" }, 
-              { icon: FaInstagram, link: "#" }, 
+            {[
+              { icon: FaFacebookF, link: "#" },
+              { icon: FaLinkedinIn, link: "#" },
+              { icon: FaInstagram, link: "#" },
               { icon: FaYoutube, link: "#" },
             ].map(({ icon: Icon, link }, index) => (
               <Link
@@ -55,37 +54,41 @@ function HeroThree() {
           <h1 className="mb-4 text-lg text-white font-[500] lg:mb-8 sm:text-xl lg:text-2xl font-sanss">
             Organizers
           </h1>
-          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-14">
-            {[ 
-              { image: Image2, text: "Office of the Speaker" }, 
-              { image: Image2, text: "Committee on Renewable Energy" }, 
+          <div className="grid grid-cols-3 gap-1 md:gap-28 lg:grid-cols-3 lg:gap-44 sm:w-[275px] md:w-[350px] lg:w-[275px] sm:mx-auto md:mx-auto justify-center ml-[-20px] md:ml-[80px] lg:ml-[-40px] ">
+            {[
+              { image: Image2, text: "Office of the Speaker" },
+              { image: Image2, text: "Committee on a Renewable Energy" },
               { image: Image3, text: "", subImage: Image4 },
             ].map(({ image, text, subImage }, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center space-y-4 w-[150px]"
+                className="flex flex-col items-center text-center space-y-4   w-[150px] md:w-[300px]"
               >
                 <img
                   src={image}
                   alt={`Organizer ${index}`}
-                  className="object-contain h-[130px] w-[130px]"
+                  className="object-contain w-[90px] h-[90px] md:w-[140px] md:h-[140px] lg:h-[130px] lg:w-[130px]"
                 />
                 {text && (
                   <p
-                    className={`text-white leading-7 whitespace-normal text-[18px] ${
-                      text.includes("Committee")
-                        ? "w-[150px]"
-                        : ""
+                    className={`text-white leading-7 whitespace-normal lg:text-[18px] text-[12px] md:text-[15px] font-[500] ${
+                      text.includes("Committee") ? "w-[150px]" : ""
                     }`}
                   >
-                    {text}
+                    {text.split(" a ").map((part, i) => (
+                      <React.Fragment key={i}>
+                        {part}
+                        {i === 0 && <br />}{" "}
+                        {/* Add a line break after the first part */}
+                      </React.Fragment>
+                    ))}
                   </p>
                 )}
                 {subImage && (
                   <img
                     src={subImage}
                     alt="Sub Logo"
-                    className="lg:mt-2 w-[160px] h-[32.73px] lg:w-[150px] xl:w-[160px]"
+                    className="lg:mt-2 w-[90px] h-[20.36px] lg:h-[32.73px] lg:w-[150px] xl:w-[160px]"
                   />
                 )}
               </div>
@@ -99,12 +102,8 @@ function HeroThree() {
             Host
           </h1>
           <div className="flex flex-col items-center text-center">
-            <img
-              src={Host}
-              alt="Host Logo"
-              className="w-[130px] h-[130px] "
-            />
-            <p className="leading-7 text-white whitespace-pre-wrap mt-2 text-[18px] font-sanss">
+            <img src={Host} alt="Host Logo" className="w-[90px] h-[90px] md:w-[140px] md:h-[140px] lg:w-[130px] lg:h-[130px] " />
+            <p className="leading-7 text-white whitespace-pre-wrap mt-2 lg:text-[18px] text-[12px] md:text-[15px] font-sanss">
               Lagos State <br />
               Government
             </p>

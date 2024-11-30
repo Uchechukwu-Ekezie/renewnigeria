@@ -29,64 +29,63 @@ const partnerLogos = [
   { name: "Swat", logo: swat3 },
   { name: "Renew Nigeria", logo: renew3 },
   { name: "Lagos", logo: lagos2 },
- 
 ];
 
 const Partners = () => {
   return (
     <div className="bg-[#F5F5F5] w-full  h-full top-16 flex flex-col items-center">
       {/* Banner Section */}
-      <div className=" flex flex-col  sm:flex-col md:flex-col lg:flex-row w-[100%]   h-[70%] items-center lg:px-10 py-8 relative  mx-auto" >
-        
+      <div className=" flex flex-col  sm:flex-col md:flex-col lg:flex-row w-[100%]   h-[70%] items-center lg:px-10 py-8 relative  mx-auto">
         {/* Banner Image */}
-          <div className=" "  >
-            
+        <div className="">
           <img
             src={renewpic}
             alt="Renew Nigeria"
             className=" w-[200px] lg:w-[450px] h-[80%]  md:w-[100%]"
           />
-          </div>
-          
-    <div className="w-[70%]  md:w-[100%] lg:ml-12">
-    <div className="font-medium font-sanss  ">
-          <p className="lg:text-[14.5px]  ">TO NAME A FEW OF OUR 185,000+ CUSTOMERS</p>
-          <h2 className="text-[41.5px] lg:text-start   ">PARTNERS</h2>
-    </div>
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4  lg:gap-2 w-[90%] mt-8 mb-4 justify-items-center">
-  {partnerLogos.map((partner, index) => (
-    <div
-      key={index}
-      className={`flex items-center justify-center  ${
-        partner.name === "Renew Nigeria" || partner.name === "Green Clean Nigeria"
-          ? "lg:w-[180px] h-[100px] w-[140px]" // Larger size for specific logos
-          : "lg:w-[130px] h-[80px] w-[100px]" // Default size for others
-      }`}
-    >
-      <img
-        src={partner.logo}
-        alt={partner.name}
-        className={`object-contain ${
-          partner.name === "Renew Nigeria" || partner.name === "Green Clean Nigeria"
-            ? "w-[100%] h-[100%]" // Larger size for specific logos
-            : "w-[130px] h-[60px]" // Default size for others
-        }`}
-      />
-    </div>
-  ))}
-</div>
-</div>
+        </div>
 
-        
-      
+        <div className="w-[70%]  md:w-[100%] lg:ml-12 ">
+          <div className="font-medium text-center mt-7 font-sanss lg:text-left">
+            <p className="lg:text-[14.5px] text-[12px] md:text-[13px] font-[500]">
+              TO NAME A FEW OF OUR 185,000+ CUSTOMERS
+            </p>
+            <h2 className="lg:text-[41.5px] text-[31px] lg:text-start mt-7">
+              PARTNERS
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4  lg:gap-2 w-[90%] mt-8 mb-4 justify-items-center">
+            {partnerLogos.map((partner, index) => (
+              <div
+                key={index}
+                className={`flex items-center justify-center  ${
+                  partner.name === "Renew Nigeria" ||
+                  partner.name === "Green Clean Nigeria"
+                    ? "lg:w-[180px] h-[100px] w-[140px]" // Larger size for specific logos
+                    : "lg:w-[130px] h-[80px] w-[100px]" // Default size for others
+                }`}
+              >
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className={`object-contain ${
+                    partner.name === "Renew Nigeria" ||
+                    partner.name === "Green Clean Nigeria"
+                      ? "w-[100%] h-[100%]" // Larger size for specific logos
+                      : "w-[130px] h-[60px]" // Default size for others
+                  }`}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* Case Studies Button */}
-      <button className="mt-0 px-4 py-2 top-64 bg-black text-white text-lg ">
+      <button className="px-4 py-2 mt-0 text-lg text-white bg-black top-64 ">
         Read More Case Studies
       </button>
     </div>
-
   );
 };
 

@@ -1,26 +1,31 @@
 import React from "react";
 import acro from "../../Assets/acrobat.png";
+import report from "../../Assets/Image/report.pdf"
 
 const reports = [
   {
     title: "Powering the Future: Your Guide to Solar Energy Solutions",
     image: acro,
     buttonText: "Download the report",
+    fileUrl: report, // Replace with actual file path
   },
   {
     title: "The rise of solar home system in Nigeria",
     image: acro,
     buttonText: "Download the report",
+    fileUrl: report, // Replace with actual file path
   },
   {
     title: "The Renewable Energy Roadmap Report",
     image: acro,
     buttonText: "Download the report",
+    fileUrl:report, // Replace with actual file path
   },
   {
     title: "Nigeria Energy Outlook Report",
     image: acro,
     buttonText: "Download the report",
+    fileUrl: report, // Replace with actual file path
   },
 ];
 
@@ -30,11 +35,11 @@ const GainInsight = () => {
       <div className="max-w-screen-xl px-4 mx-auto mb-10 text-center">
         {/* Section Header */}
         <h2 className="font-sans mb-6 text-[40px] font-semibold sm:text-[40px] md:text-[40px]">
-        Nigerians Renewable Energy Reports
+          Nigerians Renewable Energy Reports
         </h2>
         <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto my-4"></div>
         <p className="mb-8 font-sans text-[#005911] text-[20px] sm:text-xl">
-          Nigerians Renewable Engery Report
+          Nigerians Renewable Energy Report
         </p>
         {/* Reports Grid */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -54,9 +59,13 @@ const GainInsight = () => {
                 {report.title}
               </h3>
               {/* Download Button */}
-              <button className="font-sans mt-auto px-6 py-2 text-[16px] w-[219px] h-[50px] font-bold text-white transition bg-[#005911] rounded-md">
+              <a
+                href={report.fileUrl}
+                download
+                className="font-sans mt-auto px-6 py-2 text-[16px] w-[219px] h-[50px] font-bold text-white transition bg-[#005911] rounded-md text-center"
+              >
                 {report.buttonText}
-              </button>
+              </a>
             </div>
           ))}
         </div>

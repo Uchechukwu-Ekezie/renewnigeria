@@ -62,7 +62,7 @@ function HeroThree() {
             ].map(({ image, text, subImage }, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center space-y-4   w-[150px] md:w-[300px]"
+                className="flex flex-col items-center text-center space-y-4   w-[130px] md:w-[300px]"
               >
                 <img
                   src={image}

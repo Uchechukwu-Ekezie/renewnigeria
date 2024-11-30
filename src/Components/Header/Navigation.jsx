@@ -148,12 +148,13 @@ function Navigation() {
                 >
                   Enquire to Participate
                 </Link>
-                <Link
-                  to="#"
-                  className="px-6 py-3 font-bold text-white rounded bg-primary-light hover:bg-white hover:text-primary-light"
-                >
-                  Download Brochure
-                </Link>
+                <a
+    href={report}
+    className="px-6 py-3 font-bold text-white rounded bg-primary-light hover:bg-white hover:text-primary-light"
+    download
+  >
+    Download Brochure
+  </a>
               </div>
             </ul>
           </nav>

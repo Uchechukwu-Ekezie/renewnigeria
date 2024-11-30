@@ -2,6 +2,7 @@ import React from "react";
 import video1 from "../../Assets/Image/whypart.png";
 import video2 from "../../Assets/Image/whyexhi.png";
 import video3 from "../../Assets/Image/whyspon.png";
+import report from "../../Assets/Image/report.pdf"
 
 const VideoGallery = () => {
   // Array of video images
@@ -25,7 +26,6 @@ const VideoGallery = () => {
               alt={alt}
               className="object-cover w-full h-full opacity-70"
             />
-            {/* Future button placeholder */}
           </div>
         ))}
       </div>
@@ -33,8 +33,8 @@ const VideoGallery = () => {
       {/* Download Button */}
       <div className="mt-12 text-center">
         <a
-          href="/path/to/brochure.pdf" // Replace with the actual link to the brochure
-          className="inline-flex items-center  bg-[#005911] text-white text-lg font-medium py-3 px-8 rounded-lg shadow-md hover:bg-green-500 transition"
+          href={report} // Replace with the actual path to the brochure
+          className="inline-flex items-center bg-[#005911] text-white text-lg font-medium py-3 px-8 rounded-lg shadow-md hover:bg-green-500 transition"
           download
         >
           <svg

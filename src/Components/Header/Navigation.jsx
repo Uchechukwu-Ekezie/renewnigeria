@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../Assets/Image/renewlogo.png";
-import report from "../../Assets/report.pdf"
+import report from "../../Assets/report.pdf";
 
 function Navigation() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -13,11 +13,7 @@ function Navigation() {
         <div className="flex items-center justify-between h-[75px]">
           {/* Logo Section */}
           <Link to="/">
-            <img
-              src={logo}
-              alt="Logo"
-              className="h-[50px] object-contain"
-            />
+            <img src={logo} alt="Logo" className="h-[50px] object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -28,10 +24,7 @@ function Navigation() {
                 onMouseEnter={() => setIsDropdownOpen(true)}
                 onMouseLeave={() => setIsDropdownOpen(false)}
               >
-                <NavLink
-                  to="#"
-                  className="transition hover:text-[#005911]"
-                >
+                <NavLink to="#" className="transition hover:text-[#005911]">
                   About
                 </NavLink>
                 {isDropdownOpen && (
@@ -79,12 +72,12 @@ function Navigation() {
               Enquire to Participate
             </Link>
             <a
-    href={report}
-    className="px-6 py-3 font-bold text-white rounded bg-primary-light hover:bg-white hover:text-primary-light"
-    download
-  >
-    Download Brochure
-  </a>
+              href={report}
+              className="px-6 py-3 font-bold text-white rounded bg-primary-light hover:bg-white hover:text-primary-light"
+              download
+            >
+              Download Brochure
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -92,26 +85,43 @@ function Navigation() {
             className="lg:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+            {isMobileMenuOpen ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="lg:hidden">
+          <nav className="absolute left-0 right-0 z-20 pb-3 bg-white lg:hidden">
             <ul className="space-y-4 text-center text-[16px] font-semibold">
               <li>
                 <NavLink
@@ -148,12 +158,13 @@ function Navigation() {
                 >
                   Enquire to Participate
                 </Link>
-                <Link
-                  to="#"
+                <a
+                  href={report}
                   className="px-6 py-3 font-bold text-white rounded bg-primary-light hover:bg-white hover:text-primary-light"
+                  download
                 >
                   Download Brochure
-                </Link>
+                </a>
               </div>
             </ul>
           </nav>

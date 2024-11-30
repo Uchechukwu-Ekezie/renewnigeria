@@ -2,7 +2,7 @@ import React from "react";
 import background from "../../Assets/Image/bg0ne.png";
 import legi from "../../Assets/Image/house of rep.png";
 import nigeria from "../../Assets/Image/renweew.png";
-import speaker1 from "../../Assets/Image/men/taju.jpeg";
+import speaker1 from "../../Assets/Image/men/taju.png";
 import speaker2 from "../../Assets/Image/men/afam.jpeg";
 import speaker3 from "../../Assets/Image/men/sonwo.jpeg";
 import ring from "../../Assets/Image/men/ring.png";
@@ -92,7 +92,7 @@ function Hero() {
                     <img
                       src={speaker1}
                       alt="Speaker 1"
-                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[8px] top-[6px] left-0 right-0 bottom-0 mx-auto"
+                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[10px] top-[6px] left-[-2px] right-0 bottom-0 mx-auto"
                     />
                   </div>
                   <p className="mt-4 text-sm font-[800] leading-[19.53px] font-sans md:text-[14px] lg:text-[15px]">
@@ -115,7 +115,7 @@ function Hero() {
                     <img
                       src={speaker2}
                       alt="Speaker 2"
-                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[8px] top-[6px] left-0 right-0 bottom-0 mx-auto"
+                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[11px] top-[6px] left-[-2px] right-0 bottom-0 mx-auto"
                     />
                   </div>
                   <p className="mt-4 text-sm font-[800] leading-[19.53px] font-sans md:text-[14px] lg:text-[15px]">
@@ -137,7 +137,7 @@ function Hero() {
                     <img
                       src={speaker3}
                       alt="Speaker 3"
-                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[8px] top-[6px] left-0 right-0 bottom-0 mx-auto"
+                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[9px] top-[6px] left-[-2px] right-0 bottom-0 mx-auto"
                     />
                   </div>
                   <p className="mt-4 text-sm font-[800] leading-[19.53px] font-sans md:text-[14px] lg:text-[15px]">

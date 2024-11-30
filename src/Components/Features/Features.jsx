@@ -33,12 +33,13 @@ const ShowFeature = () => {
 
   return (
     <section className="w-full h-auto py-16 bg-gray-300 font-sanss">
+      
       <div className="container px-4 mx-auto">
         <h2 className="mb-6 font-bold text-center text-[40px]">
           2025 Show Features
         </h2>
-
-        <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto lg:mx-auto my-4"></div>
+        
+        <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto lg:mx-auto my-4"></div> 
         <div className="grid w-[90%]  gap-4 mx-auto md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <div
@@ -50,14 +51,12 @@ const ShowFeature = () => {
                 alt={feature.title}
                 className="object-cover w-64 h-64 mx-auto rounded-md"
               />
-              <div className="flex flex-col justify-between h-full font-sans ">
+                <div className="flex flex-col justify-between h-full font-sans ">
                 <div>
                   <h3 className="mb-3 text-[20px] font-bold text-[#066C16] mt-3">
                     {feature.title}
                   </h3>
-                  <p className="text-[18px]  font-sanss text-center font-[400] text-[#555555] leading-7">
-                    {feature.description}
-                  </p>
+                  <p className="text-[18px]  font-sanss text-center font-[400] text-[#555555] leading-7">{feature.description}</p>
                 </div>
                 <div className="mt-auto">
                   {/* Empty space, pushing the content to the top */}
@@ -67,10 +66,10 @@ const ShowFeature = () => {
           ))}
         </div>
         <div className="flex flex-col justify-center gap-6 mt-8 sm:flex-row">
-          <button className="w-full sm:w-[60%] px-6 py-3 text-white transition bg-[#066C16] rounded hover:bg-red-600">
+          <button className="w-full px-6 py-3 text-white transition bg-[#066C16] rounded hover:bg-red-600 sm:w-auto">
             Visitor registration
           </button>
-          <button className="w-full sm:w-[60%] px-6 py-3 text-white transition bg-[#066C16] rounded hover:bg-red-600">
+          <button className="w-full px-6 py-3 text-white transition bg-[#066C16] rounded hover:bg-red-600 sm:w-auto">
             Delegate registration
           </button>
         </div>

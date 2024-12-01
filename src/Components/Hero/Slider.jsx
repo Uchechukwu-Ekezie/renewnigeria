@@ -40,7 +40,7 @@ function Slider() {
       {slides[currentHero] === "hero" ? <Hero /> : <HeroOne />}
 
       {/* Navigation Buttons */}
-      <div className="absolute top-[93%] lg:top-[95%] left-[38%] inset-0 flex w-10 h-10 gap-2 md:left-[44%]  px-4 lg:left-[83%] z-10" >
+      <div className="absolute top-[96%] lg:top-[95%] left-[38%] inset-0 flex w-10 h-10 gap-2 md:left-[44%]  px-4 lg:left-[83%] z-10" >
         {/* Previous Button */}
         <button
           onClick={handlePrev}

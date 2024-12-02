@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Hero from "./Hero";
-import HeroOne from "./HeroOne";
+
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
+import HeroSlideOne from "./HeroSlideOne";
 
 function Slider() {
   const [currentHero, setCurrentHero] = useState(0);
@@ -37,7 +38,7 @@ function Slider() {
       onMouseLeave={() => setHoverPause(false)}
       className="relative"
     >
-      {slides[currentHero] === "hero" ? <Hero /> : <HeroOne />}
+      {slides[currentHero] === "hero" ? <Hero /> : <HeroSlideOne/>}
 
       {/* Navigation Buttons */}
       <div className="absolute top-[96%] lg:top-[95%] left-[38%] inset-0 flex w-10 h-10 gap-2 md:left-[44%]  px-4 lg:left-[83%] z-10" >

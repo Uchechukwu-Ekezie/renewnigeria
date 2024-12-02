@@ -18,6 +18,7 @@ module.exports = {
         raleway: ["Raleway", "sans-serif"],
         inter: ['Inter', 'sans-serif'],
         nunito: ['Nunito', 'sans-serif'],
+        segoe: ['"Segoe Script"', 'cursive'], 
       },
       colors: {
         green: {

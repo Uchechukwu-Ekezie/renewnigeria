@@ -1,6 +1,6 @@
 import React from "react";
 import why from "../../Assets/Image/features/one.jpg";
-import why2 from "../../Assets/Image/features/two.jpg";
+import why2 from "../../Assets/Image/features/two.png";
 import why3 from "../../Assets/Image/features/three.jpg";
 import why4 from "../../Assets/Image/features/four.jpg";
 
@@ -33,13 +33,13 @@ const ShowFeature = () => {
   ];
 
   return (
-    <section className="w-full h-auto py-16 bg-gray-300 font-sans">
+    <section className="w-full h-auto py-16 bg-gray-300 font-sanss">
       <div className="container px-4 mx-auto">
         <h2 className="mb-6 font-bold text-center text-[40px]">
           2025 Show Features
         </h2>
 
-        <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto my-4"></div>
+        <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto lg:mx-auto my-4"></div>
         <div className="grid w-[90%] gap-4 mx-auto md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <div
@@ -58,9 +58,12 @@ const ShowFeature = () => {
                   <h3 className="mt-3 mb-3 text-[20px] font-bold text-[#066C16]">
                     {feature.title}
                   </h3>
-                  <p className="text-[18px] text-center font-[400] text-[#555555] leading-7">
+                  <p className="text-[18px] font-sanss text-center font-[400] text-[#555555] leading-7">
                     {feature.description}
                   </p>
+                </div>
+                <div className="mt-auto">
+                  {/* Empty space, pushing the content to the top */}
                 </div>
               </div>
             </div>

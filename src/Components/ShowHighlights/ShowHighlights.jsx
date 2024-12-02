@@ -47,7 +47,7 @@ const ShowHighlights = () => {
         </div>
 
         {/* Right Section */}
-        <div className="hidden lg:flex flex-row bg-white rounded-lg shadow-lg lg:w-[100%]">
+        <div className=" flex  flex-row bg-white rounded-lg shadow-lg lg:w-[100%]">
           <img
             src={img} // Replace with your logo's actual path
             alt="Federal Republic of Nigeria Logo"
@@ -59,14 +59,7 @@ const ShowHighlights = () => {
             className="mx-auto mb-6 w-[50%]"
           />
         </div>
-        <div className="flex flex-row lg:w-[100%] lg:hidden">
-          <img
-            src={rtr} // Replace with your logo's actual path
-            alt="Federal Republic of Nigeria Logo"
-            className="mx-auto mb-6 w-[90%] md:w-[60%]"
-          />
-        
-        </div>
+       
       </div>
     </section>
   );

@@ -1,7 +1,8 @@
 import React from "react";
-import why from "../../Assets/Image/whypart.jpg";
-import why2 from "../../Assets/Image/whyexhi.jpg";
-import why3 from "../../Assets/Image/whyspon.jpg";
+import why from "../../Assets/Image/conf.jpg";
+import why2 from "../../Assets/Image/tar.jpg";
+import why3 from "../../Assets/Image/pro.jpg";
+import why4 from "../../Assets/Image/pri.jpg";
 
 const ShowFeature = () => {
   const features = [
@@ -27,20 +28,19 @@ const ShowFeature = () => {
       title: "Private Sessions",
       description:
         "Unlock exclusive access to networking events, private lounges, and premium benefits designed for industry decision-makers.",
-      image: why,
+      image: why4,
     },
   ];
 
   return (
     <section className="w-full h-auto py-16 bg-gray-300 font-sanss">
-      
       <div className="container px-4 mx-auto">
         <h2 className="mb-6 font-bold text-center text-[40px]">
           2025 Show Features
         </h2>
-        
-        <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto lg:mx-auto my-4"></div> 
-        <div className="grid w-[90%]  gap-4 mx-auto md:grid-cols-2 lg:grid-cols-4">
+
+        <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto lg:mx-auto my-4"></div>
+        <div className="grid w-[90%] gap-4 mx-auto md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -49,14 +49,18 @@ const ShowFeature = () => {
               <img
                 src={feature.image}
                 alt={feature.title}
-                className="object-cover w-64 h-64 mx-auto rounded-md"
+                className={`object-cover mx-auto rounded-md ${
+                  index === 1 ? "w-48 h-49" : "w-64 h-64"
+                }`}
               />
-                <div className="flex flex-col justify-between h-full font-sans ">
+              <div className="flex flex-col justify-between h-full font-sans ">
                 <div>
                   <h3 className="mb-3 text-[20px] font-bold text-[#066C16] mt-3">
                     {feature.title}
                   </h3>
-                  <p className="text-[18px]  font-sanss text-center font-[400] text-[#555555] leading-7">{feature.description}</p>
+                  <p className="text-[18px] font-sanss text-center font-[400] text-[#555555] leading-7">
+                    {feature.description}
+                  </p>
                 </div>
                 <div className="mt-auto">
                   {/* Empty space, pushing the content to the top */}

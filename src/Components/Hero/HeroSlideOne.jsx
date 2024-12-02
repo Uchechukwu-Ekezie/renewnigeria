@@ -1,6 +1,6 @@
 import React from "react";
 import solar from "../../Assets/Image/solar.png"; // Replace with actual solar image path
-import background from "../../Assets/Image/abuja.png"; // Replace with actual background image path
+import background from "../../Assets/Image/features/iiiww.png"; // Replace with actual background image path
 import nigeria from "../../Assets/Image/renweew.png"; // Replace with actual Nigeria image path
 import legi from "../../Assets/Image/house of rep.png";
 import staff from "../../Assets/Image/staff.png";
@@ -16,13 +16,8 @@ const HeroSlideOne = () => {
         }}
       >
         {/* Overlay */}
-        <div
-          className="absolute inset-0 opacity-80"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(77, 111, 65, 0.8) 80%, rgba(77, 95, 65, 1) 100%)",
-          }}
-        ></div>
+      
+      
 
         {/* Content */}
         <div className="relative z-10 mx-auto w-full max-w-[1440px] flex flex-col items-center justify-center lg:h-[330px]">

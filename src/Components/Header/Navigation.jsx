@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../Assets/Image/renewlogo.png";
+import logo from "../../Assets/Image/logowe.png";
 import report from "../../Assets/report.pdf";
 
 function Navigation() {
@@ -13,7 +13,8 @@ function Navigation() {
         <div className="flex items-center justify-between h-[75px]">
           {/* Logo Section */}
           <Link to="/">
-            <img src={logo} alt="Logo" className="h-[50px] object-contain" />
+            <img src={logo} alt="Logo" className="h-[40px] object-contain" />
+            <h1 className="font-sanss font-[600] text-[3.2px] leading-[4.17px] text-center mt-1">FIRST NATIONAL LEGISLATIVE SUMMIT & EXPO ON RENEWABLE ENERGY</h1>
           </Link>
 
           {/* Desktop Navigation */}

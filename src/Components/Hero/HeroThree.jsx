@@ -1,11 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
+import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 import Image2 from "../../Assets/Image/organizers/image2.png";
 import Image3 from "../../Assets/Image/organizers/image3.png";
 import Image4 from "../../Assets/Image/organizers/Green_Clean_Text.png";
@@ -27,14 +23,14 @@ function HeroThree() {
       <div className="relative grid grid-cols-1 gap-8 md:grid-cols-1 lg:gap-3 lg:grid-cols-3 max-w-[1440px] mx-auto z-10 px-6">
         {/* Social Media Section */}
         <div className="flex flex-col items-center lg:items-start mt-14">
-          <h1 className="mb-4 text-lg font-bold text-white sm:text-xl lg:text-[20px] leading-6 font-sanss">
+          <h1 className="mb-4 text-lg font-bold text-white sm:text-xl lg:text-[20px] leading-6 font-sanss text-center lg:text-left">
             Stay connected with Us <br />
-            #RN2025
+            #RenewNigeria #RN2025
           </h1>
           <div className="flex justify-center pt-2 space-x-8">
             {[
-              { icon: FaFacebookF, link: "#" },
-              { icon: FaLinkedinIn, link: "#" },
+              { icon: FaFacebook, link: "#" },
+              { icon: FaLinkedin, link: "#" },
               { icon: FaInstagram, link: "#" },
               { icon: FaYoutube, link: "#" },
             ].map(({ icon: Icon, link }, index) => (
@@ -43,7 +39,7 @@ function HeroThree() {
                 to={link}
                 className="flex items-center justify-center w-[50px] h-[50px] text-[#005911] bg-white rounded-full shadow-lg hover:bg-gray-200"
               >
-                <Icon size={25} />
+                <Icon size={24} />
               </Link>
             ))}
           </div>
@@ -98,11 +94,15 @@ function HeroThree() {
 
         {/* Host Section */}
         <div className="flex flex-col items-center justify-center text-center lg:items-end">
-          <h1 className="mb-7  text-lg font-[500] text-white lg:mr-11 lg:mt-[-50px] sm:text-xl lg:text-2xl font-sanss">
-            Host
+          <h1 className="mb-7  text-lg font-[500] text-white lg:mr-3 lg:mt-[-px] sm:text-xl lg:text-2xl font-sanss">
+            Host City
           </h1>
           <div className="flex flex-col items-center text-center">
-            <img src={Host} alt="Host Logo" className="w-[90px] h-[90px] md:w-[140px] md:h-[140px] lg:w-[130px] lg:h-[130px] " />
+            <img
+              src={Host}
+              alt="Host Logo"
+              className="w-[90px] h-[90px] md:w-[140px] md:h-[140px] lg:w-[130px] lg:h-[130px] "
+            />
             <p className="leading-7 text-white whitespace-pre-wrap mt-2 lg:text-[18px] text-[12px] md:text-[15px] font-sanss">
               Lagos State <br />
               Government

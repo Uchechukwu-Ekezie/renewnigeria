@@ -19,7 +19,7 @@ const PricingPlans = () => {
         {/* Heading Section */}
         <p className="mb-4 font-medium text-green-200 uppercase">Join Us</p>
         <h1 className="mx-auto mb-12 text-2xl font-bold text-white md:text-4xl">
-          At The 2025 Renew Nigeria
+          Join Us At The 2025 Renew Nigeria
         </h1>
 
         {/* Pricing Plans */}

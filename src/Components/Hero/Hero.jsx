@@ -55,7 +55,7 @@ function Hero() {
 
               {/* Theme */}
               <p className="mb-[-20px] mx-auto font-bold text-center  lg:mt-[5px] md:text-[20px] md:mt-[10px]">
-                <span className="text-[#FFC707] font-segoe-script lg:text-[48px]">
+                <span className="text-[#FFC707] font-segoe lg:text-[48px]">
                   Theme
                 </span>{" "}
                 <span className="font-[700] font-raleway lg:text-[36px]">

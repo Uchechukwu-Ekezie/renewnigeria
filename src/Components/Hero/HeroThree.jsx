@@ -14,10 +14,11 @@ function HeroThree() {
       className="relative w-full py-12 bg-center bg-cover"
       style={{
         backgroundImage: `url(${BackgroundImage})`,
+        backgroundPosition: "0px 0px"
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 z-0 bg-[#066C16] opacity-90"></div>
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#066C16] to-[#005911] opacity-95"></div>
 
       {/* Content */}
       <div className="relative grid grid-cols-1 gap-8 md:grid-cols-1 lg:gap-3 lg:grid-cols-3 max-w-[1440px] mx-auto z-10 px-6">

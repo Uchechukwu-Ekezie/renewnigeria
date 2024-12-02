@@ -11,6 +11,7 @@ import VideoGallery from "../Components/VideoGallery/VideoGallery";
 import Slider from "../Components/Hero/Slider";
 import HeroThree from "../Components/Hero/HeroThree";
 
+
 function Home() {
   return (
     <div>

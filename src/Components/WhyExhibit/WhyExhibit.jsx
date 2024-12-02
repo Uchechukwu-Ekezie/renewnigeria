@@ -1,7 +1,7 @@
 import React from "react";
-import why from "../../Assets/Image/whypart.jpg";
-import why2 from "../../Assets/Image/whyexhi.jpg";
-import why3 from "../../Assets/Image/whyspon.jpg";
+import why from "../../Assets/Image/whyp.jpg";
+import why2 from "../../Assets/Image/whyspon.jpg";
+import why3 from "../../Assets/Image/whs.jpg";
 
 import vector from "../../Assets/Vector.png";
 

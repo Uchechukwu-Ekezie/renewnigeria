@@ -1,7 +1,7 @@
 import React from "react";
 
 // Importing partner logos
-import renewpic from "../../Assets/Image/renewpic.jpg";
+import renewpic from "../../Assets/Image/inland.jpg";
 import lagos1 from "../../Assets/Image/lagospa.png";
 import swat1 from "../../Assets/Image/swatpa.png";
 import renew1 from "../../Assets/Image/renewpa.png";

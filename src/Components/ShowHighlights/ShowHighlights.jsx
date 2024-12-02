@@ -63,7 +63,7 @@ const ShowHighlights = () => {
           <img
             src={rtr} // Replace with your logo's actual path
             alt="Federal Republic of Nigeria Logo"
-            className="mx-auto mb-6 w-[90%]"
+            className="mx-auto mb-6 w-[90%] md:w-[60%]"
           />
         
         </div>

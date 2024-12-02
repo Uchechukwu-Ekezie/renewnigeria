@@ -37,11 +37,11 @@ const Partners = () => {
       {/* Banner Section */}
       <div className=" flex flex-col  sm:flex-col md:flex-col lg:flex-row w-[100%]   h-[70%] items-center lg:px-10 py-8 relative  mx-auto">
         {/* Banner Image */}
-        <div className="">
+        <div className="flex justify-center md:w-full">
           <img
             src={renewpic}
             alt="Renew Nigeria"
-            className=" w-[200px] lg:w-[450px] h-[80%]  md:w-[100%]"
+            className=" w-[200px] lg:w-[450px] h-[80%]  md:w-[60%] "
           />
         </div>
 

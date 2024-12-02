@@ -40,7 +40,7 @@ const GainInsight = () => {
         </h2>
         <div className="w-12 h-[1px] bg-[#FFCB05] mx-auto my-4"></div>
         <p className="mb-8 font-sans text-[#005911] text-[20px] sm:text-xl">
-          Nigerians Renewable Energy Report
+          Nigerians Renewable Energy Reports
         </p>
         {/* Reports Grid */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

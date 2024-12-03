@@ -82,7 +82,7 @@ const Partners = () => {
       </div>
 
       {/* Case Studies Button */}
-      <button className="px-4 py-2 mt-0 text-lg text-white bg-black top-64 ">
+      <button className="hidden px-4 py-2 mt-0 text-lg text-white bg-black top-64 ">
         Read More Case Studies
       </button>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../../Assets/Image/features/fte.jpg";
-import rtr from "../../Assets/Image/features/sww.png";
+// import rtr from "../../Assets/Image/features/sww.png";
 const ShowHighlights = () => {
   return (
     <section className="bg-[#EBEBEB] pb-16  pt-16 px-6 lg:px-24 font-sanss">

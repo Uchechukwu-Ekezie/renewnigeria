@@ -1,0 +1,22 @@
+/* //media query for smallscreen */
+
+.staff {
+    position: absolute; /* or whatever positioning suits your design */
+    top: 0; /* Default value */
+  }
+  .solar {
+    position: absolute; /* or whatever positioning suits your design */
+    top: 0; /* Default value */
+  }
+  
+  /* Media query for screens 360px and above */
+  @media (min-width: 360px) {
+    .staff {
+      top: -40%;
+    }
+    .solar{
+top: -40%;
+    }
+  }
+  
+  /* Optional: Media query for screens below 360px */

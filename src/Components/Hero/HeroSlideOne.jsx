@@ -7,17 +7,15 @@ import staff from "../../Assets/Image/staff.png";
 
 const HeroSlideOne = () => {
   return (
-    <div className="w-full min-h-screen">
+    <div className="lg:min-h-[800px] ">
       <div
-        className="relative w-full min-h-screen bg-center bg-no-repeat bg-cover font-sanss 2xl:min-h-[1000px]"
+        className="relative w-full min-h-screen lg:min-h-[800px] font-sans bg-center bg-no-repeat bg-cover 2xl:min-h-[1000px]"
         style={{
           backgroundImage: `url(${background})`,
           backgroundPosition: "center 30%",
         }}
       >
         {/* Overlay */}
-      
-      
 
         {/* Content */}
         <div className="relative z-10 mx-auto w-full max-w-[1440px] flex flex-col items-center justify-center lg:h-[330px]">
@@ -25,7 +23,7 @@ const HeroSlideOne = () => {
           <img
             src={solar}
             alt="Solar Panel"
-            className="absolute lg:top-[120%] 2xl:top-[200%]  left-[28%] w-[42vw] 2xl:w-[511.93px] lg:-left-[0] lg:w-[450px] lg:h-auto 2xl:left-[-90px] md:w-[40vw] md:left-[32%] md:top-[90%] top-[100%]"
+            className="absolute lg:top-[150%] 2xl:top-[200%]  left-[34%] w-[42vw] 2xl:w-[511.93px] lg:-left-[0] lg:w-[450px] lg:h-auto 2xl:left-[-90px] md:w-[40vw] md:left-[32%] md:top-[90%] top-[97%] "
           />
 
           <div className="relative z-10 flex flex-col lg:flex-row h-full text-center text-white justify-between items-center lg:items-start lg:text-left 2xl:pt-[50px]  max-w-screen-2xl mx-auto px-4">
@@ -85,11 +83,11 @@ const HeroSlideOne = () => {
             </div>
 
             {/* Right Section: Speakers */}
-            <div className="flex justify-center w-full pb-9 lg:justify-start lg:w-[20%] lg:mt-10 md:w-[80%] md:pb-36">
+            <div className="staff-container relative flex justify-center w-full pb-9 lg:justify-start lg:w-[20%] lg:mt-10 md:w-[80%] md:pb-36">
               <img
                 src={staff}
                 alt="Staff"
-                className="absolute mt-[-105%]   right-[1%] md:left-[70%] w-[25vw] md:-mt-[70%] md:w-[25vw]  lg:mt-[3%] 2xl:left-[80%] 2xl:w-[310px] 2xl:h-[406px] 2xl:mt-[5%] sm:left-[10%] lg:left-[75%]"
+                className="absolute mt-[-114%] 20s:mt-[-110%] 428px:mt-[-100%] sm:mt-[-10%] right-[-6%] md:left-[80%] w-[25vw] md:top-[40%] md:w-[25vw] 2xl:top-[300%] lg:top-[250%] 2xl:left-[-20%] lg:left-[-30%] 2xl:w-[350px] 2xl:h-[406px] 2xl:mt-[5%] sm:left-[80%]"
               />
             </div>
           </div>

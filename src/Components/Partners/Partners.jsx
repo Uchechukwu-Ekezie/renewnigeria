@@ -1,7 +1,7 @@
 import React from "react";
 
 // Importing partner logos
-import renewpic from "../../Assets/Image/inland.jpg";
+import renewpic from "../../Assets/Image/features/titi.png";
 import lagos1 from "../../Assets/Image/lagospa.png";
 import swat1 from "../../Assets/Image/swatpa.png";
 import renew1 from "../../Assets/Image/renewpa.png";
@@ -37,7 +37,7 @@ const Partners = () => {
       {/* Banner Section */}
       <div className=" flex flex-col  sm:flex-col md:flex-col lg:flex-row w-[100%]   h-[70%] items-center lg:px-10 py-8 relative  mx-auto">
         {/* Banner Image */}
-        <div className="flex justify-center md:w-full">
+        <div className="flex justify-center md:w-full lg:ml-[-70px]">
           <img
             src={renewpic}
             alt="Renew Nigeria"
@@ -45,7 +45,7 @@ const Partners = () => {
           />
         </div>
 
-        <div className="w-[70%]  md:w-[100%] lg:ml-12 ">
+        <div className="w-[70%]  md:w-[100%] lg:w-[120%] lg:ml-[-60px] ">
           <div className="font-medium text-center mt-7 font-sanss lg:text-left">
             <p className="lg:text-[14.5px] text-[12px] md:text-[13px] font-[500]">
               TO NAME A FEW OF OUR 185,000+ CUSTOMERS
@@ -54,7 +54,7 @@ const Partners = () => {
               PARTNERS
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4  lg:gap-2 w-[90%] mt-8 mb-4 justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4  lg:gap-2 w-[90%] lg:w-[100%] mt-8 mb-4 justify-items-center">
             {partnerLogos.map((partner, index) => (
               <div
                 key={index}

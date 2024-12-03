@@ -1,5 +1,5 @@
-import logo from "../../Assets/Image/Footer.png";
-import logo1 from "../../Assets/Image/Footer2.png";
+import logo from "../../Assets/footerLogo.png";
+
 
 function Footer() {
   return (
@@ -8,19 +8,21 @@ function Footer() {
         <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-2 lg:gap-6 lg:grid-cols-4 lg:text-left">
           {/* Left Section */}
           <div className="w-full">
-            <div className="flex flex-col items-center gap-2 lg:items-start">
-              <img
-                src={logo}
-                alt="Green Clean Logo"
-                className="h-[47px] w-[137px]"
-              />
-              <img
-                src={logo1}
-                alt="Green Clean Logo"
-                className="h-[5px] w-[150px]"
-              />
-            </div>
-            <p className="mt-5 text-center lg:text-left text-[14px] leading-6 font-albert font-[400] text-white md:text-[16px]">
+          <div className="flex flex-col items-center gap-2 lg:items-start lg:w-[147px]">
+  <img
+    src={logo}
+    alt="Green Clean Logo"
+    className="h-[47px]"
+  />
+  <h1
+    className="font-sans font-semibold  text-[4.2px] leading-[4.17px] text-center lg:text-left mt-1 whitespace-nowrap"
+  >
+    FIRST NATIONAL LEGISLATIVE SUMMIT & EXPO ON RENEWABLE ENERGY
+  </h1>
+</div>
+
+
+            <p className="mt-5 text-center lg:text-left lg:pl-[7px] text-[14px] leading-6 font-albert font-[400] text-white md:text-[16px]">
               Driving Nigeria's <br /> Green Revolution
             </p>
           </div>

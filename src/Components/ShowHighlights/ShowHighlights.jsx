@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../../Assets/Image/features/fte.jpg";
-import rtr from "../../Assets/Image/features/sww.png";
+// import rtr from "../../Assets/Image/features/sww.png";
 const ShowHighlights = () => {
   return (
     <section className="bg-[#EBEBEB] pb-16  pt-16 px-6 lg:px-24 font-sanss">
@@ -47,7 +47,7 @@ const ShowHighlights = () => {
         </div>
 
         {/* Right Section */}
-        <div className="hidden lg:flex flex-row bg-white rounded-lg shadow-lg lg:w-[100%]">
+        <div className=" flex  flex-row bg-white rounded-lg shadow-lg lg:w-[100%]">
           <img
             src={img} // Replace with your logo's actual path
             alt="Federal Republic of Nigeria Logo"
@@ -59,14 +59,7 @@ const ShowHighlights = () => {
             className="mx-auto mb-6 w-[50%]"
           />
         </div>
-        <div className="flex flex-row lg:w-[100%] lg:hidden">
-          <img
-            src={rtr} // Replace with your logo's actual path
-            alt="Federal Republic of Nigeria Logo"
-            className="mx-auto mb-6 w-[90%] md:w-[60%]"
-          />
-        
-        </div>
+       
       </div>
     </section>
   );

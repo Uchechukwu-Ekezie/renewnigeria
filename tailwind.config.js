@@ -7,11 +7,14 @@ module.exports = {
         center: true,
       },
       screens: {
+        "20s": "370px",
         sm: "640px",
         md: "768px",
         lg: "1024px",
         xl: "1280px",
         "2xl": "1440px",
+        '428px': '428px',
+        'h-sm': { raw: '(max-height: 556px)' },
       },
       fontFamily: {
         sanss: ['"DM Sans"', "sans-serif"],

@@ -23,7 +23,7 @@ const HeroSlideOne = () => {
           <img
             src={solar}
             alt="Solar Panel"
-            className="absolute lg:top-[120%] 2xl:top-[200%]  left-[34%] w-[42vw] 2xl:w-[511.93px] lg:-left-[0] lg:w-[450px] lg:h-auto 2xl:left-[-90px] md:w-[40vw] md:left-[32%] md:top-[90%] top-[97%] "
+            className="absolute lg:top-[150%] 2xl:top-[200%]  left-[34%] w-[42vw] 2xl:w-[511.93px] lg:-left-[0] lg:w-[450px] lg:h-auto 2xl:left-[-90px] md:w-[40vw] md:left-[32%] md:top-[90%] top-[97%] "
           />
 
           <div className="relative z-10 flex flex-col lg:flex-row h-full text-center text-white justify-between items-center lg:items-start lg:text-left 2xl:pt-[50px]  max-w-screen-2xl mx-auto px-4">
@@ -87,7 +87,7 @@ const HeroSlideOne = () => {
               <img
                 src={staff}
                 alt="Staff"
-                className="absolute mt-[-114%] 20s:mt-[-110%] 428px:mt-[-100%] sm:mt-[-10%] right-[-6%] md:left-[80%] w-[25vw] md:-mt-[40%] md:w-[25vw] 2xl:top-[140%] lg:top-[140%] 2xl:left-[-20%] lg:left-[-30%] 2xl:w-[350px] 2xl:h-[406px] 2xl:mt-[5%] sm:left-[80%]"
+                className="absolute mt-[-114%] 20s:mt-[-110%] 428px:mt-[-100%] sm:mt-[-10%] right-[-6%] md:left-[80%] w-[25vw] md:top-[40%] md:w-[25vw] 2xl:top-[300%] lg:top-[250%] 2xl:left-[-20%] lg:left-[-30%] 2xl:w-[350px] 2xl:h-[406px] 2xl:mt-[5%] sm:left-[80%]"
               />
             </div>
           </div>

@@ -1,11 +1,9 @@
 import React from "react";
-import why from "../../Assets/Image/whypart.jpg";
-import why2 from "../../Assets/Image/whyexhi.jpg";
-import why3 from "../../Assets/Image/whyspon.jpg";
+import why from "../../Assets/Image/whyp.jpg";
+import why2 from "../../Assets/Image/whyspon.jpg";
+import why3 from "../../Assets/Image/whs.jpg";
 
 import vector from "../../Assets/Vector.png";
-import heading from "../../Assets/Heading.png";
-import headingtwo from "../../Assets/Heading2.png";
 
 const WhyExhibit = () => {
   const sections = [
@@ -57,49 +55,55 @@ const WhyExhibit = () => {
   ];
 
   return (
-    <section className="w-full py-8 bg-white sm:py-12">
-      {/* Header Section */}
-      <div className="ml-7 md:mx-auto lg:mx-auto  w-[50%] md:w-[93%] lg:w-[90%] mb-[14px]  flex gap-4">
-        <img src={vector} alt="Vector" />
-        <img src={heading} alt="Heading" />
-      </div>
-      <div className=" ml-7 md:mx-auto lg:mx-auto w-[50%] md:w-[93%] lg:w-[90%] mb-[24px]  md:mb-[54px] lg:mb-[54px]">
-        <img src={headingtwo} alt="Heading Two" />
-      </div>
-      {/* Cards Section */}
-      <div className="grid grid-cols-1 gap-6 px-4 mx-auto sm:px-6 lg:w-[95%] md:grid-cols-2 lg:grid-cols-3">
-        {sections.map((section, index) => (
-          <div
-            key={index}
-            className="flex flex-col justify-between h-full items-center px-4 py-4 bg-[#EBEBEB] rounded-md shadow-lg"
-          >
-            {/* Section Title */}
-            <h3 className="mb-4 text-lg font-semibold text-center text-[#005911] md:text-xl lg:text-2xl">
-              {section.title}
-            </h3>
-            {/* Image */}
-            <img
-              src={section.image}
-              alt={section.title}
-              className="object-cover w-full h-48 mb-4 rounded-lg sm:h-56 md:h-64"
-            />
-            {/* Points */}
-            <ul className="flex-grow mb-6 space-y-4 text-sm font-normal text-[#555555] sm:text-base lg:text-[16px]">
-              {section.points.map((point, idx) => (
-                <li key={idx} className="flex items-start">
-                  <span className="mr-2 text-[16px] font-normal text-black">•</span>
-                  <span className="font-sans text-[16px] font-normal">
-                    {point.normal}
-                  </span>
-                </li>
-              ))}
-            </ul>
-            {/* Button */}
-            <button className="px-6 py-2 w-[80%] text-white bg-[#005911] transition hover:bg-green-200">
-              {section.buttonText}
-            </button>
-          </div>
-        ))}
+    <section className="w-full py-8 bg-white">
+      <div className="mx-auto max-w-[1440px]">
+        {/* Header Section */}
+        <div className="ml-7 md:mx-auto lg:mx-auto w-[50%] md:w-[93%] lg:w-[1250px] mb-[14px] flex gap-4">
+          <img src={vector} alt="Vector" />
+          <h1 className="font-sanss text-[16px] font-[600] text-[#005911]">
+            RENEW NIGERIA
+          </h1>
+        </div>
+        <div className="ml-7 md:mx-auto lg:mx-auto w-[50%] md:w-[93%] lg:w-[1250px] mb-[24px] md:mb-[54px] lg:mb-[54px]">
+          <h1 className="font-sanss font-[700] text-[55px]">Why Us</h1>
+        </div>
+        {/* Cards Section */}
+        <div className="grid grid-cols-1 gap-6 px-4 mx-auto sm:px-6 lg:w-[1250px] md:grid-cols-2 lg:grid-cols-3">
+          {sections.map((section, index) => (
+            <div
+              key={index}
+              className="flex flex-col justify-between h-full items-center px-4 py-4 bg-[#EBEBEB] rounded-md shadow-lg"
+            >
+              {/* Section Title */}
+              <h3 className="mb-4 text-lg font-semibold text-center text-[#005911] md:text-xl lg:text-2xl">
+                {section.title}
+              </h3>
+              {/* Image */}
+              <img
+                src={section.image}
+                alt={section.title}
+                className="object-cover w-full h-48 mb-4 rounded-lg sm:h-56 md:h-64 mx-auto"
+              />
+              {/* Points */}
+              <ul className="flex-grow mb-6 space-y-4 text-sm font-normal text-[#555555] sm:text-base lg:text-[16px]">
+                {section.points.map((point, idx) => (
+                  <li key={idx} className="flex items-start">
+                    <span className="mr-2 text-[16px] font-normal text-black">
+                      •
+                    </span>
+                    <span className="font-sans text-[16px] font-normal">
+                      {point.normal}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              {/* Button */}
+              <button className="px-6 py-2 w-[80%] text-white bg-[#005911] transition hover:bg-green-200">
+                {section.buttonText}
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

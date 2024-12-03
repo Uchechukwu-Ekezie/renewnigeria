@@ -56,7 +56,7 @@ const WhyExhibit = () => {
 
   return (
     <section className="w-full py-8 bg-white">
-      <div className="mx-auto max-w-[1440px]">
+      <div className="mx-auto max-w-[1440px] px-5">
         {/* Header Section */}
         <div className="ml-7 md:mx-auto lg:mx-auto w-[50%] md:w-[93%] lg:w-[1250px] mb-[14px] flex gap-4">
           <img src={vector} alt="Vector" />
@@ -82,7 +82,7 @@ const WhyExhibit = () => {
               <img
                 src={section.image}
                 alt={section.title}
-                className="object-cover w-full h-48 mb-4 rounded-lg sm:h-56 md:h-64 mx-auto"
+                className="object-cover w-full h-48 mx-auto mb-4 rounded-lg sm:h-56 md:h-64"
               />
               {/* Points */}
               <ul className="flex-grow mb-6 space-y-4 text-sm font-normal text-[#555555] sm:text-base lg:text-[16px]">

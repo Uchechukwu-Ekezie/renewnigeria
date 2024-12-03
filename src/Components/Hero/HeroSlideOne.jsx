@@ -7,9 +7,9 @@ import staff from "../../Assets/Image/staff.png";
 
 const HeroSlideOne = () => {
   return (
-    <div className="w-full min-h-screen">
+    <div className="">
       <div
-        className="relative w-full min-h-screen bg-center bg-no-repeat bg-cover font-sanss 2xl:min-h-[1000px]"
+        className="relative w-full min-h-screen font-sans bg-center bg-no-repeat bg-cover 2xl:min-h-[1000px]"
         style={{
           backgroundImage: `url(${background})`,
           backgroundPosition: "center 30%",
@@ -25,7 +25,7 @@ const HeroSlideOne = () => {
           <img
             src={solar}
             alt="Solar Panel"
-            className="absolute lg:top-[5%] 2xl:top-[10%] left-[-1%] w-[42vw] 2xl:w-[511.93px] lg:w-[400px] lg:h-auto 2xl:left-[-90px] md:w-[35vw] md:left-[-1%] md:top-[8%] top-[6%]"
+            className="absolute lg:top-[5%] 2xl:top-[10%]  w-[42vw] 2xl:w-[511.93px] lg:w-[400px] lg:h-auto 2xl:left-[-90px] md:w-[35vw] md:left-[-1%] md:top-[8%] top-[100%]"
           />
 
           <div className="relative z-10 flex flex-col lg:flex-row h-full text-center text-white justify-between items-center lg:items-start lg:text-left 2xl:pt-[50px]  max-w-screen-2xl mx-auto px-4">

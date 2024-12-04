@@ -1,6 +1,5 @@
 import logo from "../../Assets/footerLogo.png";
 
-
 function Footer() {
   return (
     <div className="py-10 text-white bg-[#202020]">
@@ -8,19 +7,12 @@ function Footer() {
         <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-2 lg:gap-6 lg:grid-cols-4 lg:text-left">
           {/* Left Section */}
           <div className="w-full">
-          <div className="flex flex-col items-center gap-2 lg:items-start lg:w-[147px]">
-  <img
-    src={logo}
-    alt="Green Clean Logo"
-    className="h-[47px]"
-  />
-  <h1
-    className="font-sans font-semibold  text-[4.2px] leading-[4.17px] text-center lg:text-left mt-1 whitespace-nowrap"
-  >
-    FIRST NATIONAL LEGISLATIVE SUMMIT & EXPO ON RENEWABLE ENERGY
-  </h1>
-</div>
-
+            <div className="flex flex-col items-center gap-2 lg:items-start lg:w-[147px]">
+              <img src={logo} alt="Green Clean Logo" className="h-[40px] object-contain" />
+              <h1 className="font-sanss font-[600] text-[3.2px] leading-[4.17px] text-center mt-1">
+                FIRST NATIONAL LEGISLATIVE SUMMIT & EXPO ON RENEWABLE ENERGY
+              </h1>
+            </div>
 
             <p className="mt-5 text-center lg:text-left lg:pl-[7px] text-[14px] leading-6 font-albert font-[400] text-white md:text-[16px]">
               Driving Nigeria's <br /> Green Revolution
@@ -33,19 +25,23 @@ function Footer() {
               Our <span className="text-[#005911]">Services</span>
             </h3>
             <ul className="flex flex-col items-center md:items-start justify-center space-y-4 text-[14px] leading-6 font-albert font-[400] md:text-[16px]">
-              {["Wind Turbines", "Solar Panels", "Hydropower Plants", "Fossil Resources", "Battery Materials"].map(
-                (item, index) => (
-                  <li key={index}>
-                    <a
-                      href="#"
-                      className="flex items-center space-x-2 hover:text-green-500"
-                    >
-                      <span className="font-extrabold">›</span>
-                      <span>{item}</span>
-                    </a>
-                  </li>
-                )
-              )}
+              {[
+                "Wind Turbines",
+                "Solar Panels",
+                "Hydropower Plants",
+                "Fossil Resources",
+                "Battery Materials",
+              ].map((item, index) => (
+                <li key={index}>
+                  <a
+                    href="#"
+                    className="flex items-center space-x-2 hover:text-green-500"
+                  >
+                    <span className="font-extrabold">›</span>
+                    <span>{item}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -55,19 +51,23 @@ function Footer() {
               Useful <span className="text-[#005911]">Links</span>
             </h3>
             <ul className="flex flex-col items-center md:items-start justify-center space-y-4 text-[14px] leading-6 font-albert font-[400] md:text-[16px]">
-              {["About Us", "Leadership Team", "News & Blog", "Our Projects", "Contacts"].map(
-                (link, index) => (
-                  <li key={index}>
-                    <a
-                      href="#"
-                      className="flex items-center space-x-2 hover:text-green-500"
-                    >
-                      <span className="font-extrabold">›</span>
-                      <span>{link}</span>
-                    </a>
-                  </li>
-                )
-              )}
+              {[
+                "About Us",
+                "Leadership Team",
+                "News & Blog",
+                "Our Projects",
+                "Contacts",
+              ].map((link, index) => (
+                <li key={index}>
+                  <a
+                    href="#"
+                    className="flex items-center space-x-2 hover:text-green-500"
+                  >
+                    <span className="font-extrabold">›</span>
+                    <span>{link}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 

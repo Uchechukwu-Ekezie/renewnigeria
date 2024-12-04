@@ -16,7 +16,7 @@ import HeroSlideOne from "../Components/Hero/HeroSlideOne";
 function Home() {
   return (
     <div>
-      <HeroSlideOne/>
+      
       <Slider />
       <HeroThree />
       <HeroFour />

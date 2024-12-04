@@ -2,17 +2,17 @@ import React from "react";
 import background from "../../Assets/Image/bg0ne.png";
 import legi from "../../Assets/Image/house of rep.png";
 import nigeria from "../../Assets/Image/renweew.png";
-import speaker1 from "../../Assets/Image/men/taju.jpeg";
+import speaker1 from "../../Assets/Image/men/taju.png";
 import speaker2 from "../../Assets/Image/men/afam.jpeg";
 import speaker3 from "../../Assets/Image/men/sonwo.jpeg";
-import ring from "../../Assets/Image/men/rings.png";
+import ring from "../../Assets/Image/men/ring.png";
 
 function Hero() {
   return (
-    <div className="w-full ">
+    <div className="">
       <div>
         <div
-          className="relative w-full h-screen font-sans bg-center bg-no-repeat bg-cover"
+          className="relative w-full min-h-screen font-sans bg-center bg-no-repeat bg-cover 2xl:min-h-[1000px]"
           style={{
             backgroundImage: `url(${background})`,
             backgroundPosition: "center 20%",
@@ -24,18 +24,18 @@ function Hero() {
           {/* Content */}
           <div className="relative z-10 flex flex-col lg:flex-row h-full text-center text-white justify-between items-center lg:items-start lg:text-left 2xl:pt-[50px]  max-w-screen-2xl mx-auto px-4">
             {/* Left Section: Logo */}
-            <div className="flex justify-center w-full mb-6 lg:justify-start lg:w-[20%] lg:mb-0">
+            <div className="flex justify-center w-full mb-16 md:mb-11 lg:justify-start lg:w-[20%] lg:mb-0">
               <img
                 src={legi}
                 alt="Logo"
-                className="lg:h-[240px] w-[90px] lg:w-[240px] md:w-[200px] md:pt-10 mx-auto mt-[10px] lg:mt-0"
+                className="lg:h-[100%] w-[90px] lg:w-[100%] md:w-[200px] md:pt-10 mx-auto mt-[10px] lg:mt-0"
               />
             </div>
 
             {/* Center Section: Main Content */}
             <div className="flex flex-col items-center w-full lg:items-start lg:w-[60%] ">
               {/* Title */}
-              <div className="flex justify-center w-full mt-[-50px] lg:mt-8 mb-3 lg:justify-start lg:mb-0">
+              <div className="flex justify-center w-full md:mt-4 mt-[-50px] lg:mt-8 mb-3 lg:justify-start lg:mb-0">
                 <img
                   src={nigeria}
                   alt="Logo"
@@ -55,7 +55,7 @@ function Hero() {
 
               {/* Theme */}
               <p className="mb-[-20px] mx-auto font-bold text-center  lg:mt-[5px] md:text-[20px] md:mt-[10px]">
-                <span className="text-[#FFC707] font-segoe-script lg:text-[48px]">
+                <span className="text-[#FFC707] font-segoe lg:text-[48px]">
                   Theme
                 </span>{" "}
                 <span className="font-[700] font-raleway lg:text-[36px]">
@@ -80,7 +80,7 @@ function Hero() {
 
             {/* Right Section: Speakers */}
             <div className="flex justify-center w-full pb-9 lg:justify-start lg:w-[20%] lg:mt-10 md:w-[80%] md:pb-36">
-              <div className="flex sm:flex-row sm:space-x-6 lg:flex-col lg:space-x-6 lg:space-y-5 md:flex-row md:space-x-6 md:space-y-0">
+              <div className="flex pt-8 sm:flex-row sm:space-x-6 lg:flex-col lg:space-x-6 lg:space-y-5 md:flex-row md:space-x-6 md:space-y-0">
                 {/* Speaker 1 */}
                 <div className="flex flex-col items-center text-center">
                   <div className="relative">
@@ -92,7 +92,7 @@ function Hero() {
                     <img
                       src={speaker1}
                       alt="Speaker 1"
-                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[8px] top-[6px] left-0 right-0 bottom-0 mx-auto"
+                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[10px] top-[6px] left-[-2px] right-0 bottom-0 mx-auto"
                     />
                   </div>
                   <p className="mt-4 text-sm font-[800] leading-[19.53px] font-sans md:text-[14px] lg:text-[15px]">
@@ -115,7 +115,7 @@ function Hero() {
                     <img
                       src={speaker2}
                       alt="Speaker 2"
-                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[8px] top-[6px] left-0 right-0 bottom-0 mx-auto"
+                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[11px] top-[6px] left-[-2px] right-0 bottom-0 mx-auto"
                     />
                   </div>
                   <p className="mt-4 text-sm font-[800] leading-[19.53px] font-sans md:text-[14px] lg:text-[15px]">
@@ -137,7 +137,7 @@ function Hero() {
                     <img
                       src={speaker3}
                       alt="Speaker 3"
-                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[8px] top-[6px] left-0 right-0 bottom-0 mx-auto"
+                      className="w-[77px] h-[77px] md:w-[100px] md:h-[100px] lg:w-[121.29px] lg:h-[121.29px] 2xl:w-[141.29px] 2xl:h-[141.29px] rounded-full absolute lg:top-[9px] md:top-[9px] top-[6px] left-[-2px] right-0 bottom-0 mx-auto"
                     />
                   </div>
                   <p className="mt-4 text-sm font-[800] leading-[19.53px] font-sans md:text-[14px] lg:text-[15px]">
@@ -157,3 +157,6 @@ function Hero() {
 }
 
 export default Hero;
+
+
+

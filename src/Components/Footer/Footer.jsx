@@ -1,139 +1,80 @@
-// import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-// import logo from "../../assets/image/Green_Clean logo.png";
+import logo from "../../Assets/footerLogo.png";
 
-import logo from "../../Assets/Renew_Nigeria.png";
 function Footer() {
   return (
-    <div className="py-10 text-white ">
+    <div className="py-10 text-white bg-[#202020]">
       <div className="px-6 mx-auto mt-16 w-[95%] lg:w-[90%]">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-6 lg:grid-cols-4"> {/* Grid layout on tablet and above */}
+        <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-2 lg:gap-6 lg:grid-cols-4 lg:text-left">
           {/* Left Section */}
           <div className="w-full">
-            <div className="flex items-center space-x-3">
-
-              <img
-                src={logo}
-                alt="Green Clean Logo"
-                className="h-[36px] w-[176px] lg:block"
-              />
+            <div className="flex flex-col items-center gap-2 lg:items-start lg:w-[147px]">
+              <img src={logo} alt="Green Clean Logo" className="h-[40px] object-contain" />
+              <h1 className="font-sanss font-[600] text-[3.2px] leading-[4.17px] text-center mt-1">
+                FIRST NATIONAL LEGISLATIVE SUMMIT & EXPO ON RENEWABLE ENERGY
+              </h1>
             </div>
-            <p className="mt-5 ml-3 text-[14px] leading-6 font-albert font-[400] text-white md:text-[16px] md:w-[250px]">
+
+            <p className="mt-5 text-center lg:text-left lg:pl-[7px] text-[14px] leading-6 font-albert font-[400] text-white md:text-[16px]">
               Driving Nigeria's <br /> Green Revolution
-            </p> <br />
-            
+            </p>
           </div>
 
-          {/* first Center Section */}
+          {/* Services Section */}
           <div className="w-full">
-            <h3 className="mb-4 text-[20px] font-albert font-[600] md:text-[24px]">
+            <h3 className="mb-4 text-[20px] font-albert font-[600] md:text-[24px] md:text-left">
               Our <span className="text-[#005911]">Services</span>
             </h3>
-            <ul className="space-y-2 text-[14px] leading-6 font-albert font-[400] md:text-[16px]">
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center space-x-2 hover:text-green-500"
-                >
-                  <span className="font-extrabold">›</span>
-                  <span>Wind Turbines</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center space-x-2 hover:text-green-500"
-                >
-                  <span className="font-extrabold">›</span>
-                  <span>Solar Panels</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center space-x-2 hover:text-green-500"
-                >
-                  <span className="font-extrabold">›</span>
-                  <span>Hydropower Plants</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center space-x-2 hover:text-green-500"
-                >
-                  <span className="font-extrabold">›</span>
-                  <span>Fossil Resources</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center space-x-2 hover:text-green-500"
-                >
-                  <span className="font-extrabold">›</span>
-                  <span>Battery Materials</span>
-                </a>
-              </li>
+            <ul className="flex flex-col items-center md:items-start justify-center space-y-4 text-[14px] leading-6 font-albert font-[400] md:text-[16px]">
+              {[
+                "Wind Turbines",
+                "Solar Panels",
+                "Hydropower Plants",
+                "Fossil Resources",
+                "Battery Materials",
+              ].map((item, index) => (
+                <li key={index}>
+                  <a
+                    href="#"
+                    className="flex items-center space-x-2 hover:text-green-500"
+                  >
+                    <span className="font-extrabold">›</span>
+                    <span>{item}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
-           {/* second Center Section */}
-           <div className="w-full">
-            <h3 className="mb-4 text-[20px] font-albert font-[600] md:text-[24px]">
-            Useful <span className="text-[#005911]">Links</span>
+
+          {/* Useful Links Section */}
+          <div className="w-full">
+            <h3 className="mb-4 text-[20px] font-albert font-[600] md:text-[24px] md:text-left">
+              Useful <span className="text-[#005911]">Links</span>
             </h3>
-            <ul className="space-y-2 text-[14px] leading-6 font-albert font-[400] md:text-[16px]">
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center space-x-2 hover:text-green-500"
-                >
-                  <span className="font-extrabold">›</span>
-                  <span>About Us</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center space-x-2 hover:text-green-500"
-                >
-                  <span className="font-extrabold">›</span>
-                  <span>Leadership Team</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center space-x-2 hover:text-green-500"
-                >
-                  <span className="font-extrabold">›</span>
-                  <span>News & blog</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center space-x-2 hover:text-green-500"
-                >
-                  <span className="font-extrabold">›</span>
-                  <span>Our Projects</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center space-x-2 hover:text-green-500"
-                >
-                  <span className="font-extrabold">›</span>
-                  <span>Contacts</span>
-                </a>
-              </li>
+            <ul className="flex flex-col items-center md:items-start justify-center space-y-4 text-[14px] leading-6 font-albert font-[400] md:text-[16px]">
+              {[
+                "About Us",
+                "Leadership Team",
+                "News & Blog",
+                "Our Projects",
+                "Contacts",
+              ].map((link, index) => (
+                <li key={index}>
+                  <a
+                    href="#"
+                    className="flex items-center space-x-2 hover:text-green-500"
+                  >
+                    <span className="font-extrabold">›</span>
+                    <span>{link}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Right Section */}
           <div className="w-full">
             <h3 className="mb-5 text-[20px] font-albert font-[600] md:text-[24px]">
-              Get  <span className="text-[#005911]">Notified</span>
+              Get <span className="text-[#005911]">Notified</span>
             </h3>
             <p className="mb-5 text-[14px] text-[#FFFFFF] font-albert font-[400] md:text-[16px]">
               Stay updated with our latest news! Enter your email here
@@ -142,7 +83,7 @@ function Footer() {
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full px-4 py-2 mb-4 text-[#74787C]rounded-md md:w-[306px] md:h-[60px] bg-white border-[1px] border-[#868681] focus:outline-dashed"
+                className="w-full px-4 py-2 mb-4 text-gray-800 rounded-md md:w-[306px] md:h-[60px] bg-white border-[1px] border-[#868681] focus:outline-none"
               />
               <button
                 type="submit"

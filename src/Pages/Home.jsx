@@ -10,11 +10,13 @@ import ShowHighlights from "../Components/ShowHighlights/ShowHighlights";
 import VideoGallery from "../Components/VideoGallery/VideoGallery";
 import Slider from "../Components/Hero/Slider";
 import HeroThree from "../Components/Hero/HeroThree";
+import HeroSlideOne from "../Components/Hero/HeroSlideOne";
 
 
 function Home() {
   return (
     <div>
+      <HeroSlideOne/>
       <Slider />
       <HeroThree />
       <HeroFour />

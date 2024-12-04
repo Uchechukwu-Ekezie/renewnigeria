@@ -32,12 +32,12 @@ const HeroSlideOne = () => {
               <img
                 src={legi}
                 alt="Logo"
-                className=" w-[90px] pt-10 lg:w-[200px] lg:ml-[80px] 2xl:ml-[0px] lg:h-full md:w-[200px] md:pt-10 mx-auto mt-[10px] lg:mt-0"
+                className=" w-[90px] pt-10 lg:w-[300px] lg:ml-[80px] 2xl:ml-[0px] lg:h-full md:w-[200px] md:pt-10 mx-auto mt-[10px] lg:mt-0"
               />
             </div>
 
             {/* Center Section: Main Content */}
-            <div className="flex flex-col items-center w-full lg:items-start lg:w-[60%] ">
+            <div className="flex flex-col items-center w-full lg:items-start lg:w-[60%] 2xl:w-[80%] lg:ml-24">
               {/* Title */}
               <div className="flex justify-center w-full md:mt-4 mt-[-50px] lg:mt-8 mb-3 lg:justify-start lg:mb-0">
                 <img
@@ -72,7 +72,7 @@ const HeroSlideOne = () => {
               </p>
 
               {/* Buttons */}
-              <div className="flex items-center justify-center gap-4 mt-8 lg:justify-center lg:ml-[210px] lg:mt-[40px] md:mt-[50px] 2xl:ml-[280px] ">
+              <div className="flex items-center justify-center gap-4 mt-8 lg:justify-center lg:ml-[160px] lg:mt-[40px] md:mt-[50px] 2xl:ml-[230px]">
                 <button className="px-6 py-3 lg:py-[20px] lg:px-[31px] font-bold font-sanss text-white rounded-md bg-[#066C18] hover:bg-green-700 text-[16px]">
                   Register Now
                 </button>
@@ -83,11 +83,16 @@ const HeroSlideOne = () => {
             </div>
 
             {/* Right Section: Speakers */}
-            <div className="staff-container relative flex justify-center w-full pb-9 lg:justify-start lg:w-[20%] lg:mt-10 md:w-[80%] md:pb-36">
+            <div className="staff-container relative flex justify-center w-full pb-9 lg:justify-start lg:w-[30%] 2xl:w-[30%] lg:mt-10 md:w-[80%] md:pb-36">
               <img
                 src={staff}
                 alt="Staff"
-                className="absolute mt-[-114%] 20s:mt-[-110%] 428px:mt-[-100%] sm:mt-[-10%] right-[-6%] md:left-[80%] w-[25vw] md:top-[40%] md:w-[25vw] 2xl:top-[300%] lg:top-[250%] 2xl:left-[-20%] lg:left-[-30%] 2xl:w-[350px] 2xl:h-[406px] 2xl:mt-[5%] sm:left-[80%]"
+                className="absolute 
+                  mt-[-114%] 20s:mt-[-110%] 428px:mt-[-100%] sm:mt-[-10%] 
+                  right-[-6%] md:left-[80%] 
+                  w-[25vw] md:w-[25vw] lg:w-[450px] lg:h-[465px] 2xl:w-[50vw] 2xl:h-[456px] 
+                  md:top-[40%] 2xl:top-[300%] lg:top-[240%] 
+                  2xl:left-[-0%] lg:left-[-0%]"
               />
             </div>
           </div>

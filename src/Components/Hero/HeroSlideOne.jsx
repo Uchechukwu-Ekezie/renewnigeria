@@ -3,7 +3,7 @@ import solar from "../../Assets/Image/solar.png"; // Replace with actual solar i
 import background from "../../Assets/Image/features/iiiww.png"; // Replace with actual background image path
 import nigeria from "../../Assets/Image/renweew.png"; // Replace with actual Nigeria image path
 import legi from "../../Assets/Image/house of rep.png";
-import staff from "../../Assets/Image/staff.png";
+import staff from "../../Assets/Image/features/staff.png";
 
 const HeroSlideOne = () => {
   return (
@@ -37,7 +37,7 @@ const HeroSlideOne = () => {
             </div>
 
             {/* Center Section: Main Content */}
-            <div className="flex flex-col items-center w-full lg:items-start lg:w-[60%] 2xl:w-[80%] lg:ml-24">
+            <div className="flex flex-col items-center w-full lg:items-start lg:w-[70%] 2xl:w-[80%] lg:ml-24">
               {/* Title */}
               <div className="flex justify-center w-full md:mt-4 mt-[-50px] lg:mt-8 mb-3 lg:justify-start lg:mb-0">
                 <img
@@ -89,10 +89,10 @@ const HeroSlideOne = () => {
                 alt="Staff"
                 className="absolute 
                   mt-[-114%] 20s:mt-[-110%] 428px:mt-[-100%] sm:mt-[-10%] 
-                  right-[-6%] md:left-[80%] 
-                  w-[25vw] md:w-[25vw] lg:w-[450px] lg:h-[465px] 2xl:w-[50vw] 2xl:h-[456px] 
-                  md:top-[40%] 2xl:top-[300%] lg:top-[240%] 
-                  2xl:left-[-0%] lg:left-[-0%]"
+                  right-[-1%] md:left-[90%] 
+                  w-[12vw]  md:w-[12vw]  lg:w-[200px]  2xl:w-[225px] 
+                  md:top-[40%] 2xl:top-[250%] lg:top-[240%] 
+                  2xl:left-[10%] lg:left-[10%]"
               />
             </div>
           </div>

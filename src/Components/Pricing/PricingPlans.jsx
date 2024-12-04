@@ -61,8 +61,8 @@ const PricingPlans = () => {
                 <li className="flex items-center font-sans text-[15.5px] gap-2">
                   <span className=" text-green-600">✔</span> All benefits of visitor pass access
                 </li>
-                <li className="flex items-center font-sans text-[15.5px] ">
-                  <span>✔</span> Keynote addresses and roundtable sessions
+                <li className="flex items-center font-sans text-[15.5px] gap-1">
+                  <span>✔ </span>  Keynote addresses and roundtable sessions
                 </li>
                 <li className="flex items-center font-sans text-15.5px] gap-2">
                   <span>✔</span> Interactive deep-dive sessions

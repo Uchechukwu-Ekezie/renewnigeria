@@ -44,7 +44,7 @@ const PricingPlans = () => {
                 </li>
               </ul>
             </div>
-            <button className="bg-[#FFFFFF] text-[#009379] font-medium py-3 mt-6 rounded-md hover:bg-green-600 hover:text-white transition">
+            <button className="bg-[#FFFFFF] lg:top-10 text-[#009379] font-medium py-3 mt-6 rounded-md hover:bg-green-600 hover:text-white transition">
               Get Started →
             </button>
           </div>

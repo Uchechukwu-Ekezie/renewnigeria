@@ -23,9 +23,9 @@ const PricingPlans = () => {
         </h1>
 
         {/* Pricing Plans */}
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 lg:w-[80%] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 w-full lg:w-[80%] mx-auto">
           {/* Free Plan */}
-          <div className="bg-[#005911] text-white rounded-lg shadow-lg p-8 flex flex-col justify-between w-full md:w-[370px] md:h-[520px] lg:w-[390px] lg:h-[470px] mx-auto">
+          <div className="bg-[#005911] text-white rounded-lg shadow-lg p-8 flex flex-col justify-between w-full md:w-[370px] md:h-[520px] lg:w-[390px] 2xl:w-[420px] lg:h-[470px] mx-auto">
             <div className="w-[100%]">
               <h2 className="mb-4 font-sans text-xl font-normal md:text-2xl">Free</h2>
               <p className="mb-4 text-4xl font-bold md:text-5xl font-poppins">$0</p>
@@ -50,7 +50,7 @@ const PricingPlans = () => {
           </div>
 
           {/* Enterprise Plan */}
-          <div className="bg-[#FFFFFF] text-gray-900 rounded-lg shadow-lg p-8 flex flex-col justify-between w-full md:w-[370px] md:h-[520px] lg:w-[390px] lg:h-[470px] mx-auto">
+          <div className="bg-[#FFFFFF] text-gray-900 rounded-lg shadow-lg p-8 flex flex-col justify-between w-full md:w-[370px] md:h-[520px] lg:w-[390px] lg:h-[470px] 2xl:w-[420px] mx-auto">
             <div className="w[100%]">
               <h2 className="mb-4 text-xl font-bold md:text-2xl">Enterprise</h2>
               <p className="mb-4 text-4xl font-extrabold md:text-5xl">$500</p>
@@ -61,8 +61,8 @@ const PricingPlans = () => {
                 <li className="flex items-center font-sans text-[15.5px] gap-2">
                   <span className=" text-green-600">✔</span> All benefits of visitor pass access
                 </li>
-                <li className="flex items-center font-sans text-[15.5px] gap-1">
-                  <span>✔ </span>  Keynote addresses and roundtable sessions
+                <li className="flex items-center font-sans  lg:text-[15.5px] lg:gap-1 ">
+                  <span>✔</span> Keynote addresses and roundtable sessions
                 </li>
                 <li className="flex items-center font-sans text-15.5px] gap-2">
                   <span>✔</span> Interactive deep-dive sessions

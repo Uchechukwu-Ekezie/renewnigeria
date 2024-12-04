@@ -29,17 +29,17 @@ const PricingPlans = () => {
             <div className="w-[100%]">
               <h2 className="mb-4 font-sans text-xl font-normal md:text-2xl">Free</h2>
               <p className="mb-4 text-4xl font-bold md:text-5xl font-poppins">$0</p>
-              <p className="text-base md:text-lg font-sans text-[16px] mb-6">
+              <p className="text-base md:text-lg font-sans text-[15.5px] mb-6">
                 Best for Small Teams or Individuals.
               </p>
               <ul className="space-y-3">
-                <li className="flex items-center w-full font-sans text-[16px] gap-2">
+                <li className="flex items-center w-full font-sans text-[15.5px] gap-2">
                   <span>✔</span> <p>150+ local and international exhibitors</p>
                 </li>
-                <li className="flex items-center font-sans text-[16px] gap-2">
+                <li className="flex items-center font-sans text-[15.5px] gap-2">
                   <span>✔</span> Technical Seminar
                 </li>
-                <li className="flex items-center font-sans text-[16px] gap-2">
+                <li className="flex items-center font-sans text-[15.5px] gap-2">
                   <span>✔</span> Entrepreneurs forum
                 </li>
               </ul>
@@ -61,16 +61,16 @@ const PricingPlans = () => {
                 <li className="flex items-center font-sans text-[16px] gap-2">
                   <span className="text-xl text-green-600">✔</span> All benefits of visitor pass access
                 </li>
-                <li className="flex items-center font-sans text-[16px] gap-2">
+                <li className="flex items-center font-sans text-[15.5px] ">
                   <span>✔</span> Keynote addresses and roundtable sessions
                 </li>
-                <li className="flex items-center font-sans text-[16px] gap-2">
+                <li className="flex items-center font-sans text-15.5px] gap-2">
                   <span>✔</span> Interactive deep-dive sessions
                 </li>
-                <li className="flex items-center font-sans text-[16px] gap-2">
+                <li className="flex items-center font-sans text-[15.5px] gap-2">
                   <span>✔</span> Power lunches and breaks
                 </li>
-                <li className="flex items-center font-sans text-[16px] gap-2">
+                <li className="flex items-center font-sans text-[15.5px] gap-2">
                   <span>✔</span> Technical and social seminars
                 </li>
               </ul>

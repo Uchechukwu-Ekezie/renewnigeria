@@ -44,7 +44,7 @@ const PricingPlans = () => {
                 </li>
               </ul>
             </div>
-            <button className="bg-[#FFFFFF] lg:top-10 text-[#009379] font-medium py-3 mt-6 rounded-md hover:bg-green-600 hover:text-white transition">
+            <button className="bg-[#FFFFFF] text-[#009379] font-medium py-3 mt-6 rounded-md hover:bg-green-600 hover:text-white transition">
               Get Started →
             </button>
           </div>
@@ -58,7 +58,7 @@ const PricingPlans = () => {
                 Ultimate for Enterprise Solutions.
               </p>
               <ul className="space-y-3">
-                <li className="flex items-center font-sans text-[16px] gap-2">
+                <li className="flex items-center font-sans text-[15.5px] gap-2">
                   <span className="text-xl text-green-600">✔</span> All benefits of visitor pass access
                 </li>
                 <li className="flex items-center font-sans text-[15.5px] ">

@@ -1,11 +1,10 @@
 import React from "react";
-// Import icons from your icon library (e.g., React Icons or FontAwesome)
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { MdDateRange, MdLocationOn } from "react-icons/md";
 
 const FooterInfo = () => {
   return (
-    <div className="bg-green-600 text-white flex flex-col lg:flex-row justify-between items-center px-6 py-4">
+    <div className="bg-[#066C16] text-white flex flex-col lg:flex-row justify-between items-center px-6 py-4">
       {/* Left Section: Date and Location */}
       <div className="flex items-center gap-8 text-sm">
         {/* Date */}
@@ -50,6 +49,17 @@ const FooterInfo = () => {
           aria-label="YouTube"
         >
           <FaYoutube size={16} />
+        </a>
+
+        {/* WhatsApp Icon with Link */}
+        <a
+          href="https://wa.me/qr/VZXHSUXBGS5IP1" // Replace this with your WhatsApp number
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-green-600 hover:bg-gray-100"
+          aria-label="WhatsApp"
+        >
+          <FaWhatsapp size={16} />
         </a>
       </div>
     </div>

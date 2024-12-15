@@ -38,33 +38,33 @@ const ElevateYourBrand = () => {
 
   return (
     <section className="w-full py-12 bg-gray-100">
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto">
         {/* Header */}
-        <div className="text-center mb-8">
+        <div className="mb-8 text-center">
           <h2 className="text-3xl font-bold text-gray-800 md:text-4xl">
             Elevate Your Brand
           </h2>
-          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-          Position your brand alongside the leaders of industry and policy at the 1st Annual
-Legislative Summit and Expo on Renewable Energy (RENEW NIGERIA), where public and private decision makers come together to push progress forward on energy security
-in Nigeria.
-
-• Global Visibility: Gain prominent exposure before a diverse audience of decisionmakers
-and influencers.
-• Networking: Forge valuable connections with industry leaders and potential
-partners.
-• Global Brand Alignment: Associate your brand with initiatives driving economic
-development and sustainability
-• Community Impact: contribute to the growth and development of Renewable Energy in Nigeria
+          <p className="max-w-3xl mx-auto mt-4 text-gray-600">
+            Position your brand alongside the leaders of industry and policy at
+            the 1st Annual Legislative Summit and Expo on Renewable Energy
+            (RENEW NIGERIA), where public and private decision makers come
+            together to push progress forward on energy security in Nigeria. •
+            Global Visibility: Gain prominent exposure before a diverse audience
+            of decisionmakers and influencers. • Networking: Forge valuable
+            connections with industry leaders and potential partners. • Global
+            Brand Alignment: Associate your brand with initiatives driving
+            economic development and sustainability • Community Impact:
+            contribute to the growth and development of Renewable Energy in
+            Nigeria
           </p>
         </div>
-        
+
         {/* Sponsorship Cards */}
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
           {sponsorships.map((sponsor, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden"
+              className="flex flex-col overflow-hidden bg-white rounded-lg shadow-lg md:flex-row"
             >
               {/* Image */}
               <div className="w-full md:w-1/2">
@@ -79,10 +79,8 @@ development and sustainability
               <div
                 className={`w-full md:w-1/2 p-6 text-white ${sponsor.bgColor}`}
               >
-                <h3 className="text-xl font-bold mb-4">{sponsor.title}</h3>
-                <p className="text-sm leading-relaxed">
-                  {sponsor.description}
-                </p>
+                <h3 className="mb-4 text-xl font-bold">{sponsor.title}</h3>
+                <p className="text-sm leading-relaxed">{sponsor.description}</p>
               </div>
             </div>
           ))}

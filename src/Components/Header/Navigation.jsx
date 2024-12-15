@@ -25,10 +25,10 @@ function Navigation() {
                 onMouseEnter={() => setIsDropdownOpen(true)}
                 onMouseLeave={() => setIsDropdownOpen(false)}
               >
-                <NavLink to="#" className="transition hover:text-[#005911]">
+                <NavLink to="/#" className="transition hover:text-[#005911]">
                   About
                 </NavLink>
-                {isDropdownOpen && (
+                {/* {isDropdownOpen && (
                   <ul className="absolute left-0 z-10 w-48 bg-white border rounded shadow-md">
                     <li>
                       <NavLink
@@ -47,7 +47,7 @@ function Navigation() {
                       </NavLink>
                     </li>
                   </ul>
-                )}
+                )} */}
               </li>
               {["Participate", "Sponsor", "Visit", "Conference", "Media"].map(
                 (link) => (

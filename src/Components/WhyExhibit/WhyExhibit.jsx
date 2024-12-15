@@ -65,7 +65,9 @@ const WhyExhibit = () => {
           </h1>
         </div>
         <div className="lg:ml-7 md:mx-auto lg:mx-auto w-[100%] md:w-[93%]  mb-[24px] md:mb-[54px] lg:mb-[54px]">
-          <h1 className="font-sanss font-[700] text-[55px] text-center lg:text-left">Why Us</h1>
+          <h1 className="font-sanss font-[700] text-[55px] text-center lg:text-left">
+            Why Us
+          </h1>
         </div>
         {/* Cards Section */}
         <div className="grid grid-cols-1 gap-6 px-4 mx-auto sm:px-6 lg:w-[1250px] md:grid-cols-2 lg:grid-cols-3">

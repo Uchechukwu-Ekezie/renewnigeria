@@ -11,6 +11,7 @@ import VideoGallery from "../Components/VideoGallery/VideoGallery";
 import Slider from "../Components/Hero/Slider";
 import HeroThree from "../Components/Hero/HeroThree";
 import HeroSlideOne from "../Components/Hero/HeroSlideOne";
+import CleanEnergyConference from "../Components/ConferenceComponents/ConferenceHero";
 
 
 function Home() {
@@ -27,7 +28,7 @@ function Home() {
       <WhyExhibit />
       <GainInsight />
       <PricingPlans />
-      <Partners />
+      <CleanEnergyConference/>
     </div>
   );
 }

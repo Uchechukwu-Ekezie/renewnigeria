@@ -58,14 +58,14 @@ const WhyExhibit = () => {
     <section className="w-full py-8 bg-white">
       <div className="mx-auto max-w-[1440px] px-5">
         {/* Header Section */}
-        <div className="ml-7 md:mx-auto lg:mx-auto w-[50%] md:w-[93%] lg:w-[1250px] mb-[14px] flex gap-4">
+        <div className="lg:ml-7 md:mx-auto lg:mx-auto w-[100%] md:w-[93%]  mb-[14px] flex gap-4 justify-center lg:justify-start">
           <img src={vector} alt="Vector" />
           <h1 className="font-sanss text-[16px] font-[600] text-[#005911]">
             RENEW NIGERIA
           </h1>
         </div>
-        <div className="ml-7 md:mx-auto lg:mx-auto w-[50%] md:w-[93%] lg:w-[1250px] mb-[24px] md:mb-[54px] lg:mb-[54px]">
-          <h1 className="font-sanss font-[700] text-[55px]">Why Us</h1>
+        <div className="lg:ml-7 md:mx-auto lg:mx-auto w-[100%] md:w-[93%]  mb-[24px] md:mb-[54px] lg:mb-[54px]">
+          <h1 className="font-sanss font-[700] text-[55px] text-center lg:text-left">Why Us</h1>
         </div>
         {/* Cards Section */}
         <div className="grid grid-cols-1 gap-6 px-4 mx-auto sm:px-6 lg:w-[1250px] md:grid-cols-2 lg:grid-cols-3">

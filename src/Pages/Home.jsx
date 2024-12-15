@@ -1,7 +1,6 @@
 import React from "react";
 import HeroFour from "../Components/Hero/HeroFour";
 import PricingPlans from "../Components/Pricing/PricingPlans";
-import Partners from "../Components/Partners/Partners";
 import GainInsight from "../Components/GainInsight/GainInsight";
 import WhyExhibit from "../Components/WhyExhibit/WhyExhibit";
 import ShowFeatures from "../Components/Features/Features";
@@ -10,8 +9,6 @@ import ShowHighlights from "../Components/ShowHighlights/ShowHighlights";
 import VideoGallery from "../Components/VideoGallery/VideoGallery";
 import Slider from "../Components/Hero/Slider";
 import HeroThree from "../Components/Hero/HeroThree";
-import HeroSlideOne from "../Components/Hero/HeroSlideOne";
-import CleanEnergyConference from "../Components/ConferenceComponents/ConferenceHero";
 
 
 function Home() {
@@ -28,7 +25,7 @@ function Home() {
       <WhyExhibit />
       <GainInsight />
       <PricingPlans />
-      <CleanEnergyConference/>
+     
     </div>
   );
 }

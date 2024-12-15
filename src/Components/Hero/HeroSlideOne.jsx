@@ -90,8 +90,8 @@ const HeroSlideOne = () => {
                 className="absolute 
                   mt-[-114%] 20s:mt-[-110%] 428px:mt-[-100%] sm:mt-[-10%] 
                   right-[-1%] md:left-[90%] 
-                  w-[12vw]  md:w-[12vw]  lg:w-[200px]  2xl:w-[225px] 
-                  md:top-[40%] 2xl:top-[250%] lg:top-[240%] 
+                  w-[12vw]  md:w-[12vw]  lg:w-[140.75px] lg:h-[406px] 2xl:h-[410px]  2xl:w-[140.75px] 
+                  md:top-[40%] 2xl:top-[290%] lg:top-[250%] 
                   2xl:left-[10%] lg:left-[10%]"
               />
             </div>

@@ -21,7 +21,7 @@ const DelegateTestimonials = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-12 px-4 md:px-8">
+    <div className="bg-[#E3E3E3] py-16 px-4 md:px-8">
       {/* Header */}
       <h2 className="text-center text-[32px] font-bold text-[#313131] mb-4">
         Hear From Our Delegates
@@ -29,18 +29,18 @@ const DelegateTestimonials = () => {
       <div className="w-16 h-[2px] bg-[#066C16] mx-auto mb-8"></div>
 
       {/* Testimonials Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="  w-[80%]  h-full  mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {testimonials.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col bg-white rounded-md shadow-lg"
+            className="flex flex-col w-[full]  h-full rounded-md shadow-lg"
           >
             {/* Video Thumbnail */}
-            <div className="relative">
+            <div className="relative  sm:h-[250px]">
               <img
                 src={item.videoThumbnail}
                 alt="Video Thumbnail"
-                className="w-full h-auto rounded-t-md"
+                className="w-full h-full rounded-t-md"
               />
               {/* Play Button */}
               <button className="absolute inset-0 flex justify-center items-center">
@@ -58,14 +58,18 @@ const DelegateTestimonials = () => {
             </div>
 
             {/* Quote Section */}
-            <div className="p-6">
+            <div className="p-6 top-10  w-full lg:h-[100px] h-fit  relative bg-white border-l-4 border-green-900">
               <p className="text-gray-700 italic text-sm leading-relaxed mb-4">
                 "{item.quote}"
               </p>
-              <p className="text-[#066C16] font-bold text-sm">
+              
+            </div>
+            <div className="lg:w-[80%]  w-full top-12  relative ">
+            <p className="text-[#066C16] font-bold text-sm">
                 {item.name}
               </p>
             </div>
+            
           </div>
         ))}
       </div>

@@ -35,7 +35,7 @@ const KeyThemes = () => {
   ];
 
   return (
-    <div className="bg-gray-50 py-12 px-6 md:px-10">
+    <div className="bg-[#E3E3E3] py-12 px-6 md:px-10">
       {/* Header */}
       <h2 className="text-center text-[32px] font-bold text-gray-800 mb-2">
         Key Themes For The Summit
@@ -47,7 +47,7 @@ const KeyThemes = () => {
         {themes.map((theme, index) => (
           <div
             key={index}
-            className="text-center bg-white shadow-md rounded-md p-4"
+            className="text-center bg-transparent  p-4"
           >
             {/* Image */}
             <img

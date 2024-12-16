@@ -35,12 +35,17 @@ const ConferenceHighlights = () => {
       <div className="w-16 h-[2px] bg-[#066C16] mx-auto mb-10"></div>
 
       {/* Highlights Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="lg:w-[80%] w-full md:w-[80%]  mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
         {highlights.map((item, index) => (
+          
           <div
             key={index}
-            className="bg-white shadow-md rounded-md overflow-hidden"
+            className="bg-[#EBEBEB] shadow-md rounded-md overflow-hidden"
           >
+            <h3 className="text-[20px] font-bold text-[#066C16] mb-4 text-center">
+                {item.title}
+              </h3>
             {/* Image */}
             <img
               src={item.imgSrc}
@@ -50,9 +55,7 @@ const ConferenceHighlights = () => {
 
             {/* Content */}
             <div className="p-6">
-              <h3 className="text-[20px] font-bold text-[#066C16] mb-4 text-center">
-                {item.title}
-              </h3>
+              
               <ul className="list-disc list-outside text-gray-600 leading-relaxed pl-5 space-y-3">
                 {item.description.map((desc, i) => (
                   <li key={i}>{desc}</li>

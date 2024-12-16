@@ -21,8 +21,8 @@ const CleanEnergyConference = () => {
         </h1>
 
         {/* Subtitle */}
-        <div className="lg:w-[70%] w-[100%] mx-auto">
-        <p className="text-[23px]  font-sansssm:text-base md:text-lg leading-[33px] mb-6">
+        <div className="lg:w-[70%] w-[100%] lg:mx-auto">
+        <p className="text-[23px] sm:text-[15px]  font-sansss  md:text-[25px] leading-[33px] mb-6">
           A defining conference enabling sustainable, affordable, and reliable
           energy access within Nigeria
         </p>

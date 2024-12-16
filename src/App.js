@@ -10,7 +10,7 @@ import Sponsor from "./Pages/Sponsor";
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-slate-300 h-dvh">
+      <div className=" h-dvh">
         <Routes>
           <Route path="/" element={<RootLayout />}>
             <Route index element={<Home />} />

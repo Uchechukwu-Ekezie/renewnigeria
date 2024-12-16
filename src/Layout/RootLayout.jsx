@@ -4,21 +4,17 @@ import Navigation from "../Components/Header/Navigation";
 import Main from "../Components/Footer/Main";
 import Partners from "../Components/Partners/Partners";
 
-
-
-
-
 function RootLayout() {
   return (
     <div>
-    <Navigation/>
+      <Navigation />
       <main>
         <Outlet />
       </main>
-      
+
       <footer>
-      <Partners/>
-        <Main/>
+        <Partners />
+        <Main />
       </footer>
     </div>
   );

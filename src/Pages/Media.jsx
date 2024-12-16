@@ -1,13 +1,14 @@
-import React from 'react'
-
+import React from "react";
+import ReportSection from "../Components/ReportsNigeria/ReportSection";
+import Top from "../Components/ReportsNigeria/Top";
 
 function Media() {
   return (
-    <div className='bg-red-600 w-[700px]'>
-        <p>hahagagjh</p>
-      
+    <div>
+      <Top />
+      <ReportSection />
     </div>
-  )
+  );
 }
 
-export default Media
+export default Media;

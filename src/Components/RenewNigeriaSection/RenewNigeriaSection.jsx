@@ -1,6 +1,10 @@
 import React from "react";
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
+import slide1 from "../../Assets/Image/visit/renewnigeria/Slide-1.png";
+import slide2 from "../../Assets/Image/visit/renewnigeria/Slide-2.png";
+import slide3 from "../../Assets/Image/visit/renewnigeria/Slide-3.png";
+import slide4 from "../../Assets/Image/visit/renewnigeria/Slide-4.png";
 const RenewNigeriaSection = () => {
   return (
     <section className="bg-white px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
@@ -55,22 +59,22 @@ const RenewNigeriaSection = () => {
           {/* Image Carousel */}
           <div className="flex overflow-x-auto gap-4 justify-center w-full">
             <img
-              src="https://via.placeholder.com/300x200"
+              src={slide1}
               alt="Placeholder 1"
               className="w-[242px] sm:w-64 h-[161.18px] rounded-lg object-cover"
             />
             <img
-              src="https://via.placeholder.com/300x200"
+              src={slide2}
               alt="Placeholder 2"
               className="w-[242px] sm:w-64 h-[161.18px] rounded-lg object-cover"
             />
             <img
-              src="https://via.placeholder.com/300x200"
+              src={slide3}
               alt="Placeholder 3"
               className="w-[242px] sm:w-64 h-[161.18px] rounded-lg object-cover"
             />
             <img
-              src="https://via.placeholder.com/300x200"
+              src={slide4}
               alt="Placeholder 4"
               className="w-[242px] sm:w-64 h-[161.18px] rounded-lg object-cover"
             />

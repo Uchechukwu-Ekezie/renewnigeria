@@ -1,27 +1,30 @@
 import React from "react";
-
+import slide1 from "../../Assets/Image/visit/AtRenewNigeria/Slide-1.png";
+import slide2 from "../../Assets/Image/visit/AtRenewNigeria/Slide-2.png";
+import slide3 from "../../Assets/Image/visit/AtRenewNigeria/Slide-3.png";
+import slide4 from "../../Assets/Image/visit/AtRenewNigeria/Slide-4.png";
 const AtRenewNigeria = () => {
   const cards = [
     {
-      img: "https://via.placeholder.com/300x200",
+      img: slide1,
       title: "Network",
       description:
         "with global energy suppliers, investors, regulatory authorities and over 6,500 attendees to establish new and existing partnerships",
     },
     {
-      img: "https://via.placeholder.com/300x200",
+      img: slide2,
       title: "Discover",
       description:
         "cutting-edge products and technologies from leading industry suppliers to stay up-to-date with the latest energy trends",
     },
     {
-      img: "https://via.placeholder.com/300x200",
+      img: slide3,
       title: "Gain Insights",
       description:
         "from 70+ energy experts at our high-level conferences and stay informed about the latest developments in energy",
     },
     {
-      img: "https://via.placeholder.com/300x200",
+      img: slide4,
       title: "Connect",
       description:
         "with like-minded professionals and explore new business opportunities in the energy industry",

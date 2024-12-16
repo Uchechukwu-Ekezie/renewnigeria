@@ -1,13 +1,18 @@
 import React from "react";
-
+import slide1 from "../../Assets/Image/visit/WhoWillYouMeet/Slide-1.png";
+import slide2 from "../../Assets/Image/visit/WhoWillYouMeet/Slide-2.png";
+import slide3 from "../../Assets/Image/visit/WhoWillYouMeet/Slide-3.png";
+import slide4 from "../../Assets/Image/visit/WhoWillYouMeet/Slide-4.png";
+import slide5 from "../../Assets/Image/visit/WhoWillYouMeet/Slide-5.png";
+import slide6 from "../../Assets/Image/visit/WhoWillYouMeet/Slide-6.png";
 const WhoWillMeet = () => {
   const participants = [
-    { img: "https://via.placeholder.com/300x200", name: "Ministers of Energy, Renewables & Power" },
-    { img: "https://via.placeholder.com/300x200", name: "CEOs of National Utilities and Regulations" },
-    { img: "https://via.placeholder.com/300x200", name: "Directors from Distribution and Generation Companies" },
-    { img: "https://via.placeholder.com/300x200", name: "Leaders of Environment and Climate Change Institutions" },
-    { img: "https://via.placeholder.com/300x200", name: "Leaders from Global Corporate Finance" },
-    { img: "https://via.placeholder.com/300x200", name: "Other Future Pioneers" },
+    { img: slide1, name: "Ministers of Energy, Renewables & Power" },
+    { img: slide2, name: "CEOs of National Utilities and Regulations" },
+    { img: slide3, name: "Directors from Distribution and Generation Companies" },
+    { img: slide4, name: "Leaders of Environment and Climate Change Institutions" },
+    { img: slide5, name: "Leaders from Global Corporate Finance" },
+    { img: slide6, name: "Other Future Pioneers" },
   ];
 
   return (
@@ -27,11 +32,11 @@ const WhoWillMeet = () => {
               alt={participant.name}
               className="w-full lg:w-[359.99px] lg:h-[211.75px] h-40 object-cover transition-transform duration-300 group-hover:scale-110"
             />
-            <div className="absolute inset-0 pb-[14.75px] bg-black bg-opacity-50 flex items-end justify-center">
+            {/* <div className="absolute inset-0 pb-[14.75px] bg-black bg-opacity-50 flex items-end justify-center">
               <h3 className="font-sanss font-semibold text-white  text-center text-xl">
                 {participant.name}
               </h3>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

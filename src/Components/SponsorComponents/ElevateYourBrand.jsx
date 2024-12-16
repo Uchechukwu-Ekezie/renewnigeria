@@ -44,7 +44,7 @@ const ElevateYourBrand = () => {
 
   return (
     <section className="w-full py-12 bg-gray-100 h-full">
-      <div className="w-[85%] mx-auto px-4">
+      <div className="lg:w-[85%]  mx-auto px-4">
         {/* Header */}
         <div className="mx-auto mb-8 w-[98%]">
           <h2 className="text-center text-[50px] font-sans font-bold text-gray-800 md:text-4xl">
@@ -80,7 +80,7 @@ const ElevateYourBrand = () => {
         </div>
 
         {/* Sponsorship Cards */}
-        <div className="w-[80%] mx-auto grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+        <div className="lg:w-[80%]  mx-auto grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
           {sponsorships.map((sponsor, index) => (
             <div
               key={index}

@@ -4,14 +4,15 @@ import slide2 from "../../Assets/Image/visit/NigeriaEnergy/Slide-2.png";
 const NigeriaEnergy = () => {
   return (
     <section className="bg-gray-100 py-10 px-10">
-      <h2 className="text-center text-green-600 text-2xl md:text-3xl font-bold mb-8">
+      <h2 className=" font-sanss text-center text-[#066c16] text-2xl lg:text-[40px] lg:leading-[50px] md:text-3xl font-bold mb-3">
         At Nigeria Energy
       </h2>
+      <hr className="border-b mx-auto border-[#066C16] w-[50px] mb-14" />
       <div className="max-w-[1175px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Leadership Summit */}
         <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-[640px] mx-auto px-[50px] pt-[27px] pb-[37px]">
           {/* Title */}
-          <h2 className="text-center text-green-600 text-2xl font-bold mb-4">
+          <h2 className="font-sanss text-center text-[#066c16] text-2xl font-semibold mb-4">
             LEADERSHIP SUMMIT
           </h2>
 
@@ -23,22 +24,21 @@ const NigeriaEnergy = () => {
           />
 
           {/* List */}
-          <ul className="space-y-4 text-gray-600 text-sm leading-relaxed">
+          <ul className="font-sanss lg:pl-4 list-disc space-y-9 text-[#555555] text-base leading-7">
             <li>
-              <strong>Identify Challenges and Opportunities:</strong> Assess the
-              current state of renewable energy in Nigeria, identifying key
-              challenges and opportunities for growth and development.
+              Identify Challenges and Opportunities: Assess the current state of
+              renewable energy in Nigeria, identifying key challenges and
+              opportunities for growth and development.
             </li>
             <li>
-              <strong>Formulate actionable policies and strategies</strong> that
-              will support the scaling up of renewable energy projects, ensuring
-              alignment with national and international sustainability goals.
+              Formulate actionable policies and strategies that will support the
+              scaling up of renewable energy projects, ensuring alignment with
+              national and international sustainability goals.
             </li>
             <li>
-              <strong>Foster collaboration</strong> between public and private
-              sectors to mobilize resources, expertise, and investments
-              necessary for the successful implementation of renewable energy
-              initiatives.
+              Foster collaboration between public and private sectors to
+              mobilize resources, expertise, and investments necessary for the
+              successful implementation of renewable energy initiatives.
             </li>
           </ul>
         </div>
@@ -46,8 +46,8 @@ const NigeriaEnergy = () => {
         {/* Technical Seminar */}
         <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-[640px]y mx-auto px-[50px] pt-[27px] pb-[37px]">
           {/* Title */}
-          <h2 className="text-center text-green-600 text-2xl font-bold mb-4">
-            Technical Seminar
+          <h2 className="font-sanss text-center text-[#066c16] text-2xl font-semibold mb-4">
+            TECHNICAL SEMINAR
           </h2>
 
           {/* Image */}
@@ -59,22 +59,22 @@ const NigeriaEnergy = () => {
 
           {/* List */}
 
-          <ul className="space-y-4 text-gray-600 text-sm leading-relaxed">
+          <ul className="font-sanss lg:pl-4 list-disc space-y-9 text-[#555555] text-base leading-7">
             <li>
-              <strong>Capacity Building:</strong> Enhance the skills and
-              knowledge of stakeholders through training and knowledge-sharing
-              sessions, empowering them to effectively contribute to the
-              renewable energy sector.
+              Capacity Building: Enhance the skills and knowledge of
+              stakeholders through training and knowledge-sharing sessions,
+              empowering them to effectively contribute to the renewable energy
+              sector.
             </li>
             <li>
-              <strong>Innovation and Technology:</strong> Encourage adopting
-              innovative technologies and practices to accelerate sustainable
-              energy transitions.
+              Innovation and Technology: Encourage the adoption of innovative
+              technologies and practices that can accelerate the transition to a
+              sustainable energy future.
             </li>
             <li>
-              <strong>Awareness and Advocacy:</strong> Raise awareness about the
-              benefits of renewable energy and advocate for policies that
-              support its growth.
+              Awareness and Advocacy: Raise awareness about the benefits of
+              renewable energy and advocate for supportive policies and
+              regulations that will facilitate its growth.
             </li>
           </ul>
         </div>

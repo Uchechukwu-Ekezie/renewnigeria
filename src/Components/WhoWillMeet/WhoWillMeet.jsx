@@ -30,7 +30,7 @@ const WhoWillMeet = () => {
             <img
               src={participant.img}
               alt={participant.name}
-              className="w-full lg:w-[359.99px] lg:h-[211.75px] h-40 object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full lg:w-[359.99px] lg:h-[211.75px]  object-cover transition-transform duration-300 group-hover:scale-110"
             />
             {/* <div className="absolute inset-0 pb-[14.75px] bg-black bg-opacity-50 flex items-end justify-center">
               <h3 className="font-sanss font-semibold text-white  text-center text-xl">

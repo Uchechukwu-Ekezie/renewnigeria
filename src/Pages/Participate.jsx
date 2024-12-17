@@ -1,9 +1,14 @@
 import React from 'react'
+import ExhibitingAtRenewNigeria from '../Components/ExhibitingAtRenewNigeria/ExhibitingAtRenewNigeria'
+import StatsSection from '../Components/StatsSection/StatsSection'
+import WhyParticipate from '../Components/WhyParticipate/WhyParticipate'
 
 const Participate = () => {
   return (
-    <div className='bg-lime-200 w-[700px]'>
-        <p>prince</p>
+    <div className=''>
+        <ExhibitingAtRenewNigeria/>
+        <StatsSection />
+        <WhyParticipate/>
       
     </div>
   )

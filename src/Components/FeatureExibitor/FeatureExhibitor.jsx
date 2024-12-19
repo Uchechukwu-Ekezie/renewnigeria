@@ -1,16 +1,17 @@
 import React, { useEffect, useRef } from "react";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
-import image from "../../Assets/Image/participate/feature/image.png";
-import image2 from "../../Assets/Image/participate/feature/image2.png";
-import image3 from "../../Assets/Image/participate/feature/image3.png";
-import image4 from "../../Assets/Image/participate/feature/image4.png";
-import image5 from "../../Assets/Image/participate/feature/image5.png";
+import jasolar from "../../Assets/img/jasolar.webp";
+import nnpc from "../../Assets/img/npp.webp";
+import ats from "../../Assets/img/ats.webp";
+import meksan from "../../Assets/img/meksan.png";
+import bestcom from "../../Assets/img/bestcom.webp";
+
 const exhibitors = [
-  { name: "JA SOLAR", logo: image },
-  { name: "NPP", logo: image2 },
-  { name: "ATS trafo", logo: image3 },
-  { name: "Meksan Transformer", logo: image4 },
-  { name: "Bestcom Tech", logo: image5 },
+  { name: "JA SOLAR", logo: jasolar },
+  { name: "NPP", logo: nnpc },
+  { name: "ATS trafo", logo: ats },
+  { name: "Meksan Transformer", logo: meksan },
+  { name: "Bestcom Tech", logo: bestcom },
 ];
 
 const ExhibitorsCarousel = () => {

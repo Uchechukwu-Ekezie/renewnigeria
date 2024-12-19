@@ -2,9 +2,9 @@ import React from "react";
 
 const ExhibitingAtRenewNigeria = () => {
   return (
-    <section className="px-4 py-10 lg:py-16 lg:px-24 bg-white">
+    <section className="w-full py-10 lg:py-16 bg-white">
       {/* Container */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div className="max-w-[1280px] px-5 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left Content */}
         <div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">

@@ -1,27 +1,31 @@
 import React from "react";
+import image1 from "../../Assets/Image/participate/whyParticipate/image1.png";
+import image2 from "../../Assets/Image/participate/whyParticipate/image2.png";
+import image3 from "../../Assets/Image/participate/whyParticipate/image3.png";
+import image4 from "../../Assets/Image/participate/whyParticipate/image4.png";
 
 const WhyParticipate = () => {
   const content = [
     {
-      imgSrc: "https://via.placeholder.com/300x200", // Replace with your actual image URL
+      imgSrc: image1, // Replace with your actual image URL
       title: "Exhibit your energy solutions",
       description:
         "Demonstrate your ability to provide solutions in an energy ecosystem primed for change.",
     },
     {
-      imgSrc: "https://via.placeholder.com/300x200", // Replace with your actual image URL
+      imgSrc: image2, // Replace with your actual image URL
       title: "Nurture long-term partnerships",
       description:
         "Meet the leading distributors, investors, financial institutions, dealers and traders within Africa’s power sector.",
     },
     {
-      imgSrc: "https://via.placeholder.com/300x200", // Replace with your actual image URL
+      imgSrc: image3, // Replace with your actual image URL
       title: "Win business",
       description:
         "Establish your position in West Africa’s energy market by showcasing your latest products and services.",
     },
     {
-      imgSrc: "https://via.placeholder.com/300x200", // Replace with your actual image URL
+      imgSrc: image4, // Replace with your actual image URL
       title: "Grow your brand",
       description:
         "Guarantee your place in the tender process for some of the West African region’s leading energy projects at the live show.",
@@ -29,8 +33,8 @@ const WhyParticipate = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-12">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="w-full bg-gray-100 py-12">
+      <div className="max-w-[1280px] mx-auto px-5">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
           Why Participate?
         </h2>

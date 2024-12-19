@@ -10,15 +10,19 @@ const StatsSection = () => {
   ];
 
   return (
-    <div className="bg-green-700 py-8 px-4">
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center text-white">
+    <div className="w-full bg-[#066c16]  py-14">
+      <div className="max-w-[1280px] px-5 mx-auto   ">
+      <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-center text-white">
+
         {stats.map((stat, index) => (
           <div key={index}>
-            <h3 className="text-lg md:text-xl font-medium mb-2">{stat.label}</h3>
-            <p className="text-3xl md:text-4xl font-bold">{stat.value}</p>
+            <h3 className="font-sanss text-lg lg:text-2xl font-medium mb-5">{stat.label}</h3>
+            <p className="font-sanss text-3xl lg:text-5xl font-medium">{stat.value}</p>
           </div>
         ))}
       </div>
+      </div>
+      
     </div>
   );
 };

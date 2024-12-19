@@ -1,17 +1,22 @@
 import React from "react";
-
+import image1 from "../../Assets/Image/participate/ExhibitingAtRenewNigeria.png"
 const ExhibitingAtRenewNigeria = () => {
   return (
     <section className="w-full py-10 lg:py-16 bg-white">
-      {/* Container */}
-      <div className="max-w-[1280px] px-5 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        {/* Left Content */}
-        <div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+      <div className="m-w-[1280px] px-5">
+         {/* Container */}
+      <h2 className="text-2xl md:text-3xl lg:text-[50px] text-center font-bold text-gray-900 mb-6">
             Exhibiting at Renew Nigeria?
           </h2>
+          <div className="w-[50px] h-[2px] bg-[#066C16] mx-auto mt-4 mb-5"></div>
+      <div className="max-w-[1280px] px-5 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      
+        {/* Left Content */}
 
-          <ul className="text-gray-700 text-sm sm:text-base space-y-4 leading-relaxed">
+        <div>
+          
+
+          <ul className="font-sanss list-inside list-disc font-normal text-[#313131] text-sm lg:text-lg space-y-2 leading-relaxed">
             <li>
               Demonstrate your ability to provide solutions in an energy
               ecosystem primed for change
@@ -45,15 +50,17 @@ const ExhibitingAtRenewNigeria = () => {
         {/* Right Image */}
         <div className="w-full">
           <img
-            src="https://via.placeholder.com/600x400"
+            src={image1}
             alt="Exhibiting at Renew Nigeria"
-            className="w-full h-auto rounded-lg shadow-md"
+            className="w-full h-auto lg:w- shadow-md"
           />
-          <p className="text-gray-500 italic text-sm mt-2 text-right">
+          <p className="text-[#313131] font-sanss font-normal italic text-lg mt-2 text-center">
             The House of Representatives
           </p>
         </div>
       </div>
+      </div>
+     
     </section>
   );
 };

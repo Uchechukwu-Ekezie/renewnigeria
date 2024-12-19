@@ -34,7 +34,7 @@ const WhyParticipate = () => {
 
   return (
     <section className="w-full bg-gray-100 py-12">
-      <div className="max-w-[1280px] mx-auto px-5">
+      <div className="max-w-[1200px] mx-auto px-5">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
           Why Participate?
         </h2>
@@ -44,10 +44,10 @@ const WhyParticipate = () => {
               <img
                 src={item.imgSrc}
                 alt={item.title}
-                className="w-full h-48 object-cover mb-4"
+                className="w-full h-48 lg:w-[270px] lg:h-[179.81px] object-cover mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-gray-600">{item.description}</p>
+              <h3 className="font-sanss text-[#313131] text-xl font-bold mb-2">{item.title}</h3>
+              <p className="font-sanss text-[#313131] text-lg">{item.description}</p>
             </div>
           ))}
         </div>

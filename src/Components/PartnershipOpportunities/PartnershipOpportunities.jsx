@@ -2,7 +2,7 @@ import React from "react";
 import image1 from "../../Assets/Image/participate/partnershipOpportunities/image1.png"
 const PartnershipOpportunities = () => {
   return (
-    <section className="bg-gray-50  w-full py-12">
+    <section className="w-full py-12 bg-[#EEEAEA]">
       <div className="flex flex-col md:flex-row items-center justify-between max-w-[1013.19px] px-5 mx-auto gap-8">
         {/* Left: Image */}
         <div className="flex-shrink-0">
@@ -14,7 +14,7 @@ const PartnershipOpportunities = () => {
         </div>
 
         {/* Right: Content */}
-        <div className="font-sanss flex-1 text-center lg:text-left ">
+        <div className="flex-1 text-center font-sanss lg:text-left ">
           <h2 className="text-2xl md:text-3xl lg:text-[36px] lg:leading-[50px] font-bold text-[#066C16] mb-4">
             Conference Partnership Opportunities
           </h2>

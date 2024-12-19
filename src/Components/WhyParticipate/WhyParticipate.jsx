@@ -33,12 +33,13 @@ const WhyParticipate = () => {
   ];
 
   return (
-    <section className="w-full bg-gray-100 py-12">
+    <section className="w-full py-12 bg-[#E3E3E3]">
       <div className="max-w-[1200px] mx-auto px-5">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+        <h2 className="mb-8 text-3xl font-bold text-center md:text-4xl">
           Why Participate?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="w-16 h-[2px] bg-yellow-400 mx-auto mb-4"></div>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {content.map((item, index) => (
             <div key={index} className="text-center">
               <img

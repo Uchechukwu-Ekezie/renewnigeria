@@ -3,10 +3,10 @@ import React from "react";
 import image1 from "../../Assets/Image/participate/sponsorship-opportunities.png"
 const SponsorshipEnquiry = () => {
   return (
-    <section className="bg-white w-full py-12 md:py-16" >
+    <section className="w-full py-12 bg-white md:py-16" >
       <div className="max-w-[1280px] mx-auto px-5">
          {/* Heading */}
-      <div className="text-center mb-8">
+      <div className="mb-8 text-center">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#066C16] mb-2">
           Conference Sponsorship Enquiry
         </h2>
@@ -33,7 +33,7 @@ const SponsorshipEnquiry = () => {
               (RENEW NIGERIA), where public and private decision makers come
               together to push progress forward on energy security in Nigeria.
             </p>
-            <ul className="font-nunito w-[474px] text-sm lg:text-base font-medium lg:leading-5 space-y-2 list-disc list-inside">
+            <ul className="font-nunito lg:w-[474px] text-sm lg:text-base font-medium lg:leading-5 space-y-2 list-disc list-inside">
               <li>Global Visibility</li>
               <li>Networking:</li>
               <li>Global Brand Alignment:</li>
@@ -42,7 +42,7 @@ const SponsorshipEnquiry = () => {
           </div>
         </div>
         {/* Button */}
-        <div className="text-center mt-12">
+        <div className="mt-12 text-center">
           <button className="bg-[#066C16] text-white py-3 px-6 rounded-md font-medium shadow-lg hover:bg-[#055a12] transition">
             Sponsorship Enquiry
           </button>

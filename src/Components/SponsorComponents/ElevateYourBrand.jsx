@@ -1,5 +1,5 @@
 import React from "react";
-import venueImg from "../../Assets/Image/conferencewindmill.png"; // Replace with actual path
+import venueImg from "../../Assets/Image/venueImg.png"; // Replace with actual path
 import conferenceImg from "../../Assets/Image/conferencepeople.png";
 import networkingImg from "../../Assets/Image/networking.jfif";
 import hostedImg from "../../Assets/Image/cleaninglady.png";
@@ -43,15 +43,15 @@ const ElevateYourBrand = () => {
   ];
 
   return (
-    <section className="w-full py-12 bg-gray-100 h-full">
-      <div className="lg:w-[85%]  mx-auto px-4">
+    <section className="w-full h-full py-12 ">
+      <div className="max-w-[1280px]  mx-auto px-4">
         {/* Header */}
         <div className="mx-auto mb-8 w-[98%]">
-          <h2 className="text-center text-[50px] font-sans font-bold text-gray-800 md:text-4xl">
+          <h2 className="text-center text-[50px] font-sanss font-bold text-[#313131] md:text-4xl leading-[60px]">
             Elevate Your Brand
           </h2>
-          <div className="w-12 h-1 bg-[#000000] mx-auto mb-6"></div>
-          <br />
+          <div className="w-12 h-1 bg-[#000000] mx-auto mb-[40px] mt-[30px]"></div>
+          
           <div className="mt-4 text-gray-600 text-[18px] font-sans mx-auto">
             <p>
               Position your brand alongside the leaders of industry and policy
@@ -80,36 +80,40 @@ const ElevateYourBrand = () => {
         </div>
 
         {/* Sponsorship Cards */}
-        <div className="lg:w-[80%]  mx-auto grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+        <div className="grid gap-6 mx-auto sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 lg:max-w-[1072px]">
           {sponsorships.map((sponsor, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row overflow-hidden"
+              className="flex flex-col overflow-hidden md:flex-row"
             >
               {/* Image */}
-              <div className="w-full md:w-1/2">
+              <div className="w-full lg:w-[536px] md:w-1/2">
                 <img
                   src={sponsor.image}
                   alt={sponsor.title}
-                  className="object-cover w-full h-52 md:h-full"
+                  className="object-cover w-full h-52 md:h-full lg:h-[357px] -translate-y-"
+                  style={{ objectPosition: "center"
+      
+                    
+                   }}
                 />
               </div>
 
               {/* Content */}
               <div
-                className={`lg:w-[70%] mx-auto md:w-1/2 p-6 ${
+                className={`lg:w-[50%] mx-auto md:w-1/2 pt-[67.2px] pl-[30px] ${
                   sponsor.bgColor || "bg-white"
                 }`}
               >
                 <h3
-                  className={`text-xl font-bold mb-4 ${
+                  className={`text-xl font[500]  font-sanss text-[25px] leading-[35px] mb-[34px] ${
                     sponsor.titleColor || "text-white"
                   }`}
                 >
                   {sponsor.title}
                 </h3>
                 <p
-                  className={`text-sm leading-relaxed ${
+                  className={`font-sanss text-[18px] font-[400] leading-[28px] lg:max-w-[492px] ${
                     sponsor.textColor || "text-white"
                   }`}
                 >

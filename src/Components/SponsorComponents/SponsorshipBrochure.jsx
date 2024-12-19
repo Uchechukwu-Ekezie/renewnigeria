@@ -16,7 +16,7 @@ const SponsorshipBrochure = () => {
           </div>
 
           {/* Right Section - Content */}
-          <div className="w-full text-center lg:w-2/3 lg:text-left">
+          <div className="w-full text-left lg:w-2/3 lg:text-left">
             <h2 className="text-[24px] lg:text-[40px] font-sanss font-bold mb-6">
               Download The Sponsorship Brochure
             </h2>

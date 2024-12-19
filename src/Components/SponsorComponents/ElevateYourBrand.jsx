@@ -91,7 +91,7 @@ const ElevateYourBrand = () => {
                 <img
                   src={sponsor.image}
                   alt={sponsor.title}
-                  className="object-cover w-full h-48 md:h-full"
+                  className="object-cover w-full h-52 md:h-full"
                 />
               </div>
 

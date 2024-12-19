@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa6";
-import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import Image2 from "../../Assets/Image/organizers/image2.png";
 import Image3 from "../../Assets/Image/organizers/image3.png";
 import Image4 from "../../Assets/Image/organizers/Green_Clean_Text.png";
@@ -34,6 +34,7 @@ function HeroThree() {
               { icon: FaLinkedin, link: "#" },
               { icon: FaInstagram, link: "#" },
               { icon: FaYoutube, link: "#" },
+              { icon: FaWhatsapp, link: "https://wa.me/qr/VZXHSUXBGS5IP1" },
             ].map(({ icon: Icon, link }, index) => (
               <Link
                 key={index}

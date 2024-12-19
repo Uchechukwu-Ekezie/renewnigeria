@@ -70,7 +70,7 @@ const WhyExhibit = () => {
           </h1>
         </div>
         {/* Cards Section */}
-        <div className="grid grid-cols-1 gap-6 px-4 mx-auto sm:px-6 lg:w-[1250px] md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 px-4 mx-auto sm:px-6 md:grid-cols-2 lg:grid-cols-3">
           {sections.map((section, index) => (
             <div
               key={index}

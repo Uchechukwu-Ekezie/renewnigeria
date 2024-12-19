@@ -10,7 +10,7 @@ import FooterInfo from '../Components/ConferenceComponents/Contact'
 
 const Conference = () => {
   return (
-    <div className='  w-full'>
+    <div className=''>
         <CleanEnergyConference/>
         <FooterInfo/>
         <ComingSoon/>

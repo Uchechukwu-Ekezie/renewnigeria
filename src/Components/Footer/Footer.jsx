@@ -2,11 +2,11 @@ import logo from "../../Assets/footerLogo.png";
 
 function Footer() {
   return (
-    <div className="py-10 text-white bg-[#202020]">
-      <div className="px-6 mx-auto mt-16 w-[95%] lg:w-[90%]">
-        <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-2 lg:gap-6 lg:grid-cols-4 lg:text-left">
+    <div className="w-full py-10 text-white bg-[#202020]">
+      <div className="px-5 mx-auto mt-16  max-w-[1170px]">
+        <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-2 lg:gap-1 lg:grid-cols-4 lg:text-left">
           {/* Left Section */}
-          <div className="w-full">
+          <div className="max-w-[2500px]">
             <div className="flex flex-col items-center gap-2 lg:items-start lg:w-[147px]">
               <img src={logo} alt="Green Clean Logo" className="h-[40px] object-contain" />
               <h1 className="font-sanss font-[600] text-[3.2px] leading-[4.17px] text-center mt-1">
@@ -83,11 +83,11 @@ function Footer() {
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full px-4 py-2 mb-4 text-gray-800 rounded-md md:w-[306px] md:h-[60px] bg-white border-[1px] border-[#868681] focus:outline-none"
+                className="max-w-[270px] px-4 py-2 mb-4 text-gray-800 rounded-md md:w-[306px] md:h-[60px] bg-white border-[1px] border-[#868681] focus:outline-none"
               />
               <button
                 type="submit"
-                className="w-full px-6 py-2 text-white bg-[#49AF45] rounded-md md:w-[306px] md:h-[60px] hover:bg-[#30862d]"
+                className="max-w-[270px] px-6 py-2 text-white bg-[#49AF45] rounded-md md:w-[306px] md:h-[60px] hover:bg-[#30862d]"
               >
                 SUBSCRIBE NOW
               </button>

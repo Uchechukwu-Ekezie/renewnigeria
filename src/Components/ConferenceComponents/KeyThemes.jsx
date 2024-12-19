@@ -35,39 +35,42 @@ const KeyThemes = () => {
   ];
 
   return (
-    <div className="bg-[#E3E3E3] py-12 px-6 md:px-10">
+    <div className="bg-[#E3E3E3]  w-full">
       {/* Header */}
+      <div className="max-w-[1280px] mx-auto px-5 py-12 ">
       <h2 className="text-center text-[32px] font-bold text-gray-800 mb-2">
         Key Themes For The Summit
       </h2>
       <div className="w-16 h-[2px] bg-yellow-400 mx-auto mb-10"></div>
 
       {/* Themes Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
         {themes.map((theme, index) => (
           <div
             key={index}
-            className="text-center bg-transparent  p-4"
+            className="p-4 text-center bg-transparent"
           >
             {/* Image */}
             <img
               src={theme.imgSrc}
               alt={theme.title}
-              className="w-full h-40 object-cover mb-4 rounded-md"
+              className="object-cover w-full h-40 mb-4 rounded-md"
             />
             {/* Title */}
-            <h3 className="text-lg font-bold text-gray-800 mb-2">
+            <h3 className="mb-2 text-[20px] font-bold leading-[30px] text-[#313131]">
               {theme.title}
             </h3>
             {/* Description */}
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-sm leading-relaxed text-gray-600">
               {theme.description}
             </p>
           </div>
         ))}
       </div>
     </div>
+    </div>
   );
 };
 
 export default KeyThemes;
+// bg-[#066C16]

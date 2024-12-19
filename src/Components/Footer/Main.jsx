@@ -10,8 +10,8 @@ function Main() {
     
 
       {/* Content Wrapper */}
-      <div className="max-w-screen-2xl mx-auto">
-      <div className="relative w-[90%] mx-auto pt-16 sm:pt-20 ">
+      <div className="max-w-[1170px] mx-auto">
+      <div className="relative pt-16 mx-auto sm:pt-20 ">
         <Down />
       </div>
 

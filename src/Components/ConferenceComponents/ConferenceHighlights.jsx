@@ -27,8 +27,10 @@ const ConferenceHighlights = () => {
   ];
 
   return (
-    <div className="bg-gray-50 py-12 px-6 md:px-10">
+    <div className="w-full py-12 bg-gray-50 md:px-10">
+      
       {/* Header */}
+      <div className="max-w-[1280px] mx-auto px-5">
       <h2 className="text-center text-[32px] font-bold text-[#066C16] mb-2">
         What You Can Expect From The 2025 Conferences
       </h2>
@@ -56,7 +58,7 @@ const ConferenceHighlights = () => {
             {/* Content */}
             <div className="p-6">
               
-              <ul className="list-disc list-outside text-gray-600 leading-relaxed pl-5 space-y-3">
+              <ul className="pl-5 space-y-3 leading-relaxed text-gray-600 list-disc list-outside">
                 {item.description.map((desc, i) => (
                   <li key={i}>{desc}</li>
                 ))}
@@ -64,6 +66,7 @@ const ConferenceHighlights = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

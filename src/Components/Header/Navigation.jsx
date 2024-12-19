@@ -132,14 +132,6 @@ function Navigation() {
                   About Us
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/sustainability"
-                  className="block text-gray-700 hover:text-[#005911]"
-                >
-                  Sustainability
-                </NavLink>
-              </li>
               {["Participate", "Sponsor", "Visit", "Conference", "Media"].map(
                 (link) => (
                   <li key={link}>

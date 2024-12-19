@@ -56,7 +56,7 @@ const WhyExhibit = () => {
 
   return (
     <section className="w-full py-8 bg-white">
-      <div className="mx-auto max-w-[1440px] px-5">
+      <div className="mx-auto max-w-[1280px] px-5">
         {/* Header Section */}
         <div className="lg:ml-7 md:mx-auto lg:mx-auto w-[100%] md:w-[93%]  mb-[14px] flex gap-4 justify-center lg:justify-start">
           <img src={vector} alt="Vector" />

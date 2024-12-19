@@ -1,32 +1,14 @@
 import React from "react";
-
-// Import your thumbnail images
-import videoThumbnail1 from "../../Assets/Image/testimonials.jfif";
-import videoThumbnail2 from "../../Assets/Image/testimonials2.jfif";
-
-const DelegateTestimonials = () => {
-  const testimonials = [
-    {
-      videoThumbnail: videoThumbnail1,
-      quote:
-        "Nigeria Energy 2023 is a vibrant show that we are proud to be a part of. Our expectations were over fulfilled with the number of people interested in our products.",
-      name: "Thomas Sasserath, Project Manager, A.H.T. Syngas Tech N.V.",
-    },
-    {
-      videoThumbnail: videoThumbnail2,
-      quote:
-        "Nigeria is a fast-growing economy, and Nigeria Energy is the best media to showcase your company/products not only for the Nigerian market but also for the West Africa region.",
-      name: "Engr. Lucas Istifanus, Principal Engineer/Adjunct Lecturer, The University of Jos, Nigeria",
-    },
-  ];
-
+import image1 from "../../Assets/Image/participate/HearExhibitor/image1.png";
+import image2 from "../../Assets/Image/participate/HearExhibitor/image2.png";
+const ExhibitorTestimonials = () => {
   return (
     <section className="w-full bg-[#E3E3E3] py-12 md:py-16 ">
       <div className="max-w-[1280px] px-5 mx-auto">
         {/* Heading */}
         <div className="text-center mb-9">
           <h2 className="font-sanss text-2xl md:text-3xl lg:text-[40px] lg:leading-[50px] font-bold text-[#000000] ">
-            Hear From Our Delegates
+            Hear From Our Exhibitors
           </h2>
           <div className="w-[50px] h-[2px] bg-gray-800 mx-auto mt-4"></div>
         </div>
@@ -37,7 +19,7 @@ const DelegateTestimonials = () => {
           <div className="  overflow-hidden">
             <div className="relative w-full h-[250px] sm:h-[300px]">
               <img
-                src={videoThumbnail1}
+                src={image1}
                 alt="Exhibitor Testimonial 1"
                 className="w-full h-full object-cover"
               />
@@ -77,7 +59,7 @@ const DelegateTestimonials = () => {
           <div className=" overflow-hidden">
             <div className="relative w-full h-[250px] sm:h-[300px]">
               <img
-                src={videoThumbnail2}
+                src={image2}
                 alt="Exhibitor Testimonial 2"
                 className="w-full h-full object-cover"
               />
@@ -118,4 +100,4 @@ const DelegateTestimonials = () => {
   );
 };
 
-export default DelegateTestimonials;
+export default ExhibitorTestimonials;

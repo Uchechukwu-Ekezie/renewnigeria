@@ -14,15 +14,17 @@ const CleanEnergyConference = () => {
       <div className="absolute inset-0 bg-green-700 bg-opacity-40"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-[#FFFFFF] max-w-4xl px-4 md:px-8">
+      <div className= " w-full relative z-10 text-[#FFFFFF] max-w-4xl px-4 md:px-8">
         {/* Title */}
-        <h1 className="text-[40px] sm:text-4xl md:text-5xl font-sanss font-medium  leading-[50px] mb-4">
+        <div className="lg:w-[120%] w-full">
+        <h1 className=" lg:text-[40px] text-[30px]  font-sanss font-medium leading-relaxed  lg:leading-[50px] mb-4">
           Powering Nigeria’s Clean Energy Transition
         </h1>
+        </div>
 
         {/* Subtitle */}
-        <div className="lg:w-[70%] w-[100%] lg:mx-auto">
-        <p className="text-[23px] sm:text-[15px]  font-sansss  md:text-[25px] leading-[33px] mb-6">
+        <div className="lg:w-[75%] w-[100%] lg:mx-auto">
+        <p className="lg:text-[23px] text-[15px]  font-sanss  md:text-[25px] leading-relaxed lg:leading-[33px] mb-6">
           A defining conference enabling sustainable, affordable, and reliable
           energy access within Nigeria
         </p>

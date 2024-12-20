@@ -9,19 +9,18 @@ function HeroTwo() {
   const images = [image1, image2, image3, image4, image5];
 
   return (
-    <div className="grid grid-cols-1 gap-4 px-16 py-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:px-24 bg-slate-200">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className="overflow-hidden "
-        >
-          <img
-            src={image}
-            alt={`Image ${index + 1}`}
-            className="object-cover w-full h-full"
-          />
-        </div>
-      ))}
+    <div className="bg-white ">
+      <div className="max-w-[1280px] mx-auto grid w-full grid-cols-1 gap-4 px-16 py-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:px-24">
+        {images.map((image, index) => (
+          <div key={index} className="overflow-hidden ">
+            <img
+              src={image}
+              alt={`Image ${index + 1}`}
+              className="object-cover w-full h-full"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

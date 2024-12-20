@@ -101,7 +101,7 @@ const ElevateYourBrand = () => {
 
               {/* Content */}
               <div
-                className={`lg:w-[50%] mx-auto md:w-1/2 pt-[67.2px] pl-[30px] ${
+                className={`lg:w-[50%] mx-auto md:w-1/2 pt-[67.2px] lg:pl-[30px] pb-5  px-5 ${
                   sponsor.bgColor || "bg-white"
                 }`}
               >

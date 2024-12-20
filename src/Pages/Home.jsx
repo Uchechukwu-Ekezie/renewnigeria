@@ -9,6 +9,7 @@ import ShowHighlights from "../Components/ShowHighlights/ShowHighlights";
 import VideoGallery from "../Components/VideoGallery/VideoGallery";
 import Slider from "../Components/Hero/Slider";
 import HeroThree from "../Components/Hero/HeroThree";
+import ShowFeatureinHero from "../Components/Features/ShowFeaturesinHero";
 
 
 function Home() {
@@ -18,7 +19,8 @@ function Home() {
       <Slider />
       <HeroThree />
       <HeroFour />
-      <ShowFeatures />
+
+      <ShowFeatureinHero/>
       <ComingSoon />
       <ShowHighlights />
       <VideoGallery />

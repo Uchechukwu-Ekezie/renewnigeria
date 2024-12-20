@@ -19,7 +19,7 @@ const ExhibitorFeedback = () => {
            {feedback.map((item, index) => (
             <p
               key={index}
-              className="font-sanss  text-white text-[25px] leading-[35px] font-medium"
+              className="font-sanss  text-white lg:text-[25px] leading-[35px] font-medium"
             >
               {item}
             </p>

@@ -2,8 +2,8 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <>
-      <div className="relative hidden  lg:block bg-white h-[205px] w-full py-8">
+    <div className="w-full">
+      <div className="relative hidden  lg:block bg-white h-[205px] max-w-[1280px] mx-auto py-8 px-5">
         {/* White Background Div */}
         <div className="z-0">
           {/* Content of the white background div (if needed) */}
@@ -158,7 +158,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -61,10 +61,10 @@ const Exhibi= () => {
   return (
     <div className="relative h-[25vh]  md:h-[15vh] lg:h-[25vh]">
       <div className="relative max-w-[1280px] px-5 mx-auto mt-6 overflow-hidden">
-        <h2 className="mb-4 text-[40px] font-bold text-center text-[#066C16] md:text-xl font-sanss leading-[50px]">
+        <h2 className="mb-4 lg:text-[40px] font-bold text-center text-[#066C16] md:text-xl font-sanss leading-[50px]">
           Featured Exhibitors 2025
         </h2>
-        <div className="w-16 h-[2px] bg-[#066C16] mx-auto mb-10"></div>
+        <div className="w-16 h-[2px] bg-[#066C1] mx-auto mb-10"></div>
 
         {/* Left Arrow */}
         <button
@@ -88,7 +88,7 @@ const Exhibi= () => {
           {exhibitors.map((item, index) => (
             <div
               key={index}
-              className="flex items-center justify-center flex-shrink-0 mb-40"
+              className="flex items-center justify-center flex-shrink-0 mt-[-50px] lg:mt-10"
               style={{
                 minWidth: "100%", // Take full width for one item per view
               }}

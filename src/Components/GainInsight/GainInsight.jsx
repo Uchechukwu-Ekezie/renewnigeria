@@ -33,7 +33,7 @@ const reports = [
 const GainInsight = () => {
   return (
     <section className="bg-[#F5F5F5] py-12 w-full">
-      <div className="max-w-screen-xl px-4 mx-auto mb-10 text-center">
+      <div className="max-w-[1280px] px-5 mx-auto mb-10 text-center">
         {/* Section Header */}
         <h2 className="uppercase font-sans mb-6 text-[40px] font-semibold sm:text-[40px] md:text-[40px]">
          Gain Insight Into The Nigeria Renewable Energy Sector

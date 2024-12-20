@@ -15,7 +15,7 @@ const PricingPlans = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#60AC45] to-[#005911]"></div>
 
 
-      <div className="container relative max-w-screen-lg mx-auto text-center">
+      <div className="container relative max-w-[1280px] mx-auto text-center">
         {/* Heading Section */}
         <p className="mb-4 font-medium text-green-200 uppercase">Join Us</p>
         <h1 className="mx-auto mb-12 text-2xl font-bold text-white md:text-4xl">

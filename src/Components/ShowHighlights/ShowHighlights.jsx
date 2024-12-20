@@ -3,7 +3,8 @@ import img from "../../Assets/Image/features/fte.jpg";
 // import rtr from "../../Assets/Image/features/sww.png";
 const ShowHighlights = () => {
   return (
-    <section className="bg-[#EBEBEB] pb-16  pt-16 px-6 lg:px-24 font-sanss">
+    <section className="bg-[#EBEBEB] w-full pb-16  pt-16  font-sanss">
+      <div className="max-w-[1280px]  px-6 lg:px-24">
       <h2 className="text-[40px] text-center font-bold text-[#313131] mb-4">
         2025 Show Highlights
       </h2>
@@ -61,6 +62,8 @@ const ShowHighlights = () => {
         </div>
        
       </div>
+      </div>
+      
     </section>
   );
 };

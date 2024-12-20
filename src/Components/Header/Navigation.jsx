@@ -15,6 +15,13 @@ function Navigation() {
 
   const activeStyle = "text-[#005911] font-bold"; // Define active styles
 
+  const location = useLocation();
+
+  // Close mobile menu on navigation
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location]);
+
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow">
       <div className="w-full px-6 sm:px-6 lg:px-[60px]">

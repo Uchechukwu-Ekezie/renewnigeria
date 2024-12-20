@@ -6,11 +6,13 @@ import Visit from "./Pages/Visit";
 import Participate from "./Pages/Participate";
 import Conference from "./Pages/Conference";
 import Sponsor from "./Pages/Sponsor";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
       <div className=" h-dvh">
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<RootLayout />}>
             <Route index element={<Home />} />

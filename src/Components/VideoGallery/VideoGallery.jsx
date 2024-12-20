@@ -13,23 +13,23 @@ const VideoGallery = () => {
   ];
 
   return (
-    <section className="bg-[#066C16] py-12 px-6 lg:px-24 w-full">
-      {/* Video Grid */}
-      <div className="max-w-[1280px] mx-auto">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {videos.map(({ src, alt }, index) => (
-            <div
-              key={index}
-              className="relative overflow-hidden bg-black rounded-lg shadow-lg"
-            >
-              <img
-                src={src}
-                alt={alt}
-                className="object-cover w-full h-full opacity-70"
-              />
-            </div>
-          ))}
-        </div>
+    <section className="w-full bg-[#066C16] py-12 ">
+      <div className="max-w-[1280px] px-9">
+         {/* Video Grid */}
+      <div className="grid grid-cols-1 gap-8  sm:grid-cols-2 lg:grid-cols-3">
+        {videos.map(({ src, alt }, index) => (
+          <div
+            key={index}
+            className="relative overflow-hidden bg-black rounded-lg shadow-lg"
+          >
+            <img
+              src={src}
+              alt={alt}
+              className="object-cover w-full h-full opacity-70"
+            />
+          </div>
+        ))}
+      </div>
 
         {/* Download Button */}
         <div className="mt-12 text-center">
@@ -51,9 +51,8 @@ const VideoGallery = () => {
               />
             </svg>
 
-            <span className="ml-3">Download the 2024 Post Share Brochure</span>
-          </a>
-        </div>
+          <span className="ml-3">Download the 2024 Post Share Brochure</span>
+        </a>
       </div>
     </section>
   );

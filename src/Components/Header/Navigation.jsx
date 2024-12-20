@@ -1,11 +1,19 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "../../Assets/Image/logowe.png";
 import report from "../../Assets/report.pdf";
 
 function Navigation() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation(); // Tracks current route
+
+  useEffect(() => {
+    // Close the mobile menu when the route changes
+    setIsMobileMenuOpen(false);
+  }, [location]);
+
+  const activeStyle = "text-[#005911] font-bold"; // Define active styles
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow">
@@ -14,7 +22,9 @@ function Navigation() {
           {/* Logo Section */}
           <Link to="/">
             <img src={logo} alt="Logo" className="h-[40px] object-contain" />
-            <h1 className="font-sanss font-[600] text-[3.2px] leading-[4.17px] text-center mt-1">FIRST NATIONAL LEGISLATIVE SUMMIT & EXPO ON RENEWABLE ENERGY</h1>
+            <h1 className="font-sanss font-[600] text-[3.2px] leading-[4.17px] text-center mt-1">
+              FIRST NATIONAL LEGISLATIVE SUMMIT & EXPO ON RENEWABLE ENERGY
+            </h1>
           </Link>
 
           {/* Desktop Navigation */}
@@ -25,36 +35,27 @@ function Navigation() {
                 onMouseEnter={() => setIsDropdownOpen(true)}
                 onMouseLeave={() => setIsDropdownOpen(false)}
               >
-                <NavLink to="/#" className="transition hover:text-[#005911]">
+                <NavLink
+                  to="/#"
+                  className={({ isActive }) =>
+                    `transition hover:text-[#005911] ${
+                      isActive ? activeStyle : ""
+                    }`
+                  }
+                >
                   About
                 </NavLink>
-                {/* {isDropdownOpen && (
-                  <ul className="absolute left-0 z-10 w-48 bg-white border rounded shadow-md">
-                    <li>
-                      <NavLink
-                        to="/about-us"
-                        className="block px-4 py-2 text-[#504F53] hover:bg-gray-100 hover:text-[#005911]"
-                      >
-                        About Us
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/sustainability"
-                        className="block px-4 py-2 text-[#504F53] hover:bg-gray-100 hover:text-[#005911]"
-                      >
-                        Sustainability
-                      </NavLink>
-                    </li>
-                  </ul>
-                )} */}
               </li>
               {["Participate", "Sponsor", "Visit", "Conference", "Media"].map(
                 (link) => (
                   <li key={link}>
                     <NavLink
                       to={`/${link.toLowerCase()}`}
-                      className="transition hover:text-[#005911]"
+                      className={({ isActive }) =>
+                        `transition hover:text-[#005911] ${
+                          isActive ? activeStyle : ""
+                        }`
+                      }
                     >
                       {link}
                     </NavLink>
@@ -126,8 +127,12 @@ function Navigation() {
             <ul className="space-y-4 text-center text-[16px] font-semibold">
               <li>
                 <NavLink
-                  to="/about-us"
-                  className="block text-gray-700 hover:text-[#005911]"
+                  to="/#"
+                  className={({ isActive }) =>
+                    `block text-gray-700 hover:text-[#005911] ${
+                      isActive ? activeStyle : ""
+                    }`
+                  }
                 >
                   About Us
                 </NavLink>
@@ -137,7 +142,11 @@ function Navigation() {
                   <li key={link}>
                     <NavLink
                       to={`/${link.toLowerCase()}`}
-                      className="block text-gray-700 hover:text-[#005911]"
+                      className={({ isActive }) =>
+                        `block text-gray-700 hover:text-[#005911] ${
+                          isActive ? activeStyle : ""
+                        }`
+                      }
                     >
                       {link}
                     </NavLink>

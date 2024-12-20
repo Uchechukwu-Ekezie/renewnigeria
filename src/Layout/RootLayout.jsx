@@ -17,7 +17,7 @@ function RootLayout() {
     <div>
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/qr/VZXHSUXBGS5IP1"
+        href="https://api.whatsapp.com/send/?phone=%2B2348034474677&text&type=phone_number&app_absent=0&wame_ctl=1"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed z-50 flex items-center justify-center p-4 text-2xl text-white transition duration-300 transform bg-green-500 rounded-full shadow-lg bottom-6 right-6 hover:scale-110 hover:shadow-xl"

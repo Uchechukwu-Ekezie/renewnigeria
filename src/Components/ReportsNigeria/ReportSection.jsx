@@ -58,6 +58,32 @@ const ReportSection = () => {
       ],
       image: image,
     },
+    {
+      id: 5,
+      title: "Why Nigeria?",
+      description:
+        "Discover the opportunities and challenges in Nigeria's energy sector with a focus on investment potential and government initiatives in this report.",
+      repo: "This report covers:",
+      points: [
+        "Nigeria's ranking in ease of doing business",
+        "Taxation policies for companies in Nigeria",
+        "Government initiatives to improve energy access and sustainability",
+      ],
+      image: image,
+    },
+    {
+      id: 6,
+      title: "Why Nigeria?",
+      description:
+        "Discover the opportunities and challenges in Nigeria's energy sector with a focus on investment potential and government initiatives in this report.",
+      repo: "This report covers:",
+      points: [
+        "Nigeria's ranking in ease of doing business",
+        "Taxation policies for companies in Nigeria",
+        "Government initiatives to improve energy access and sustainability",
+      ],
+      image: image,
+    },
   ];
 
   // Download Function

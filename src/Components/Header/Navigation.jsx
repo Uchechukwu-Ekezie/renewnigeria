@@ -15,7 +15,7 @@ function Navigation() {
 
   const activeStyle = "text-[#005911] font-bold"; // Define active styles
 
-  const location = useLocation();
+ 
 
   // Close mobile menu on navigation
   useEffect(() => {
